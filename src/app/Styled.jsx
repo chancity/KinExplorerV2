@@ -2,7 +2,7 @@ import styled from 'styled-components/macro'
 
 
 export const AppParent = styled.div`
-	padding-left: 16.6667rem;
+	padding-left: 9.6667rem;
     overflow: hidden;
 	@media (max-width: 62.5em) {
 	    padding-left: 0;
@@ -19,7 +19,7 @@ const AppBody = styled.div`
     transition: transform 150ms ease-out 0s;
     
     @media (max-width: 62.5em) {
-	    transform: translateX(${props => props.open ? "16.6667rem" : "0rem" });
+	    transform: translateX(${props => props.open ? "9.6667rem" : "0rem" });
 	    padding: 3.88889rem 1.11111rem 1.66667rem;
 	}
 `;

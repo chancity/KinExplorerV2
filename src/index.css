@@ -13,7 +13,7 @@ body {
   font-smooth: always;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5em) {
   html, body {
 
   }

@@ -39,6 +39,7 @@ export const Header = styled.div`
 		    right: 0.555556rem;
 		    top: 0.611111rem;
 		    z-index: 2;
+		    color: currentColor;
 		    padding: 0px;
 		    border-width: initial;
 		    border-style: none;
@@ -74,7 +75,7 @@ export const Label = styled.label`
     border-color: initial;
     border-image: initial;
     flex: 0 0 auto;
-    
+    color: currentColor;
     :active{
 	    transform: scale(0.95);
 	    opacity: 0.6;
@@ -94,13 +95,12 @@ export const Label = styled.label`
 	    justify-content: center;
 	    width: 1.77778rem;
 	    z-index: 1;
-	    color: white;
 	    background: none;
 	}
 `;
 
 export const Input = styled.input`
-    width: 7.22222rem;
+    width: 14.22222rem;
     line-height: 1.66667rem;
     font-size: 0.833333rem;
     color: currentcolor;

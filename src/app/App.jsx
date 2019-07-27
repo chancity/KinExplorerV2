@@ -3,6 +3,7 @@ import {AppParent, AppBody} from './Styled';
 import Routes from "./Routes";
 import {NavMenu} from "../layout/Header/NavMenu";
 import {BrowserRouter} from "react-router-dom";
+import {Footer} from "../layout/Footer/Styled";
 
 
 
@@ -35,3 +36,10 @@ function App() {
 }
 
 export default App;
+
+
+//<Footer>
+//	<AppBody>
+//
+//	</AppBody>
+//</Footer>

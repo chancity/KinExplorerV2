@@ -17,12 +17,12 @@ export const NavMenu = ({ open, toggleOpen, isMobile }) => {
 
 
 	return (
-		<div>
+		<header>
 			<Wrapper>
 				<Nav searchOpen={searchOpen} isMobile={isMobile} toggleSearchOpen={toggleSearchOpen}/>
-				<MobileNav open={open} toggleOpen={toggleOpen} toggleSearchOpen={toggleSearchOpen} style={{display: (isMobile ? "flex" : "none")}}/>
+				<MobileNav open={open} toggleOpen={toggleOpen} isMobile={isMobile} toggleSearchOpen={toggleSearchOpen} style={{display: (isMobile ? "flex" : "none")}}/>
 			</Wrapper>
-			<Sidebar open={open} isMobile={isMobile}/>
-		</div>
+			<Sidebar open={open} isMobile={isMobile} toggleOpen={toggleOpen}/>
+		</header>
 	);
 };

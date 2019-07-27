@@ -41,6 +41,12 @@ export const SecondaryMenu = styled.div`
 
 export const SecondaryMenuItem = styled.div`
     padding-right: 1.11111rem;
+    display: flex;
+    svg {
+		height: 16px;
+		width: 16px;
+		fill: currentColor;	
+	}
 `;
 
 

@@ -9,14 +9,14 @@ export const Wrapper = styled.nav`
     height: 2.77778rem;
     font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 500;
-    color: white;
+    color: honeydew;
     background: #262626;
     transition: background 300ms ease-out 0s;
     padding: 0;
     font-size:16px;
     
     svg{
-        fill: white;
+        fill: currentColor;
     }
     @media (max-width: 62.5em) {
     	font-size: 16px;
@@ -69,6 +69,11 @@ export const SocialWrapper = styled.nav`
     flex: 1 1 auto;
     @media (max-width: 62.5em) {
     	display: none;
+	}
+	svg{
+		height: 18px;
+		width: 18px;
+		fill: currentColor;	
 	}
 `;
 

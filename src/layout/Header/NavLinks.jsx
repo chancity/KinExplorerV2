@@ -6,17 +6,23 @@ import {Seperator} from "./Styled/Navbar";
 export const NavLinks = () => {
 	return (
 		<Wrapper>
-			<NavLink to={"/my-profile"}>
-				Link 1
+			<NavLink to={"/my-kin-wallet"}>
+				My Kin Wallet
 			</NavLink>
 			<Seperator/>
-			<NavLink to={"/leaderboards"}>
-				Link 2
-			</NavLink>
-			<Seperator/>
-			<NavLink to={"/store"}>
-				Link 3
+			<NavLink to={"/register-your-app"}>
+				Register Your App
 			</NavLink>
 		</Wrapper>
 	);
 };
+
+
+//<Seperator/>
+//<NavLink to={"/leaderboards"}>
+//	Link 2
+//</NavLink>
+//<Seperator/>
+//<NavLink to={"/store"}>
+//	Link 3
+//</NavLink>

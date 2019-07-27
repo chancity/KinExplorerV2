@@ -7,6 +7,7 @@ import React from "react";
 import {Logo} from "../Logo";
 import {NavLinks} from "./NavLinks";
 import {SocialLinks} from "./SocialLinks";
+import {SocialWrapper} from "./Styled/Navbar";
 
 const OpenButtonStyle = {
 	background: "rgba(0, 0, 0, 0.07)"
@@ -24,12 +25,37 @@ const ArrowWrapperStyle = {
 	transform: "rotate(180deg)",
 	transition: "transform 0.2s ease 0s"
 }
-export const MobileNav = ({open, toggleOpen, style, toggleSearchOpen}) => {
+export const MobileNav = ({open, toggleOpen, isMobile, style, toggleSearchOpen}) => {
 	const [secondaryOpen, setSecondaryOpen] = React.useState(false);
+
+	React.useEffect(() => {
+		if(!isMobile) {
+			setSecondaryOpen(false);
+		}
+
+
+	},[isMobile]);
+
+	React.useEffect(() => {
+		if(open && secondaryOpen) {
+			toggleOpen();
+		}
+
+
+	},[secondaryOpen]);
+
+
+	React.useEffect(() => {
+		if(open && secondaryOpen) {
+			setSecondaryOpen(!secondaryOpen);
+		}
+
+
+	},[open]);
 
 	const onSecondaryOpen = () => {
 		setSecondaryOpen(!secondaryOpen);
-	}
+	};
 
 	return (
 		<Wrapper style={style}>
