@@ -22,7 +22,7 @@ const LogoBg = styled.div`
 
 export const Logo = () =>(
 	<LogoLink to={"/"}>
-		<LogoBg/>
+		LOGO
 
 	</LogoLink>
 )

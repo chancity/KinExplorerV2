@@ -7,15 +7,15 @@ export const NavLinks = () => {
 	return (
 		<Wrapper>
 			<NavLink to={"/my-profile"}>
-				Profile
+				Link 1
 			</NavLink>
 			<Seperator/>
 			<NavLink to={"/leaderboards"}>
-				Leaderboards
+				Link 2
 			</NavLink>
 			<Seperator/>
 			<NavLink to={"/store"}>
-				Store
+				Link 3
 			</NavLink>
 		</Wrapper>
 	);
