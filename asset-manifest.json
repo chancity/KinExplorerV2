@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/play-around/static/css/main.12c1220a.chunk.css",
-    "main.js": "/play-around/static/js/main.763bcf3d.chunk.js",
-    "main.js.map": "/play-around/static/js/main.763bcf3d.chunk.js.map",
+    "main.css": "/play-around/static/css/main.0c14e0bb.chunk.css",
+    "main.js": "/play-around/static/js/main.3cffa43c.chunk.js",
+    "main.js.map": "/play-around/static/js/main.3cffa43c.chunk.js.map",
     "runtime~main.js": "/play-around/static/js/runtime~main.c27d10d3.js",
     "runtime~main.js.map": "/play-around/static/js/runtime~main.c27d10d3.js.map",
-    "static/js/2.2cd34ebf.chunk.js": "/play-around/static/js/2.2cd34ebf.chunk.js",
-    "static/js/2.2cd34ebf.chunk.js.map": "/play-around/static/js/2.2cd34ebf.chunk.js.map",
+    "static/js/2.da6d3c89.chunk.js": "/play-around/static/js/2.da6d3c89.chunk.js",
+    "static/js/2.da6d3c89.chunk.js.map": "/play-around/static/js/2.da6d3c89.chunk.js.map",
     "index.html": "/play-around/index.html",
-    "precache-manifest.8d0a9d3f50e7bec5004e22e6df390b76.js": "/play-around/precache-manifest.8d0a9d3f50e7bec5004e22e6df390b76.js",
+    "precache-manifest.1c57fe32a836aa4d76e34099d9524251.js": "/play-around/precache-manifest.1c57fe32a836aa4d76e34099d9524251.js",
     "service-worker.js": "/play-around/service-worker.js",
-    "static/css/main.12c1220a.chunk.css.map": "/play-around/static/css/main.12c1220a.chunk.css.map",
+    "static/css/main.0c14e0bb.chunk.css.map": "/play-around/static/css/main.0c14e0bb.chunk.css.map",
+    "static/media/cmc.02229b63.svg": "/play-around/static/media/cmc.02229b63.svg",
     "static/media/github.b08bd431.svg": "/play-around/static/media/github.b08bd431.svg",
-    "static/media/logo.png": "/play-around/static/media/logo.efe65e03.png",
+    "static/media/kin-icon.svg": "/play-around/static/media/kin-icon.c41b4a2f.svg",
+    "static/media/kin-logo.5051b770.svg": "/play-around/static/media/kin-logo.5051b770.svg",
+    "static/media/medium.7f84201d.svg": "/play-around/static/media/medium.7f84201d.svg",
     "static/media/menu-arrow.aa3752fb.svg": "/play-around/static/media/menu-arrow.aa3752fb.svg",
     "static/media/menu-close.becf3616.svg": "/play-around/static/media/menu-close.becf3616.svg",
     "static/media/menu-open.7b942a07.svg": "/play-around/static/media/menu-open.7b942a07.svg",
-    "static/media/menu-search.97fe2e1d.svg": "/play-around/static/media/menu-search.97fe2e1d.svg"
+    "static/media/menu-search-close.15591e5d.svg": "/play-around/static/media/menu-search-close.15591e5d.svg",
+    "static/media/menu-search.97fe2e1d.svg": "/play-around/static/media/menu-search.97fe2e1d.svg",
+    "static/media/reddit.a3391e28.svg": "/play-around/static/media/reddit.a3391e28.svg"
   }
 }
