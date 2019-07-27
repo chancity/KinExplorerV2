@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>
+		fold
+	</title>
+	<use fill="#FFF" xlink:href="#fold" transform="translate(0 1)">
+
+	</use>
+	<defs>
+		<path id="fold" d="M0 1h17v-2H0v2zm17 4H0v2h17V5zM0 13h17v-2H0v2z">
+
+		</path>
+	</defs>
+</svg>
