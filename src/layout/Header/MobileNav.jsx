@@ -74,7 +74,7 @@ export const MobileNav = ({open, toggleOpen, isMobile, style, toggleSearchOpen})
 				</ButtonWrapper>
 			</div>
 			<SecondaryMenu open={secondaryOpen}>
-				<NavLinks/>
+				<NavLinks onClick={onSecondaryOpen}/>
 				<SecondaryMenuItem>
 					<SocialLinks/>
 				</SecondaryMenuItem>

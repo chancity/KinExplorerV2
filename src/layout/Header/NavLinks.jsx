@@ -3,14 +3,14 @@ import React from 'react';
 import {Seperator} from "./Styled/Navbar";
 
 
-export const NavLinks = () => {
+export const NavLinks = ({onClick}) => {
 	return (
 		<Wrapper>
-			<NavLink to={"/my-kin-wallet"}>
+			<NavLink to={"/my-kin-wallet"} onClick={onClick}>
 				My Kin Wallet
 			</NavLink>
 			<Seperator/>
-			<NavLink to={"/register-your-app"}>
+			<NavLink to={"/register-your-app"} onClick={onClick}>
 				Register Your App
 			</NavLink>
 		</Wrapper>

@@ -1,8 +1,8 @@
 {
-  "name": "playing-around",
-  "version": "0.1.0",
+  "name": "KinExplorerV2",
+  "version": "2.0.0",
   "private": true,
-  "homepage": "/play-around",
+  "homepage": "/KinExplorerV2",
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
