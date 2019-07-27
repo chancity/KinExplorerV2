@@ -14,6 +14,10 @@ export const Wrapper = styled.nav`
     transition: background 300ms ease-out 0s;
     padding: 0;
     font-size:16px;
+    
+    svg{
+        fill: white;
+    }
     @media (max-width: 62.5em) {
     	font-size: 16px;
 	}

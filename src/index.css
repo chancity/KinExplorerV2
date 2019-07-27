@@ -37,6 +37,9 @@ audio, canvas, iframe, img, svg, video {
 svg:not(:root) {
   overflow: hidden;
 }
+svg{
+  fill:currentColor;
+}
 ::after, ::before {
   text-decoration: inherit;
   vertical-align: inherit;
@@ -44,6 +47,14 @@ svg:not(:root) {
 *, ::after, ::before {
   background-repeat: no-repeat;
   box-sizing: inherit;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+button {
+  text-transform: none;
 }
 
 ::selection {
