@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Header/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Sidebar.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/layout/Header/Sidebar.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
               </folding>
@@ -333,7 +332,7 @@
       <workItem from="1564193538855" duration="28524000" />
       <workItem from="1564255134250" duration="21230000" />
       <workItem from="1564278480720" duration="121000" />
-      <workItem from="1564286149954" duration="6651000" />
+      <workItem from="1564286149954" duration="6708000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1564221863125</created>
@@ -398,17 +397,23 @@
       <option name="project" value="LOCAL" />
       <updated>1564292345869</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactoring">
+      <created>1564292812517</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564292812517</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56526000" />
+    <option name="totallyTimeSpent" value="56583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13779989" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13779989" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -423,7 +428,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32501948" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32501948" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -802,7 +807,7 @@
     <entry file="file://$PROJECT_DIR$/src/layout/Header/Sidebar.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
           </folding>

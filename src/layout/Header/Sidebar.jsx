@@ -30,7 +30,7 @@ const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 		if(isMobile)
 			setNavOpen();
 	};
-	
+
 	return (
 		<Menu style={{ transform: (display ? "translateX(0rem)" : "translateX(-9.6667rem)")}}>
 			<MenuInner>
