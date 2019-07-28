@@ -3,38 +3,36 @@ import React from 'react';
 import {withRouter} from "react-router-dom";
 import navOptions from "./NavOptions";
 
-const Sidebar = ({ open, isMobile, toggleOpen, location }) => {
-	const [display, setDisplay] = React.useState("translateX(0rem)");
+const Sidebar = ({ open, isMobile, toggleOpen,  location }) => {
 	const [navItems, setNavItems] = React.useState([]);
 	const [path, setPath] = React.useState(null);
+	const display = open || !isMobile;
+
 
 	React.useEffect(() =>{
 		const rootPath = location.pathname.split("/");
+		let path;
 
-		if(rootPath.length >= 2){
-			const path = rootPath[1];
+		path = rootPath[1];
 
-			if(navOptions.hasOwnProperty(path)){
-				setNavItems(navOptions[path]);
-				setPath(path);
-			} else {
-				setNavItems([]);
-				setPath(null);
-			}
+		if(navOptions.hasOwnProperty(path)){
+			setNavItems(navOptions[path]);
+			setPath(`${path}`);
+		} else {
+			setNavItems([]);
+			setPath(null);
 		}
 	}, [location.pathname]);
 
-	React.useEffect(() =>{
-		setDisplay((open || !isMobile) && navItems.length > 0 ? "translateX(0rem)" : "translateX(-9.6667rem)")
-	}, [isMobile, open, navItems]);
 
 	const toggle = ()=>{
 		if(isMobile)
 			toggleOpen();
 	};
 
+
 	return (
-		<Menu style={{ transform: display }}>
+		<Menu style={{ transform: (display ? "translateX(0rem)" : "translateX(-9.6667rem)")}}>
 			<MenuInner>
 				{navItems.map((value, index)=>(
 					<Section key={index}>

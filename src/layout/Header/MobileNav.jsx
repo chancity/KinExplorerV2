@@ -7,7 +7,6 @@ import React from "react";
 import {Logo} from "../Logo";
 import {NavLinks} from "./NavLinks";
 import {SocialLinks} from "./SocialLinks";
-import {SocialWrapper} from "./Styled/Navbar";
 
 const OpenButtonStyle = {
 	background: "rgba(0, 0, 0, 0.07)"
@@ -24,7 +23,9 @@ const ArrowWrapperStyle = {
 	transformOrigin: "center center",
 	transform: "rotate(180deg)",
 	transition: "transform 0.2s ease 0s"
-}
+};
+
+
 export const MobileNav = ({open, toggleOpen, isMobile, style, toggleSearchOpen}) => {
 	const [secondaryOpen, setSecondaryOpen] = React.useState(false);
 
@@ -34,7 +35,7 @@ export const MobileNav = ({open, toggleOpen, isMobile, style, toggleSearchOpen})
 		}
 
 
-	},[isMobile]);
+	},[isMobile, setSecondaryOpen]);
 
 	React.useEffect(() => {
 		if(open && secondaryOpen) {
@@ -42,7 +43,7 @@ export const MobileNav = ({open, toggleOpen, isMobile, style, toggleSearchOpen})
 		}
 
 
-	},[secondaryOpen]);
+	},[open, secondaryOpen, toggleOpen]);
 
 
 	React.useEffect(() => {
@@ -51,7 +52,7 @@ export const MobileNav = ({open, toggleOpen, isMobile, style, toggleSearchOpen})
 		}
 
 
-	},[open]);
+	},[open,secondaryOpen, setSecondaryOpen]);
 
 	const onSecondaryOpen = () => {
 		setSecondaryOpen(!secondaryOpen);

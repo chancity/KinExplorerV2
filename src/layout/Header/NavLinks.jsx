@@ -14,10 +14,6 @@ export const NavLinks = ({onClick}) => {
 				Apps
 			</NavLink>
 			<Seperator/>
-			<NavLink to={"/explorer"} onClick={onClick} activeClassName={"navActive"}>
-				Explorer
-			</NavLink>
-			<Seperator/>
 			<NavLink to={"/stats"} onClick={onClick} activeClassName={"navActive"}>
 				Stats
 			</NavLink>

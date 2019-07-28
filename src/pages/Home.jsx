@@ -4,7 +4,7 @@ import {Title} from '../layout/Title'
 export const Home = () => (
 	<>
 		<Title>
-			Welcome
+			Welcome to Kin Explorer
 		</Title>
 	</>
 );

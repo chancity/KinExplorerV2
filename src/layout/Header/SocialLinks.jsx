@@ -1,4 +1,4 @@
-import { Wrapper, NavLink, SocialLink } from "./Styled/NavLinks";
+import { SocialLink } from "./Styled/NavLinks";
 import React from 'react';
 import { ReactComponent as GithubSvg } from '../../static/images/social/github.svg';
 import { ReactComponent as KinSvg } from '../../static/images/kin/kin-logo.svg';

@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 import React from "react";
 import {Link} from "react-router-dom";
-import KinIcon from '../static/images/kin/kin-icon.svg';
+//import KinIcon from '../static/images/kin/kin-icon.svg';
 import KinLogoFull from '../static/images/kin/kin-logo.svg';
 
 const LogoLink = styled(Link)`
@@ -27,7 +27,7 @@ const LogoBg = styled.div`
 
 
 export const Logo = () =>(
-	<LogoLink to={"/"}>
+	<LogoLink to={"/explorer"}>
 		<LogoBg/>
 		<span style={{opacity:"0.65",color: "rgb(147, 107, 251)", verticalAlign: "middle"}}>Explorer</span>
 	</LogoLink>

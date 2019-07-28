@@ -70,6 +70,7 @@ const myKinWallet = [
 	}
 ];
 
+
 const navOptions = {
 	"explorer": explorerNav,
 	"apps": kinApps,

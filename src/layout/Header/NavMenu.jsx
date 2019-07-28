@@ -8,13 +8,9 @@ import Sidebar from "./Sidebar";
 export const NavMenu = ({ open, toggleOpen, isMobile }) => {
 	const [searchOpen, setSearchOpen] = React.useState(false);
 
-
 	const toggleSearchOpen = () =>{
 		setSearchOpen(!searchOpen);
-		console.log(!searchOpen)
 	};
-
-
 
 	return (
 		<header>
