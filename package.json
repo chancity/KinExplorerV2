@@ -2,7 +2,7 @@
   "name": "KinExplorerV2",
   "version": "2.0.0",
   "private": true,
-  "homepage": "/KinExplorerV2",
+  "homepage": "/",
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
