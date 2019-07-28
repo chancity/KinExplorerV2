@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "004a14654c7ec1a25a91ea32fbe39819",
+    "revision": "486d82a9d639965eac83686eeb3c369a",
     "url": "/KinExplorerV2/index.html"
   },
   {
-    "revision": "3ec653022467040e21f0",
+    "revision": "7d9373465f87f3753515",
     "url": "/KinExplorerV2/static/css/main.0b40fb59.chunk.css"
   },
   {
-    "revision": "aa16b8177acbf3b9dad6",
-    "url": "/KinExplorerV2/static/js/2.6ae3bd20.chunk.js"
+    "revision": "ac5b1036a336bcc27976",
+    "url": "/KinExplorerV2/static/js/2.2e4b68df.chunk.js"
   },
   {
-    "revision": "3ec653022467040e21f0",
-    "url": "/KinExplorerV2/static/js/main.e83e8946.chunk.js"
+    "revision": "7d9373465f87f3753515",
+    "url": "/KinExplorerV2/static/js/main.4233f3d8.chunk.js"
   },
   {
     "revision": "1cb110f20a055a26e251",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b08bd431fb60533c40a4e7e64f3aea90",
     "url": "/KinExplorerV2/static/media/github.b08bd431.svg"
-  },
-  {
-    "revision": "c41b4a2f5d707a5ea1688a3d836c052f",
-    "url": "/KinExplorerV2/static/media/kin-icon.c41b4a2f.svg"
   },
   {
     "revision": "a0a213e9cf97426cb2d6b1d68a9268c9",
