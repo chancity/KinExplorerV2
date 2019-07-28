@@ -13,11 +13,11 @@ const Routes = () => (
 		<Switch>
 			<Route exact path="/" component={ Home }/>
 			<Route exact path="/my-kin-wallet" component={ MyKinWallet }/>
-			<Route exact path="/operations" component={ Operations }/>
-			<Route exact path="/payments" component={ Payments }/>
-			<Route exact path="/transactions" component={ Transactions }/>
-			<Route exact path="/ledgers" component={ Ledgers }/>
-			<Route exact path="/effects" component={ Effects }/>
+			<Route exact path="/explorer/operations" component={ Operations }/>
+			<Route exact path="/explorer/payments" component={ Payments }/>
+			<Route exact path="/explorer/transactions" component={ Transactions }/>
+			<Route exact path="/explorer/ledgers" component={ Ledgers }/>
+			<Route exact path="/explorer/effects" component={ Effects }/>
 		</Switch>
 );
 

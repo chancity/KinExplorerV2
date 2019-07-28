@@ -2,7 +2,7 @@ import {Wrapper,} from "./Styled/Navbar";
 import React from 'react';
 import {MobileNav} from "./MobileNav";
 import {Nav} from "./Nav";
-import {Sidebar} from "./Sidebar";
+import Sidebar from "./Sidebar";
 
 
 export const NavMenu = ({ open, toggleOpen, isMobile }) => {

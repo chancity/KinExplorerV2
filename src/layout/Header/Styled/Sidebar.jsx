@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export const Menu = styled.nav`
     position: fixed;
@@ -42,7 +42,7 @@ export const SectionTitle = styled.h4`
     margin: 0.555556rem 2.22222rem
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
     display: inline-block;
     color: inherit;
     cursor: pointer;

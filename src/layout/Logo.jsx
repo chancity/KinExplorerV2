@@ -1,7 +1,8 @@
 import styled from 'styled-components/macro'
 import React from "react";
 import {Link} from "react-router-dom";
-import KinLogo from '../static/images/kin/kin-icon.svg';
+import KinIcon from '../static/images/kin/kin-icon.svg';
+import KinLogoFull from '../static/images/kin/kin-logo.svg';
 
 const LogoLink = styled(Link)`
     display: inline-block;
@@ -17,7 +18,7 @@ const LogoBg = styled.div`
     vertical-align: middle;
     box-sizing: border-box;
     background-size: contain;
-    background-image: url(${KinLogo});
+    background-image: url(${KinLogoFull});
     width: 1.75rem;
     height: 1.75rem;
     background-position: center center;
@@ -28,7 +29,7 @@ const LogoBg = styled.div`
 export const Logo = () =>(
 	<LogoLink to={"/"}>
 		<LogoBg/>
-		<span style={{opacity:"0.65",color: "rgb(147, 107, 251)"}}>Explorer</span>
+		<span style={{opacity:"0.65",color: "rgb(147, 107, 251)", verticalAlign: "middle"}}>Explorer</span>
 	</LogoLink>
 )
 

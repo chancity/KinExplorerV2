@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-import {Link} from "react-router-dom";
+import { NavLink as Link} from "react-router-dom";
 
 export const Wrapper = styled.nav`
     display: flex;

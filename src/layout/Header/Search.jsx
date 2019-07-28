@@ -30,7 +30,7 @@ export const Search = ({searchOpen,isMobile, toggleSearchOpen}) =>{
 						<SearchSvg style={svgStyle}/>
 					</Label>
 					<span style={{position: "relative", display: "inline-block", direction: "ltr",  width: "100%"}}>
-						<Input placeholder={"Search by Account / Transaction / ..."} autofocus="true">
+						<Input placeholder={"Search by Account / Transaction / ..."} autoFocus={true}>
 
 						</Input>
 						<PreShit/>

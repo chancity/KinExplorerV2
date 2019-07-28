@@ -18,7 +18,11 @@ body {
 
   }
 }
-
+.navActive {
+  opacity: 1 !important;
+  color: rgb(147, 107, 251) !important;
+  transform: scale(1.1);
+}
 h1 {
   font-size: 2em;
   margin: .67em 0;

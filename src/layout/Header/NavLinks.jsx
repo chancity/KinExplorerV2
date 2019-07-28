@@ -6,23 +6,21 @@ import {Seperator} from "./Styled/Navbar";
 export const NavLinks = ({onClick}) => {
 	return (
 		<Wrapper>
-			<NavLink to={"/my-kin-wallet"} onClick={onClick}>
+			<NavLink to={"/my-kin-wallet"} onClick={onClick} activeClassName={"navActive"}>
 				My Kin Wallet
 			</NavLink>
 			<Seperator/>
-			<NavLink to={"/register-your-app"} onClick={onClick}>
-				Register Your App
+			<NavLink to={"/apps"} onClick={onClick} activeClassName={"navActive"}>
+				Apps
+			</NavLink>
+			<Seperator/>
+			<NavLink to={"/explorer"} onClick={onClick} activeClassName={"navActive"}>
+				Explorer
+			</NavLink>
+			<Seperator/>
+			<NavLink to={"/stats"} onClick={onClick} activeClassName={"navActive"}>
+				Stats
 			</NavLink>
 		</Wrapper>
 	);
 };
-
-
-//<Seperator/>
-//<NavLink to={"/leaderboards"}>
-//	Link 2
-//</NavLink>
-//<Seperator/>
-//<NavLink to={"/store"}>
-//	Link 3
-//</NavLink>
