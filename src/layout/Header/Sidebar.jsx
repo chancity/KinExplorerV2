@@ -3,10 +3,10 @@ import React from 'react';
 import {withRouter} from "react-router-dom";
 import navOptions from "./NavOptions";
 
-const Sidebar = ({ open, isMobile, toggleOpen,  location }) => {
+const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 	const [navItems, setNavItems] = React.useState([]);
 	const [path, setPath] = React.useState(null);
-	const display = open || !isMobile;
+	const display = navOpen || !isMobile;
 
 
 	React.useEffect(() =>{
@@ -27,7 +27,7 @@ const Sidebar = ({ open, isMobile, toggleOpen,  location }) => {
 
 	const toggle = ()=>{
 		if(isMobile)
-			toggleOpen();
+			setNavOpen();
 	};
 
 

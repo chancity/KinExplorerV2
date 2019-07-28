@@ -1,39 +1,35 @@
 import React from 'react';
 import {AppParent, AppBody} from './Styled';
 import Routes from "./Routes";
-import {NavMenu} from "../layout/Header/NavMenu";
 import {BrowserRouter} from "react-router-dom";
+import {Provider} from "react-redux";
+import AppStore from "../store";
+import {setIsMobileOpen} from "../store/UI/actions";
+import NavMenu from "../store/UI/containers/NavMenu";
 //import {Footer} from "../layout/Footer/Styled";
-
-
-
-
+const store = AppStore;
 
 function App() {
-	const [open, setOpen] = React.useState(false);
-	const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 1000);
-	const toggleOpen = () => setOpen(!open);
-	const toggleForceClose = () => setOpen(false);
-
 	const parentRef = React.useRef(null);
+
 	React.useEffect(()=> {
 		window.addEventListener("resize", ()=>{
-			setIsMobile(window.innerWidth <= 1000);
+			store.dispatch(setIsMobileOpen(window.innerWidth <= 1000))
 		});
-
+		console.log("App Mounted");
 	}, []);
-
-
 
 
 	return (
 		<AppParent ref={parentRef}>
-			<BrowserRouter>
-				<NavMenu open={open} toggleOpen={toggleOpen} toggleForceClose={toggleForceClose} isMobile={isMobile}/>
-				<AppBody open={open}>
-					<Routes/>
-				</AppBody>
-			</BrowserRouter>
+			<Provider store={store}>
+				<BrowserRouter>
+					<NavMenu/>
+					<AppBody>
+						<Routes/>
+					</AppBody>
+				</BrowserRouter>
+			</Provider>
 		</AppParent>
 	);
 }

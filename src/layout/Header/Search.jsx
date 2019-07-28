@@ -11,14 +11,14 @@ const searchOpenStyle = {
 	width: "1.44444rem",
 	height: "1.44444rem"
 };
-export const Search = ({searchOpen,isMobile, toggleSearchOpen}) =>{
-	const svgStyle = searchOpen && isMobile ? searchOpenStyle : searchCloseStyle;
 
+export const Search = ({searchOpen, isMobile, setSearchOpen}) =>{
+	const svgStyle = searchOpen && isMobile ? searchOpenStyle : searchCloseStyle;
 
 	return(
 	<>
 		<Header searchOpen={searchOpen && isMobile}>
-			<button onClick={toggleSearchOpen}>
+			<button onClick={()=>{setSearchOpen(!searchOpen)}}>
 				<CloseSvg fill="white" style={svgStyle}/>
 			</button>
 		</Header>
@@ -31,7 +31,6 @@ export const Search = ({searchOpen,isMobile, toggleSearchOpen}) =>{
 					</Label>
 					<span style={{position: "relative", display: "inline-block", direction: "ltr",  width: "100%"}}>
 						<Input placeholder={"Search by Account / Transaction / ..."} autoFocus={true}>
-
 						</Input>
 						<PreShit/>
 					</span>

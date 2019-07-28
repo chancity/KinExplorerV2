@@ -3,21 +3,21 @@ import React from 'react';
 import {Logo} from "../Logo";
 import {NavLinks} from "./NavLinks";
 import {SocialLinks} from "./SocialLinks";
-import {Search} from "./Search";
+import Search from "../../store/UI/containers/Search";
 
 
 
 
 
-export const Nav = ({style, searchOpen,isMobile, toggleSearchOpen}) => {
+export const Nav = () => {
 	return (
-		<Normal style={style}>
+		<Normal>
 			<StartWrapper>
 				<Logo/>
 				<NavLinks/>
 			</StartWrapper>
 			<EndWrapper>
-				<Search searchOpen={searchOpen} isMobile={isMobile} toggleSearchOpen={toggleSearchOpen}/>
+				<Search/>
 				<SocialWrapper>
 					<SocialLinks/>
 				</SocialWrapper>

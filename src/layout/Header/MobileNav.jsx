@@ -19,70 +19,36 @@ export const ButtonWrapper = ({children, onClick, open}) => {
 		</Button>
 	)
 };
-const ArrowWrapperStyle = {
-	transformOrigin: "center center",
-	transform: "rotate(180deg)",
-	transition: "transform 0.2s ease 0s"
-};
+const arrowWrapperStyle = {transformOrigin: "center center",transform: "rotate(180deg)",transition: "transform 0.2s ease 0s"};
+const arrowSvgStyle = {fill:"white", width: "2rem", height: "2rem"};
+const searchWrapperStyle = { display: "inline-block",	justifyContent: "flex-end",	float: "right", backGroundColor:"transparent"};
+const searchSvgStyle = {fill:"white", width: "1.55556rem", height: "1.55556rem"};
 
 
-export const MobileNav = ({open, toggleOpen, isMobile, style, toggleSearchOpen}) => {
-	const [secondaryOpen, setSecondaryOpen] = React.useState(false);
-
-	React.useEffect(() => {
-		if(!isMobile) {
-			setSecondaryOpen(false);
-		}
-
-
-	},[isMobile, setSecondaryOpen]);
-
-	React.useEffect(() => {
-		if(open && secondaryOpen) {
-			toggleOpen();
-		}
-
-
-	},[open, secondaryOpen, toggleOpen]);
-
-
-	React.useEffect(() => {
-		if(open && secondaryOpen) {
-			setSecondaryOpen(!secondaryOpen);
-		}
-
-
-	},[open,secondaryOpen, setSecondaryOpen]);
-
-	const onSecondaryOpen = () => {
-		setSecondaryOpen(!secondaryOpen);
-	};
-
-	return (
-		<Wrapper style={style}>
-			<ButtonWrapper onClick={toggleOpen} open={open}>
-				{open ? <CloseSvg/> : <OpenSvg/>}
+export const MobileNav = ({setSearchOpen, setNavOpen, setSecondaryNavOpen, navOpen, secondaryNavOpen, style}) => (
+	<Wrapper style={style}>
+		<ButtonWrapper onClick={setNavOpen} open={navOpen}>
+			{navOpen ? <CloseSvg/> : <OpenSvg/>}
+		</ButtonWrapper>
+		<Logo/>
+		<div style={searchWrapperStyle}>
+			<ButtonWrapper  onClick={setSearchOpen}>
+				<SearchSvg style={searchSvgStyle}/>
 			</ButtonWrapper>
-			<Logo/>
-			<div style={{ display: "inline-block",	justifyContent: "flex-end",	float: "right", backGroundColor:"transparent"}}>
-				<ButtonWrapper  onClick={toggleSearchOpen}>
-					<SearchSvg style={{fill:"white", width: "1.55556rem", height: "1.55556rem"}}/>
-				</ButtonWrapper>
-				<ButtonWrapper onClick={onSecondaryOpen} open={secondaryOpen}>
-					<ArrowWrapper style={secondaryOpen ? ArrowWrapperStyle : null}>
-						<ArrowSvg style={{fill:"white", width: "2rem", height: "2rem"}}/>
-					</ArrowWrapper>
-				</ButtonWrapper>
-			</div>
-			<SecondaryMenu open={secondaryOpen}>
-				<NavLinks onClick={onSecondaryOpen}/>
-				<SecondaryMenuItem>
-					<SocialLinks/>
-				</SecondaryMenuItem>
-			</SecondaryMenu>
+			<ButtonWrapper onClick={setSecondaryNavOpen} open={secondaryNavOpen}>
+				<ArrowWrapper style={secondaryNavOpen ? arrowWrapperStyle : null}>
+					<ArrowSvg style={arrowSvgStyle}/>
+				</ArrowWrapper>
+			</ButtonWrapper>
+		</div>
+		<SecondaryMenu open={secondaryNavOpen}>
+			<NavLinks onClick={setSecondaryNavOpen}/>
+			<SecondaryMenuItem>
+				<SocialLinks/>
+			</SecondaryMenuItem>
+		</SecondaryMenu>
 
 
-		</Wrapper>
-	)
-};
+	</Wrapper>
+);
 
