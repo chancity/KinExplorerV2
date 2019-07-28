@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b4cc1bfde71a803bbbb5ad56d9df2616",
+    "revision": "a7b0315b155697eca6484d26b4d896f9",
     "url": "/KinExplorerV2/index.html"
   },
   {
-    "revision": "d8d003834b482f1f9cbf",
-    "url": "/KinExplorerV2/static/css/main.0c14e0bb.chunk.css"
+    "revision": "81e6f9279d0004437b9a",
+    "url": "/KinExplorerV2/static/css/main.0b40fb59.chunk.css"
   },
   {
-    "revision": "4337e04b087deb439f83",
-    "url": "/KinExplorerV2/static/js/2.ba642cb7.chunk.js"
+    "revision": "aa16b8177acbf3b9dad6",
+    "url": "/KinExplorerV2/static/js/2.6ae3bd20.chunk.js"
   },
   {
-    "revision": "d8d003834b482f1f9cbf",
-    "url": "/KinExplorerV2/static/js/main.751127d8.chunk.js"
+    "revision": "81e6f9279d0004437b9a",
+    "url": "/KinExplorerV2/static/js/main.4c012c7d.chunk.js"
   },
   {
     "revision": "1cb110f20a055a26e251",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/KinExplorerV2/static/media/kin-icon.c41b4a2f.svg"
   },
   {
-    "revision": "5051b770c40db5c67ce1ffc1d15ad156",
-    "url": "/KinExplorerV2/static/media/kin-logo.5051b770.svg"
+    "revision": "a0a213e9cf97426cb2d6b1d68a9268c9",
+    "url": "/KinExplorerV2/static/media/kin-logo.a0a213e9.svg"
   },
   {
     "revision": "7f84201d94a6f462632d6936c6e78951",
