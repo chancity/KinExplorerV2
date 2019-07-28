@@ -3,6 +3,10 @@ import React from 'react';
 import {withRouter} from "react-router-dom";
 import navOptions from "./NavOptions";
 
+
+const getRootPath = (location) => {
+	return location.pathname.split("/")[1];
+};
 const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 	const [navItems, setNavItems] = React.useState([]);
 	const [path, setPath] = React.useState(null);
@@ -10,10 +14,7 @@ const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 
 
 	React.useEffect(() =>{
-		const rootPath = location.pathname.split("/");
-		let path;
-
-		path = rootPath[1];
+		const path = getRootPath(location);
 
 		if(navOptions.hasOwnProperty(path)){
 			setNavItems(navOptions[path]);
@@ -29,8 +30,7 @@ const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 		if(isMobile)
 			setNavOpen();
 	};
-
-
+	
 	return (
 		<Menu style={{ transform: (display ? "translateX(0rem)" : "translateX(-9.6667rem)")}}>
 			<MenuInner>
