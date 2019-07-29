@@ -36,7 +36,7 @@ export default (state = initialState, action)  => {
 		case SET_IS_MOBILE:
 			return {
 				...state,
-				isMobile: action.isMobile,
+				isMobile: state.isMobile !== action.isMobile ? action.isMobile : state.isMobile,
 				secondaryNavOpen: false,
 				navOpen: false,
 			};

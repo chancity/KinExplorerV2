@@ -18,7 +18,7 @@ const setSearchOpen = () => ({
 });
 
 
-const setIsMobileOpen = (value) => ({
+const setIsMobile = (value) => ({
 	type: SET_IS_MOBILE,
 	isMobile: value
 });
@@ -28,5 +28,5 @@ export {
 	setNavOpen,
 	setSearchOpen,
 	setSecondaryNavOpen,
-	setIsMobileOpen
+	setIsMobile
 }
