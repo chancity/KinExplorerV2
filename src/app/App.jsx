@@ -1,11 +1,12 @@
 import React from 'react';
-import {AppParent, AppBody} from './Styled';
+import {AppParent} from './Styled';
 import Routes from "./Routes";
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import AppStore from "../store";
 import {setIsMobileOpen} from "../store/UI/actions";
 import NavMenu from "../store/UI/containers/NavMenu";
+import AppBody from "../store/UI/containers/AppBody";
 //import {Footer} from "../layout/Footer/Styled";
 const store = AppStore;
 

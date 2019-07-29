@@ -5,7 +5,7 @@ import navOptions from "./NavOptions";
 
 
 const getRootPath = (location) => {
-	return location.pathname.split("/")[1];
+	return location.split("/")[1];
 };
 const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 	const [navItems, setNavItems] = React.useState([]);
@@ -14,7 +14,7 @@ const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 
 
 	React.useEffect(() =>{
-		const path = getRootPath(location);
+		const path = getRootPath(location.pathname);
 
 		if(navOptions.hasOwnProperty(path)){
 			setNavItems(navOptions[path]);
