@@ -4,45 +4,44 @@ import {PanelTable} from "../../../pages/explorer/Styled/ExplorerBody";
 
 
 
-const PaymentTd  = ({record}) => (
+const PaymentTd  = ({record, index}) => (
 	<>
-		<td>
+		<td key={`${index}-acc`}>
 			{record.from.substr(0,4)}
 		</td>
-		<td>
+		<td key={`${index}-msg`}>
 			Pay {record.amount} KIN to {record.to.substring(0,4)}
 		</td>
-		<td>
+		<td key={`${index}-time`}>
 			{record.created_at}
 		</td>
-		<td>
+		<td key={`${index}-button`}>
 
 		</td>
 	</>
 );
 
 
-const CreateAccountTd = ({record}) => (
+const CreateAccountTd = ({record, index}) => (
 	<>
-		<td>
+		<td key={`${index}-acc`}>
 			{record.funder.substring(0,4)}
 		</td>
-		<td>
+		<td key={`${index}-msg`}>
 			Created account {record.account.substring(0,4)} with balance {record.starting_balance}
 		</td>
-		<td>
+		<td key={`${index}-time`}>
 			{record.created_at}
 		</td>
-		<td>
+		<td key={`${index}-button`}>
 
 		</td>
 	</>
 );
 
 const FormatedTd = ({record, index}) => (
-	<tr>
-		<td>{index}</td>
-		{record.type_i === 0 ? <CreateAccountTd record={record}/> :  <PaymentTd record={record}/> }
+	<tr key={index}>
+		{record.type_i === 0 ? <CreateAccountTd record={record} key={index}/> :  <PaymentTd record={record} key={index}/> }
 	</tr>
 );
 
