@@ -53,7 +53,8 @@ export default (state = initialState, action)  => {
 			if(action.payload.splice) {
 				recordsCopy.splice(-1, 1);
 			}
-			stateCopy[action.payload.name].records = recordsCopy;
+			const sorted = recordsCopy.sort((a,b)=> b.created_at-a.created_at);
+			stateCopy[action.payload.name].records =  sorted;
 			stateCopy[action.payload.name].parentRenderTimestamp = Date.now();
 
 			return {

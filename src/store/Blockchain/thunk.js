@@ -19,7 +19,7 @@ export const startStream = (caller) => async (dispatch, getState, {api}) => {
 
 	const es = await api[caller]()
 			.cursor(pagingToken)
-			.limit(25)
+			.limit(1)
 			.order('asc')
 			.stream({
 				onmessage: (record => {
