@@ -1,11 +1,9 @@
 import {cancelStreamSuccessAction, startStreamBeginAction,startStreamSuccessAction, addRecordAction} from "./actions";
 
-const txHandler = function (txResponse) {
-	console.log(txResponse);
-};
 
 export const startStream = (caller) => async (dispatch, getState, {api}) => {
 	dispatch(startStreamBeginAction(caller));
+
 	const okay = await api[caller]()
 		.cursor('now')
 		.limit(25)
@@ -40,8 +38,8 @@ const onStreamError = (error)  => {
 
 export const cancelStream = (caller) => async (dispatch, getState) => {
 	const {BC} = getState();
-	if(BC.streams.hasOwnProperty(caller)){
-		BC.streams[caller]();
+	if(BC.hasOwnProperty(caller)){
+		BC[caller].closeStream();
 	}
 	dispatch(cancelStreamSuccessAction(caller));
 };

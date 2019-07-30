@@ -7,6 +7,7 @@ import AppStore from "../store";
 import {setIsMobile} from "../store/UI/actions";
 import NavMenu from "../store/UI/containers/NavMenu";
 import AppBody from "../store/UI/containers/AppBody";
+import {IntlProvider} from "react-intl";
 const store = AppStore;
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
 
 	return (
+		<IntlProvider>
 		<AppParent ref={parentRef}>
 			<Provider store={store}>
 				<BrowserRouter>
@@ -30,6 +32,7 @@ function App() {
 				</BrowserRouter>
 			</Provider>
 		</AppParent>
+		</IntlProvider>
 	);
 }
 

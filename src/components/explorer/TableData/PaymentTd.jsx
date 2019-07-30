@@ -1,6 +1,7 @@
 import * as React from "react";
+import {FormattedRelative} from "react-intl";
 
-const PaymentTd  = ({record, index}) => (
+const PaymentTd  = ({record, index, parentRenderTimestamp}) => (
 	<>
 		<td key={`${index}-acc`}>
 			{record.from.substr(0,4)}
@@ -9,7 +10,11 @@ const PaymentTd  = ({record, index}) => (
 			Pay {record.amount} KIN to {record.to.substring(0,4)}
 		</td>
 		<td key={`${index}-time`}>
-			{record.created_at}
+			<FormattedRelative
+				initialNow={parentRenderTimestamp}
+				value={record.created_at}
+			/>
+			{/*{record.created_at}*/}
 		</td>
 		<td key={`${index}-button`}>
 

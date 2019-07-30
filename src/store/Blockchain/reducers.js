@@ -7,63 +7,59 @@ import {
 	CANCELED_STREAM_ERROR,
 	ADD_RECORD
 } from './types'
-
-const initialState = {
-	streams: {},
-	records: {},
-	loaded:false,
-	parentRenderTimestamp: Date.now()
-};
+const initialState = {};
 
 export default (state = initialState, action)  => {
 	const stateCopy = {...state};
 	switch (action.type) {
 		case STARTED_STREAM_BEGIN:
-			stateCopy.streams[action.payload.name] = undefined;
-			stateCopy.records[action.payload.name] = [];
-
-			return {
-				...state,
-				streams: stateCopy.streams,
-				records: stateCopy.records,
+			stateCopy[action.payload.name] = {
+				records:[],
+				closeStream: undefined,
+				parentRenderTimestamp: undefined,
 				loaded: false
 			};
-		case STARTED_STREAM_SUCCESS:
-			stateCopy.streams[action.payload.name] = action.payload.closeFn;
 			return {
 				...state,
-				streams: stateCopy.streams,
-				loaded: true
+				...stateCopy
+			};
+		case STARTED_STREAM_SUCCESS:
+			stateCopy[action.payload.name].closeStream = action.payload.closeFn;
+			stateCopy[action.payload.name].loaded = true;
+			return {
+				...state,
+				...stateCopy
 			};
 		case STARTED_STREAM_ERROR:
-			stateCopy.streams[action.payload.name] = undefined;
+			stateCopy[action.payload.name].closeStream = undefined;
+			stateCopy[action.payload.name].error = action.payload.error;
+			stateCopy[action.payload.name].loaded = true;
 			return {
 				...state,
-				streams: stateCopy.streams,
-				error: action.payload.error,
-				loaded: true
+				...stateCopy
 			};
 		case CANCELED_STREAM_SUCCESS:
-			const newStreanState =  {...state};
-			delete newStreanState.streams[action.payload.name];
+			delete stateCopy[action.payload.name];
 			return {
 				...state,
-				streams: newStreanState.streams
+				...stateCopy
 			};
 		case ADD_RECORD:
 			const newRecord = action.payload.record;
-			const recordsCopy = [...stateCopy.records[action.payload.name]];
+			const recordsCopy = [...stateCopy[action.payload.name].records];
 			const insertIdx = recordsCopy.findIndex(rec => rec.created_at < newRecord.created_at);
 			recordsCopy.splice(insertIdx, 0, newRecord);
+
 			if(action.payload.splice) {
 				recordsCopy.splice(-1, 1);
 			}
-			stateCopy.records[action.payload.name] = recordsCopy;
+			stateCopy[action.payload.name].records = recordsCopy;
+			stateCopy[action.payload.name].parentRenderTimestamp = Date.now();
 
 			return {
 				...state,
-				records: 	stateCopy.records,
-				parentRenderTimestamp: Date.now()
+				...stateCopy,
+
 			};
 		default:
 			return state

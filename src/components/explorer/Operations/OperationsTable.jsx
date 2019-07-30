@@ -3,7 +3,7 @@ import {PanelTable} from "../../../pages/explorer/Styled/ExplorerBody";
 import TableHeader from "../TableData/TableHeader";
 import TableBody from "../TableData/TableBody";
 
-export const OperationsTable = ({doStream, limit, loaded, records, startStream, cancelStream}) => {
+export const OperationsTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
 
 	React.useEffect(() => {
 		startStream("operations");
@@ -17,7 +17,7 @@ export const OperationsTable = ({doStream, limit, loaded, records, startStream, 
 		<PanelTable>
 			<TableHeader data={["Account", "Operation", "Time", ""]}/>
 			{loaded &&
-				<TableBody records={records}/>
+				<TableBody records={records} parentRenderTimestamp={parentRenderTimestamp}/>
 			}
 		</PanelTable>
 	);

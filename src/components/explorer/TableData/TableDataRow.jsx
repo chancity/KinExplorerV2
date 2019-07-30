@@ -3,20 +3,20 @@ import PaymentTd from "./PaymentTd";
 import CreateAccountTd from "./CreateAccountTd";
 
 
-const getTd = (record, index) => {
+const getTd = (record, index, parentRenderTimestamp) => {
 	switch (record.type_i) {
 		case 0:
-			return <CreateAccountTd record={record} index={index} key={`${index}-cra`}/>;
+			return <CreateAccountTd record={record} index={index} key={`${index}-cra`} parentRenderTimestamp={parentRenderTimestamp}/>;
 		case 1:
-			return <PaymentTd record={record} index={index} key={`${index}-pay`}/>;
+			return <PaymentTd record={record} index={index} key={`${index}-pay`} parentRenderTimestamp={parentRenderTimestamp}/>;
 		default:
 			return null
 	}
 };
 
-const TableDataRow = ({record, index}) =>(
+const TableDataRow = ({record, index, parentRenderTimestamp}) =>(
 	<tr key={`${index}-tr`}>
-		{ getTd(record, index) }
+		{ getTd(record, index, parentRenderTimestamp) }
 	</tr>
 );
 

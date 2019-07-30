@@ -3,10 +3,10 @@ import FormattedTd from "./TableDataRow";
 
 
 
-const TableBody = ({records}) => (
+const TableBody = ({records, parentRenderTimestamp}) => (
 	<tbody>
 		{records.map((record, index )=> (
-			<FormattedTd key={index} record={record} index={index}/>
+			<FormattedTd key={index} record={record} index={index} parentRenderTimestamp={parentRenderTimestamp}/>
 		))}
 	</tbody>
 );
