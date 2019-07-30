@@ -19,12 +19,16 @@ const stats = [
 		text: "Overview",
 	},
 	{
-		path:"ios",
-		text: "iOS",
+		path:"mas",
+		text: "Monthly Active Spenders",
 	},
 	{
-		path:"android",
-		text: "Android",
+		path:"mae",
+		text: "Monthly Active Earners",
+	},
+	{
+		path:"mat",
+		text: "Monthly Active Tourists",
 	}
 ];
 

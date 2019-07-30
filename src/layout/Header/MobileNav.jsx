@@ -9,7 +9,7 @@ import {NavLinks} from "./NavLinks";
 import {SocialLinks} from "./SocialLinks";
 
 
-const OpenButtonStyle = {background: "rgba(0, 0, 0, 0.07)"};
+const OpenButtonStyle = {background: "#2f3136"};
 const arrowWrapperStyle = {transformOrigin: "center center",transform: "rotate(180deg)",transition: "transform 0.2s ease 0s"};
 const arrowSvgStyle = {fill:"white", width: "2rem", height: "2rem"};
 const searchWrapperStyle = { display: "inline-block",	justifyContent: "flex-end",	float: "right", backGroundColor:"transparent"};

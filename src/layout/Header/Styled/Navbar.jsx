@@ -5,15 +5,17 @@ export const Wrapper = styled.nav`
     left: 0;
     box-sizing: border-box;
     z-index: 3;
-    width: 100vw;
+    width: 100%;
     height: 2.77778rem;
-    font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Avenir Next",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-weight: 500;
-    color: honeydew;
-    background: #262626;
+    background: #2f3136;
+    -webkit-transition: background 300ms ease-out 0s;
     transition: background 300ms ease-out 0s;
     padding: 0;
-    font-size:16px;
+    font-size: 16px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 1.5px 0 rgba(0,0,0,.05), 0 2px 0 rgba(0,0,0,.05);
+    color: #b9bbbe;
     
     svg{
         fill: currentColor;
@@ -56,11 +58,11 @@ export const EndWrapper = styled.div`
 export const Seperator = styled.span`
     width: 0.277778rem;
     height: 0.277778rem;
-    opacity: 0.35;
+    opacity: 1;
     flex: 0 0 auto;
     margin: 0 0.833333rem;
     border-radius: 50%;
-    background: currentcolor;
+    background: #292b2f;
 `;
 
 export const SocialWrapper = styled.nav`

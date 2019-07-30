@@ -29,7 +29,7 @@ const LogoBg = styled.div`
 export const Logo = () =>(
 	<LogoLink to={"/explorer"}>
 		<LogoBg/>
-		<span style={{color: "rgb(147, 107, 251)", verticalAlign: "middle"}}>Explorer</span>
+		<span style={{color: "#936BFB", verticalAlign: "middle"}}>Explorer</span>
 	</LogoLink>
 )
 

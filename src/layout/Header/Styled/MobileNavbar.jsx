@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     -webkit-box-pack: justify;
     justify-content: space-between;
     height: 2.77778rem;
-        background-color: #262626;
+
     @media (max-width: 62.5em) {
 	    display: flex;
 	    -webkit-box-align: center;
@@ -21,8 +21,8 @@ export const Wrapper = styled.div`
 export const SecondaryMenu = styled.div`
     position: absolute;
     top: 2.77778rem;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     height: ${props => props.open ? "2.77778rem" : "0rem"};
     display: flex;
     flex-wrap: nowrap;
@@ -34,9 +34,9 @@ export const SecondaryMenu = styled.div`
     overflow-x: scroll;
     overflow-y: hidden;
     color: rgb(134, 134, 134);
-    padding: 0px 1.11111rem;
+    padding: 0 1.11111rem;
+    background-color: #292b2f;
     transition: height 0.1s ease 0s;
-    background: rgb(239, 239, 239);
 `;
 
 export const SecondaryMenuItem = styled.div`

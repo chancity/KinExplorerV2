@@ -11,7 +11,7 @@ export const Overlay = styled.div`
 	    left: 0;
 	 	display: ${props => props.searchOpen ? "block !important" : "none !important"};
 	    overflow-y: auto;
-	    background: rgb(239, 239, 239);
+	    background: #36393f;
 	    margin: 0;
     }
 `;
@@ -25,6 +25,7 @@ export const Modal = styled.div`
 	    right: 0px;
 	    background: currentcolor;
 	    overflow: auto;
+	    box-shadow: 0 2px 0 rgba(0,0,0,.2), 0 3px 0 rgba(0,0,0,.05), 0 4px 0 rgba(0,0,0,.05);
     }
 `;
 
@@ -56,10 +57,12 @@ export const Wrapper = styled.form`
     align-items: center;
     justify-content: flex-start;
     flex: 0 0 auto;
-        background-color: #262626;
+    background-color: #202225;
+    border-radius: .5em;
     @media (max-width: 62.5em){
 	    display: block;
 	    padding: 0;
+       border-radius: 0;
 	}
 `;
 

@@ -11,16 +11,16 @@ export const AppParent = styled.div`
 
 
 const AppBody = styled.div`
-    width: 56.8889rem;
+    width: 76.8889rem;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 5rem 2.22222rem 1.66667rem;
+    padding: 3rem 1.11111rem 1.66667rem;
     transition: transform 150ms ease-out 0s;
     
     @media (max-width: 62.5em) {
 	    transform: translateX(${props => props.navOpen ? "9.6667rem" : "0rem" });
-	    padding: 3.88889rem 1.11111rem 1.66667rem;
+	
 	}
 `;
 
