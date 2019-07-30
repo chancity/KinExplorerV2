@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/explorer/Styled/ExplorerBody.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Blockchain/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Blockchain/containers/OperationsTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Blockchain/reducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Blockchain/thunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Blockchain/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Styled.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Styled.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/MobileNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/MobileNav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/NavOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/NavOptions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/Styled/MobileNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Styled/MobileNavbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/Styled/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Styled/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/Styled/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Styled/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/Styled/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Styled/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Logo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Title.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Title.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Effects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explorer/Effects.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explorer/Overview.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Ledgers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explorer/Ledgers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MyKinWallet.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mykinwallet/MyKinWallet.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Operations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explorer/Operations.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Payments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explorer/Payments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Transactions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explorer/Transactions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="544">
+              <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -342,7 +313,7 @@
       <workItem from="1564286149954" duration="6708000" />
       <workItem from="1564293107818" duration="616000" />
       <workItem from="1564367238192" duration="1187000" />
-      <workItem from="1564418757337" duration="36470000" />
+      <workItem from="1564418757337" duration="37207000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1564221863125</created>
@@ -477,23 +448,37 @@
       <option name="project" value="LOCAL" />
       <updated>1564433119497</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="unused import">
+      <created>1564476299523</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1564476299523</updated>
+    </task>
+    <task id="LOCAL-00021" summary="idk">
+      <created>1564476823430</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1564476823430</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94856000" />
+    <option name="totallyTimeSpent" value="95593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1481" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32640332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32640332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32810047" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32810047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,7 +487,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32496077" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32496077" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -520,7 +505,8 @@
     <MESSAGE value="meta data" />
     <MESSAGE value="okay" />
     <MESSAGE value="unused import" />
-    <option name="LAST_COMMIT_MESSAGE" value="unused import" />
+    <MESSAGE value="idk" />
+    <option name="LAST_COMMIT_MESSAGE" value="idk" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/layout/Footer/Styled.jsx">
@@ -954,8 +940,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="544">
+          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

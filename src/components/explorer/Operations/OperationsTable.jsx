@@ -40,8 +40,8 @@ const CreateAccountTd = ({record, index}) => (
 );
 
 const FormatedTd = ({record, index}) => (
-	<tr key={index}>
-		{record.type_i === 0 ? <CreateAccountTd record={record} key={index}/> :  <PaymentTd record={record} key={index}/> }
+	<tr key={`${index}-tr`}>
+		{record.type_i === 0 ? <CreateAccountTd record={record} index={index} key={`${index}-cra`}/> :  <PaymentTd record={record} index={index} key={`${index}-pay`}/> }
 	</tr>
 );
 
