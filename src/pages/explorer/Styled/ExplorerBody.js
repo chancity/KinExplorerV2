@@ -39,9 +39,9 @@ export const Panel = styled.div`
 	border-radius: .5em;
 	margin: 0 10px 10px 0;
     box-shadow: 3px 3px 3px rgba(0,0,0,.2), 4.5px 4.5px 4.5px rgba(0,0,0,.05), 6px 6px 6px rgba(0,0,0,.05);
-	@media (max-width: 62.5em) {
+	/*@media (max-width: 829px) {
 		margin: 0 0 10px 0;
-	}
+	}*/
 
 `;
 
