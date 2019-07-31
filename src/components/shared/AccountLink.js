@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
+import {NavLink} from "../explorer/Styled/Table";
 
 
 const AccountLink = ({account, label, hideKnown = false}) => {
@@ -11,7 +11,7 @@ const AccountLink = ({account, label, hideKnown = false}) => {
   }
   return (
     <span title={account}>
-      <Link to={`/account/${account}`}>{accLabel}</Link>
+      <NavLink to={`/explorer/account/${account}`}>{accLabel}</NavLink>
     </span>
   )
 }

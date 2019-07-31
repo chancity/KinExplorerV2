@@ -29,8 +29,8 @@ export const OperationsTable = ({doStream, limit, loaded, records, parentRenderT
 			{loaded
 				?
 				<TableBody>
-					{records.map((record, index) => (
-						<Operation  key={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={false}/>
+					{records.map((record) => (
+						<Operation op={record} parentRenderTimestamp={parentRenderTimestamp} compact={false}/>
 					))}
 				</TableBody>
 				:

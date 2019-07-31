@@ -42,6 +42,6 @@ export const NavLink = styled(Link)`
 	color: rgb(147,107,251);
 	cursor:pointer;
 	:hover{
-		color: rgb(91, 60, 171);
+		color: rgb(91, 60, 171) !important;
 	}
 `;

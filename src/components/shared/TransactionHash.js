@@ -7,7 +7,7 @@ const TransactionHash = ({hash, compact = true}) => {
   const hashLabel = compact ? shortHash(hash) : hash;
   return (
     <span title={hash}>
-      	<NavLink to={`/explorer/transactions/${hash}`}>{hashLabel}</NavLink>
+      	<NavLink to={`/explorer/transactions/${hash}`} >{hashLabel}</NavLink>
     </span>
   )
 };
