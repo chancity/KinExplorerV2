@@ -1,13 +1,9 @@
 import * as React from "react";
-import FormattedTd from "./TableDataRow";
 
 
-
-const TableBody = ({records, parentRenderTimestamp}) => (
+const TableBody = ({children}) => (
 	<tbody>
-		{records.map((record, index )=> (
-			<FormattedTd key={index} record={record} index={index} parentRenderTimestamp={parentRenderTimestamp}/>
-		))}
+		{children}
 	</tbody>
 );
 

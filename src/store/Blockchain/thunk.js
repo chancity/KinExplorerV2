@@ -1,12 +1,16 @@
-import {cancelStreamSuccessAction, startStreamBeginAction,startStreamSuccessAction, addRecordAction} from "./actions";
+import {cancelStreamSuccessAction, startStreamBeginAction, startStreamErrorAction, startStreamSuccessAction, addRecordAction} from "./actions";
 
 
-export const startStream = (caller) => async (dispatch, getState, {api}) => {
+export const startStream = (caller, limit) => async (dispatch, getState, {api}) => {
+	const {BC} = getState();
+	if(BC.hasOwnProperty(caller)){
+		dispatch(startStreamErrorAction(caller,"only one stream at a time is allowed"));
+	}
 	dispatch(startStreamBeginAction(caller));
 
 	const okay = await api[caller]()
 		.cursor('now')
-		.limit(25)
+		.limit(limit)
 		.call();
 
 	const data = await okay.prev();
@@ -19,7 +23,7 @@ export const startStream = (caller) => async (dispatch, getState, {api}) => {
 
 	const es = await api[caller]()
 			.cursor(pagingToken)
-			.limit(1)
+			.limit(limit)
 			.order('asc')
 			.stream({
 				onmessage: (record => {

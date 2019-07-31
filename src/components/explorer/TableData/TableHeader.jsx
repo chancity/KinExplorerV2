@@ -6,9 +6,9 @@ const TableHeader = ({data}) => (
 	<thead>
 		<tr>
 			{data.map((value, index) => (
-				<td key={index}>
+				<th key={index}>
 					{value}
-				</td>
+				</th>
 			))}
 		</tr>
 	</thead>
