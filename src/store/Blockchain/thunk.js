@@ -6,9 +6,9 @@ import omit from 'lodash/omit'
 const formatRecord  = (record) => {
 	record.time = record.created_at || record.closed_at;
 	const camelCasedRecord = mapKeys(record, (v, k) => camelCase(k));
-	return omit(camelCasedRecord, ['links', 'pagingToken']);
+	return omit(camelCasedRecord, ['links']);
 }
-export const startStream = (caller, limit) => async (dispatch, getState, {api}) => {
+export const startStream = (caller, limit, delay=true) => async (dispatch, getState, {api}) => {
 	const {BC} = getState();
 	if(BC.hasOwnProperty(caller)){
 		dispatch(startStreamErrorAction(caller,"only one stream at a time is allowed"));
@@ -23,7 +23,7 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 	const data = await okay.prev();
 
 	data.records.forEach(record =>{
-		onMessage.call(null, record, dispatch, caller, false, limit);
+		dispatch(addRecordAction(caller,[formatRecord(record)] , false));
 	});
 
 	const pagingToken = data.records[0].paging_token;
@@ -33,7 +33,12 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 			.order('asc')
 			.stream({
 				onmessage: (record => {
-					onMessage.call(null, record, dispatch, caller, true, limit)
+					if(delay) {
+						onMessage.call(null, formatRecord(record), dispatch, caller, true, limit)
+					} else {
+						dispatch(addRecordAction(caller,[formatRecord(record)] , true));
+					}
+
 				}),
 				onerror: onStreamError
 			});
@@ -46,7 +51,7 @@ function onMessage(record, dispatch, caller, splice, limit) {
 	const what = records[caller] ||  ( records[caller] = {});
 	const _records = what.records || (what.records = []);
 
-	_records.push(formatRecord(record));
+	_records.push(record);
 
 	clearTimeout(what.clear);
 
@@ -55,7 +60,6 @@ function onMessage(record, dispatch, caller, splice, limit) {
 			what.records.length = 0;
 		},
 		500);
-
 
 	if(what.length >= limit) {
 		dispatch(addRecordAction(caller, what, splice));

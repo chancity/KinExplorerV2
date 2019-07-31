@@ -32,7 +32,7 @@ export const OperationsTable = ({doStream, limit, loaded, records, parentRenderT
 				?
 				<TableBody>
 					{records.map((record, index) => (
-						<Operation key={`${index}-op-data`} inde={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={false}/>
+						<Operation key={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={false}/>
 					))}
 				</TableBody>
 				:

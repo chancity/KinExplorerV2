@@ -7,7 +7,7 @@ import TimeTd from "../TableData/TimeTd";
 export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
 
 	React.useEffect(() => {
-		startStream("ledgers", limit);
+		startStream("ledgers", limit, false);
 
 		return () =>{
 			cancelStream("ledgers");
@@ -23,15 +23,15 @@ export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTime
 			{loaded
 			?
 				<TableBody>
-					{records.map((op,index) => (
-						<tr key={`${index}-ledeger-tr`}>
-							<td key={`${index}-navlink`}>
+					{records.map((op) => (
+						<tr key={op.id}>
+							<td>
 								<NavLink to={`/explorer/ledgers/${op.sequence}`}>{op.sequence}</NavLink>
 							</td>
-							<td key={`${index}-tx-count`}>
+							<td>
 								{op.transactionCount}
 							</td>
-							<TimeTd id={index} key={`${index}-time`} render_time={parentRenderTimestamp} record_time={op.time}/>
+							<TimeTd render_time={parentRenderTimestamp} record_time={op.time}/>
 						</tr>
 					))}
 				</TableBody>

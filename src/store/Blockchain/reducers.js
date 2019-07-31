@@ -50,7 +50,7 @@ export default (state = initialState, action)  => {
 			const recordsCopy = [...stateCopy[action.payload.name].records];
 
 			newRecords.forEach(record => {
-				const insertIdx = recordsCopy.findIndex(rec => rec.time < record.time);
+				const insertIdx = recordsCopy.findIndex(rec => rec.pagingToken < record.pagingToken);
 				recordsCopy.splice(insertIdx, 0, record);
 
 				if(action.payload.splice) {
