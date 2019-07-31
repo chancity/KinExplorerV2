@@ -27,9 +27,9 @@ export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTime
 								<NavLink to={`/explorer/ledgers/${record.sequence}`}>{record.sequence}</NavLink>
 							</td>
 							<td key={`${index}-tx-count`}>
-								{record.transaction_count}
+								{record.transactionCount}
 							</td>
-							<TimeTd index={index} render_time={parentRenderTimestamp} record_time={record.closed_at}/>
+							<TimeTd index={index} render_time={parentRenderTimestamp} record_time={record.time}/>
 						</tr>
 					))}
 				</TableBody>

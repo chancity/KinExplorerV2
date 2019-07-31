@@ -2,11 +2,10 @@ import * as React from "react";
 import {FormattedRelative} from "react-intl";
 
 
-const TimeTd = ({index, record_time, render_time}) => (
-	<td key={`${index}-time`}>
+const TimeTd = ({record_time, render_time}) => (
+	<td>
 		<FormattedRelative
-			key={`${index}-frtime`}
-			updateInterval={1}
+			updateInterval={5}
 			initialNow={render_time}
 			value={record_time}
 		/>

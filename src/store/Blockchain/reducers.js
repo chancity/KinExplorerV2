@@ -47,14 +47,13 @@ export default (state = initialState, action)  => {
 		case ADD_RECORD:
 			const newRecord = action.payload.record;
 			const recordsCopy = [...stateCopy[action.payload.name].records];
-			const insertIdx = recordsCopy.findIndex(rec => rec.paging_token < newRecord.paging_token);
+			const insertIdx = recordsCopy.findIndex(rec => rec.time < newRecord.time);
 			recordsCopy.splice(insertIdx, 0, newRecord);
 
 			if(action.payload.splice) {
 				recordsCopy.splice(-1, 1);
 			}
-			const sorted = recordsCopy.sort((a,b)=> b.paging_token-a.paging_token);
-			stateCopy[action.payload.name].records =  sorted;
+			stateCopy[action.payload.name].records =  recordsCopy;
 			stateCopy[action.payload.name].parentRenderTimestamp = Date.now();
 
 			return {

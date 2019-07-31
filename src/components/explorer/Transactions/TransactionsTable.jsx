@@ -3,6 +3,7 @@ import {NavLink, PanelTable} from "../Styled/Table";
 import TableHeader from "../TableData/TableHeader";
 import TableBody from "../TableData/TableBody";
 import TimeTd from "../TableData/TimeTd";
+import TransactionHash from "../../shared/TransactionHash";
 
 export const TransactionsTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
 
@@ -21,18 +22,18 @@ export const TransactionsTable = ({doStream, limit, loaded, records, parentRende
 			{loaded
 			?
 				<TableBody>
-					{records.map((record, index) => (
+					{records.map((op, index) => (
 						<tr key={index}>
-							<td key={`${index}-id`}>
-								<NavLink to={`/explorer/transactions/${record.id}`}>{record.id.substring(0,7)}</NavLink>
+							<td>
+								<TransactionHash hash={op.hash} compact={true} />
 							</td>
 							<td key={`${index}-ledger`}>
-								<NavLink to={`/explorer/ledgers/${record.ledger_attr}`}>{record.ledger_attr}</NavLink>
+								<NavLink to={`/explorer/ledgers/${op.ledgerAttr}`}>{op.ledgerAttr}</NavLink>
 							</td>
 							<td key={`${index}-ops-count`}>
-								<NavLink to={`/explorer/transactions/${record.id}`}>{record.operation_count}</NavLink>
+								<NavLink to={`/explorer/transactions/${op.id}`}>{op.operationCount}</NavLink>
 							</td>
-							<TimeTd index={index} render_time={parentRenderTimestamp} record_time={record.created_at}/>
+							<TimeTd index={index} render_time={parentRenderTimestamp} record_time={op.time}/>
 						</tr>
 					))}
 				</TableBody>
