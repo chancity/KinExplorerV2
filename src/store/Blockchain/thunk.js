@@ -29,13 +29,13 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 	const pagingToken = data.records[0].paging_token;
 	const es = await api[caller]()
 			.cursor(pagingToken)
-			.limit(limit)
+			.limit(5)
 			.order('asc')
 			.stream({
 				onmessage: (record => {
 					dispatch(addRecordAction(caller, formatRecord(record), true));
 				}),
-				//onerror: onStreamError
+				onerror: onStreamError
 			});
 
 	dispatch(startStreamSuccessAction(caller, es));

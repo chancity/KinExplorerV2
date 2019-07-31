@@ -45,6 +45,7 @@ export default (state = initialState, action)  => {
 				...stateCopy
 			};
 		case ADD_RECORD:
+
 			const newRecord = action.payload.record;
 			const recordsCopy = [...stateCopy[action.payload.name].records];
 			const insertIdx = recordsCopy.findIndex(rec => rec.time < newRecord.time);
