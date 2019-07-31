@@ -6,10 +6,8 @@ export const BodyGrid = styled.div`
     grid-gap: 10px;
    	grid-template-columns: repeat(3, 1fr);
 	@media (max-width: 72.5em) {
- 		grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
- 		.main, .child {
- 			grid-column: auto !important;
- 		}
+ 		display: flex;
+ 		flex-direction: column;
 	}
 	
 	.main {

@@ -5,8 +5,6 @@ import {Link} from "react-router-dom";
 export const PanelTable = styled.table`
 	text-align: left;
 	border-spacing: 0;
-    width: 100%;
-    max-width: 100%;
 	box-sizing: border-box;
 	
 	td, th{
