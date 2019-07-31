@@ -35,13 +35,16 @@ const getMessages = locale => {
 }
 
 function App() {
-
-
 	const parentRef = React.useRef(null);
 
+
 	React.useEffect(()=> {
-		window.addEventListener("resize", ()=>{
-			store.dispatch(setIsMobile(window.innerWidth <= 1000))
+		let clearTimer = null;
+		window.addEventListener("resize", ()=> {
+			if(clearTimer)
+				clearTimeout(clearTimer);
+
+			clearTimer = setTimeout(store.dispatch(setIsMobile(window.innerWidth <= 1000)), 100)
 		});
 	}, []);
 

@@ -4,6 +4,7 @@ import TableHeader from "../TableData/TableHeader";
 import TableBody from "../TableData/TableBody";
 import TimeTd from "../TableData/TimeTd";
 import TransactionHash from "../../shared/TransactionHash";
+import AppData from "../../shared/AppData";
 
 export const TransactionsTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
 
@@ -20,7 +21,7 @@ export const TransactionsTable = ({doStream, limit, loaded, records, parentRende
 	return (
 
 		<PanelTable>
-			<TableHeader data={["#", "Ledger", "Ops", "Time"]}/>
+			<TableHeader data={["#", "AppId", "Ledger", "Ops", "Time"]}/>
 			{loaded
 			?
 				<TableBody>
@@ -28,6 +29,9 @@ export const TransactionsTable = ({doStream, limit, loaded, records, parentRende
 						<tr key={`${index}-tx-tr`}>
 							<td key={`${index}-tx-hash`}>
 								<TransactionHash hash={op.hash} compact={true} />
+							</td>
+							<td key={`${index}-tx-memo`}>
+								<AppData memo={op.memo} compact={false} />
 							</td>
 							<td key={`${index}-tx-navlink-td-ledger`}>
 								<NavLink key={`${index}-tx-navlink-ledger`} to={`/explorer/ledgers/${op.ledgerAttr}`}>{op.ledgerAttr}</NavLink>
