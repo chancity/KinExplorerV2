@@ -6,7 +6,20 @@ export const PanelTable = styled.table`
 	text-align: left;
 	border-spacing: 0;
 	box-sizing: border-box;
-	
+	@media (max-width: 62.5em){
+		font-size: 12px;
+		td, th{
+			padding-left: .5em;
+		}
+		>thead > tr > th {
+		    padding-top:  .5em;
+		    padding-bottom:  .5em;
+	    }
+	    > tbody > tr > td {
+		    padding-top:  .5em;
+		    padding-bottom:  .5em;
+	    }
+	}
 	td, th{
 		padding-left: 1em;
 	}

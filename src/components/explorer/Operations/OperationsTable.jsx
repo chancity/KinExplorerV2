@@ -6,7 +6,10 @@ import Operation from "./OperationTypes/Operation";
 
 
 
-export const OperationsTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
+const desktop = ["Account", "Operation","Transaction","Type", "Time"];
+const mobile = ["Account", "Operation", "Time"];
+
+export const OperationsTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream, isMobile}) => {
 	React.useEffect(() => {
 		startStream("operations", limit);
 
@@ -20,12 +23,12 @@ export const OperationsTable = ({doStream, limit, loaded, records, parentRenderT
 	}, []);
 	return (
 		<PanelTable>
-			<TableHeader data={["Account", "Operation", "Time", ""]}/>
+			<TableHeader data={isMobile ? mobile : desktop}/>
 			{loaded
 				?
 				<TableBody>
 					{records.map((record, index) => (
-						<Operation key={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={true}/>
+						<Operation key={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={isMobile}/>
 					))}
 				</TableBody>
 				:

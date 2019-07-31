@@ -74,9 +74,9 @@ const Operation = ({compact, op, parentRenderTimestamp, index}) => {
         </td>
       )}
       <TimeTd key={index} index={index} render_time={parentRenderTimestamp} record_time={op.time}/>
-      <td key={index}>
+        {/*} <td key={index}>
         <JSONButton key={index} url={"null"} />
-      </td>
+      </td>*/}
     </tr>
   )
 }

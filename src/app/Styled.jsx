@@ -16,6 +16,7 @@ const AppBody = styled.div`
     box-sizing: border-box;
     margin: 0 auto;
     padding: 3rem 1.11111rem 1.66667rem;
+    overflow: auto;
     transition: transform 150ms ease-out 0s;
     
     @media (max-width: 62.5em) {

@@ -9,13 +9,6 @@ export const Panel = styled.div`
 	padding: 5px 10px;
 	border-radius: .5em;
     box-shadow: 3px 3px 3px rgba(0,0,0,.2), 4.5px 4.5px 4.5px rgba(0,0,0,.05), 6px 6px 6px rgba(0,0,0,.05);
-    *{
-   		:not(table) 
-		{
-	        flex: 1 1 auto;
-		}
-  
-    }
 `;
 
 export const PanelHeader = styled.div`
