@@ -23,17 +23,17 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 	const data = await okay.prev();
 
 	data.records.forEach(record =>{
-		dispatch(addRecordAction(caller, formatRecord(record), false))
+		onMessage.call(null, record, dispatch, caller, false, limit);
 	});
 
 	const pagingToken = data.records[0].paging_token;
 	const es = await api[caller]()
 			.cursor(pagingToken)
-			.limit(5)
+			.limit(limit)
 			.order('asc')
 			.stream({
 				onmessage: (record => {
-					dispatch(addRecordAction(caller, formatRecord(record), true));
+					onMessage.call(null, record, dispatch, caller, true, limit)
 				}),
 				onerror: onStreamError
 			});
@@ -41,6 +41,28 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 	dispatch(startStreamSuccessAction(caller, es));
 };
 
+const records = {};
+function onMessage(record, dispatch, caller, splice, limit) {
+	const what = records[caller] ||  ( records[caller] = {});
+	const _records = what.records || (what.records = []);
+
+	_records.push(formatRecord(record));
+
+	clearTimeout(what.clear);
+
+	what.clear = setTimeout(function(){
+			dispatch(addRecordAction(caller, what.records , splice));
+			what.records.length = 0;
+		},
+		500);
+
+
+	if(what.length >= limit) {
+		dispatch(addRecordAction(caller, what, splice));
+		what.length = 0;
+	}
+
+};
 
 const onStreamError = (error)  => {
 	console.error(error)

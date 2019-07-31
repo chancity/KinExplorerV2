@@ -12,8 +12,6 @@ export const Panel = styled.div`
 `;
 
 export const PanelHeader = styled.div`
-	display: flex;
-	flex:1 1 auto;
 	padding: 1em .5em;
 	font-weight: 600;
 	font-size: 20px;

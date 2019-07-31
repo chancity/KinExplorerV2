@@ -35,10 +35,10 @@ export const Overview = () => {
 					</OverviewPanelHeader>
 				<SideWrapper className={"child"}>
 					<OverviewPanelHeader title={"Latest Transactions"} link={"/explorer/transactions"}>
-						<TransactionsTable limit={10}/>
+						<TransactionsTable limit={11}/>
 					</OverviewPanelHeader>
 					<OverviewPanelHeader title={"Latest Ledgers"} link={"/explorer/ledgers"}>
-						<LedgersTable limit={10}/>
+						<LedgersTable limit={11}/>
 					</OverviewPanelHeader>
 				</SideWrapper>
 			</BodyGrid>

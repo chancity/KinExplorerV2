@@ -46,14 +46,19 @@ export default (state = initialState, action)  => {
 			};
 		case ADD_RECORD:
 
-			const newRecord = action.payload.record;
+			const newRecords = action.payload.record;
 			const recordsCopy = [...stateCopy[action.payload.name].records];
-			const insertIdx = recordsCopy.findIndex(rec => rec.time < newRecord.time);
-			recordsCopy.splice(insertIdx, 0, newRecord);
 
-			if(action.payload.splice) {
-				recordsCopy.splice(-1, 1);
-			}
+			newRecords.forEach(record => {
+				const insertIdx = recordsCopy.findIndex(rec => rec.time < record.time);
+				recordsCopy.splice(insertIdx, 0, record);
+
+				if(action.payload.splice) {
+					recordsCopy.splice(-1, 1);
+				}
+			});
+
+			stateCopy[action.payload.name].loaded =  true;
 			stateCopy[action.payload.name].records =  recordsCopy;
 			stateCopy[action.payload.name].parentRenderTimestamp = Date.now();
 
