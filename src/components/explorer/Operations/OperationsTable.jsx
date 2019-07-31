@@ -22,15 +22,17 @@ export const OperationsTable = ({doStream, limit, loaded, records, parentRenderT
 		}
 	}, [cancelStream, startStream, limit]);
 
-
+	React.useEffect(() => {
+		console.log("OperationsTable Render")
+	}, []);
 	return (
 		<PanelTable>
 			<TableHeader data={["Account", "Operation","Transaction","Type", "Time", ""]}/>
 			{loaded
 				?
 				<TableBody>
-					{records.map((record) => (
-						<Operation op={record} parentRenderTimestamp={parentRenderTimestamp} compact={false}/>
+					{records.map((record, index) => (
+						<Operation key={`${index}-op-data`} inde={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={false}/>
 					))}
 				</TableBody>
 				:

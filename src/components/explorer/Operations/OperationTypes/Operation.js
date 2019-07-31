@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import TimeSynchronisedFormattedRelative from '../../../shared/TimeSynchronizedFormattedRelative'
 import TransactionHash from '../../../shared/TransactionHash'
 import OperationType from '../../../shared/OperationType'
 import AccountLink from '../../../shared/AccountLink'
@@ -45,37 +44,38 @@ const SubOperation = ({op}) => {
   return <SubOpComponent {...op} />
 };
 
-const Operation = ({compact, op, opURLFn, parentRenderTimestamp}) => {
+const Operation = ({compact, op, parentRenderTimestamp, index}) => {
   const acc =
       op.type !== 'account_merge' ? (
-          <AccountLink account={op.sourceAccount} />
+          <AccountLink key={index} account={op.sourceAccount} />
       ) : (
-          <span title={op.sourceAccount}>{op.sourceAccount.substring(0, 4)}</span>
+          <span key={index} title={op.sourceAccount}>{op.sourceAccount.substring(0, 4)}</span>
       );
 
   return (
-    <tr key={op.id}>
-      <td>{acc}</td>
+    <tr key={index}>
+      <td key={index}>{acc}</td>
       <td>
-        <SubOperation op={op} />
+        <SubOperation key={index} op={op} />
       </td>
       {compact === false && (
-        <td>
+        <td key={index}>
           <TransactionHash hash={op.transactionHash} compact={true} />
         </td>
       )}
       {compact === false && (
-        <td>
+        <td key={index}>
           <OperationType
+              key={index}
             account={op.sourceAccount}
             type={op.type}
             compact={false}
           />
         </td>
       )}
-      <TimeTd render_time={parentRenderTimestamp} record_time={op.time}/>
-      <td>
-        <JSONButton url={null} />
+      <TimeTd key={index} index={index} render_time={parentRenderTimestamp} record_time={op.time}/>
+      <td key={index}>
+        <JSONButton key={index} url={"null"} />
       </td>
     </tr>
   )
@@ -89,12 +89,10 @@ Operation.propTypes = {
   compact: PropTypes.bool,
   op: PropTypes.shape({
     id: PropTypes.string.isRequired,
-    links: PropTypes.object.isRequired,
     sourceAccount: PropTypes.string.isRequired,
     type: PropTypes.oneOf(opTypes).isRequired,
     time: PropTypes.string,
   }).isRequired,
-  opURLFn: PropTypes.func.isRequired,
   parentRenderTimestamp: PropTypes.number,
 }
 

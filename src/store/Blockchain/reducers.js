@@ -10,7 +10,7 @@ import {
 const initialState = {};
 
 export default (state = initialState, action)  => {
-	const stateCopy = {...state};
+	const stateCopy  = {...state};
 	switch (action.type) {
 		case STARTED_STREAM_BEGIN:
 			stateCopy[action.payload.name] = {

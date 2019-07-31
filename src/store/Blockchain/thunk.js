@@ -35,7 +35,7 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 				onmessage: (record => {
 					dispatch(addRecordAction(caller, formatRecord(record), true));
 				}),
-				onerror: onStreamError
+				//onerror: onStreamError
 			});
 
 	dispatch(startStreamSuccessAction(caller, es));

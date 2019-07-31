@@ -10,16 +10,16 @@ export const PanelTable = styled.table`
 	box-sizing: border-box;
 	
 	td, th{
-		padding-left: 15px;
+		padding-left: 1em;
 	}
 	>thead > tr > th {
-	    padding-top: 10px;
-	    padding-bottom: 10px;
+	    padding-top: 1em;
+	    padding-bottom: 1em;
 	   	border-bottom: #292b2f 2px solid;
     }
     > tbody > tr > td {
-	    padding-top: 10px;
-	    padding-bottom: 10px;
+	    padding-top: 1em;
+	    padding-bottom: 1em;
         border-top: #292b2f 1px solid;
     }
 	>tbody>tr:first-of-type>td {

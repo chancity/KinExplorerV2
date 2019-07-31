@@ -13,7 +13,9 @@ export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTime
 			cancelStream("ledgers");
 		}
 	}, [cancelStream, startStream, limit]);
-
+	React.useEffect(() => {
+		console.log("LedgersTable Render")
+	}, []);
 	return (
 
 		<PanelTable>
@@ -21,15 +23,15 @@ export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTime
 			{loaded
 			?
 				<TableBody>
-					{records.map((record, index) => (
-						<tr key={index}>
-							<td key={`${index}-seq`}>
-								<NavLink to={`/explorer/ledgers/${record.sequence}`}>{record.sequence}</NavLink>
+					{records.map((op,index) => (
+						<tr key={`${index}-ledeger-tr`}>
+							<td key={`${index}-navlink`}>
+								<NavLink to={`/explorer/ledgers/${op.sequence}`}>{op.sequence}</NavLink>
 							</td>
 							<td key={`${index}-tx-count`}>
-								{record.transactionCount}
+								{op.transactionCount}
 							</td>
-							<TimeTd index={index} render_time={parentRenderTimestamp} record_time={record.time}/>
+							<TimeTd id={index} key={`${index}-time`} render_time={parentRenderTimestamp} record_time={op.time}/>
 						</tr>
 					))}
 				</TableBody>

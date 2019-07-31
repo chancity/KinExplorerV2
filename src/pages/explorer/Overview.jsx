@@ -29,6 +29,7 @@ export const Overview = () => {
 				Overview
 			</Title>
 			<BodyGrid>
+
 					<OverviewPanelHeader title={"Latest Operations"} link={"/explorer/operations"} className={"main"}>
 						<OperationsTable limit={25}/>
 					</OverviewPanelHeader>

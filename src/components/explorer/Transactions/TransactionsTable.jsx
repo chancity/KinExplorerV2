@@ -14,7 +14,9 @@ export const TransactionsTable = ({doStream, limit, loaded, records, parentRende
 			cancelStream("transactions");
 		}
 	}, [cancelStream, startStream, limit]);
-
+	React.useEffect(() => {
+		console.log("TransactionsTable Render")
+	}, []);
 	return (
 
 		<PanelTable>
@@ -22,18 +24,18 @@ export const TransactionsTable = ({doStream, limit, loaded, records, parentRende
 			{loaded
 			?
 				<TableBody>
-					{records.map((op, index) => (
-						<tr key={index}>
-							<td>
+					{records.map((op,index) => (
+						<tr key={`${index}-tx-tr`}>
+							<td key={`${index}-tx-hash`}>
 								<TransactionHash hash={op.hash} compact={true} />
 							</td>
-							<td key={`${index}-ledger`}>
-								<NavLink to={`/explorer/ledgers/${op.ledgerAttr}`}>{op.ledgerAttr}</NavLink>
+							<td key={`${index}-tx-navlink-td-ledger`}>
+								<NavLink key={`${index}-tx-navlink-ledger`} to={`/explorer/ledgers/${op.ledgerAttr}`}>{op.ledgerAttr}</NavLink>
 							</td>
-							<td key={`${index}-ops-count`}>
-								<NavLink to={`/explorer/transactions/${op.id}`}>{op.operationCount}</NavLink>
+							<td key={`${index}-tx-navlink-td-ledger-tx`}>
+								<NavLink key={`${index}-tx-navlink-td-ledger-tx1`} to={`/explorer/transactions/${op.id}`}>{op.operationCount}</NavLink>
 							</td>
-							<TimeTd index={index} render_time={parentRenderTimestamp} record_time={op.time}/>
+							<TimeTd key={`${index}-tx-navlink-time`} render_time={parentRenderTimestamp} record_time={op.time}/>
 						</tr>
 					))}
 				</TableBody>
