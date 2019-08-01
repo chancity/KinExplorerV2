@@ -39,7 +39,6 @@ function App() {
 
 	React.useEffect(() => {
 		store.dispatch(setIsMobile(isMobile));
-		console.log(isMobile);
 	}, [isMobile]);
 
 	React.useEffect(() => {
