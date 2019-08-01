@@ -68,7 +68,7 @@ const getApps = () => {
 
 
 export const AppCategory = ({title, apps}) => (
-	<Panel style={{overflow: "hidden", backgroundColor: "transparent", boxShadow: "unset"}}>
+	<Panel style={{overflow: "hidden", backgroundColor: "transparent", boxShadow: "unset", padding:"0"}}>
 		<PanelHeader style={{alignSelf: "left", paddingLeft:0}}>
 			{title}
 		</PanelHeader>
