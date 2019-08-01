@@ -10,7 +10,7 @@ import WithSpinner from '../../shared/WithSpinner'
 export const TransactionsTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
 
 	React.useEffect(() => {
-		startStream("transactions", limit, false);
+		startStream("transactions", limit, true);
 
 		return () => {
 			cancelStream("transactions");
