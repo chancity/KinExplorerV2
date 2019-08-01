@@ -16,6 +16,7 @@ import viMessages from '../languages/vi'
 import zhMessages from '../languages/zh'
 import {NavMenu} from "../layout/Header/NavMenu";
 import AppParent from "../store/UI/containers/AppParent";
+import { ReactComponent as Swoosh } from '../static/images/swoosh.svg';
 
 addLocaleData([...en, ...ru, ...vi, ...zh]);
 
@@ -32,7 +33,7 @@ const getMessages = locale => {
 		default:
 			return enMessages
 	}
-}
+};
 
 function App() {
 	const [isMobile, setMobile] = React.useState(window.innerWidth <= 1000);
@@ -55,7 +56,11 @@ function App() {
 		>
 
 				<Provider store={store}>
+					<Swoosh style={{position:"fixed", zIndex: "-1", fill:"#202225", top: 0} } />
+			
+					<Swoosh style={{position:"fixed", zIndex: "-1", fill:"#202225", transform: "rotate(180deg)", bottom: 0} } />
 					<AppParent isMobile={isMobile}>
+
 					<BrowserRouter>
 						<NavMenu/>
 						<AppBody isMobile={isMobile}>

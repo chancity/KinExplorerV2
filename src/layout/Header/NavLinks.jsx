@@ -16,7 +16,7 @@ export const NavLinks = ({onClick}) => {
 			<NavLink to={"/apps"} onClick={onClick} activeClassName={"navActive"}>
 				Apps
 			</NavLink>
-		
+
 
 			{/*<NavLink to={"/stats"} onClick={onClick} activeClassName={"navActive"}>
 				Stats
