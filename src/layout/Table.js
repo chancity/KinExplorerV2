@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 
 
 export const PanelTable = styled.table`
+    table-layout: fixed;
 	text-align: left;
 	border-spacing: 0;
 	box-sizing: border-box;
