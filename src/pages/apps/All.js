@@ -90,7 +90,7 @@ export const AppCategory = ({title, apps}) => (
 								{value.isIos &&
 								<Url href={value.iosUrl}>
 									<Apple style={{marginBottom:"4px"}}/>
-									iOS Store
+									App Store
 								</Url>}
 							</UrlContainer>
 						</AppContainer>
