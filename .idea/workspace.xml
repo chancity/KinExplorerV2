@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Blockchain/containers/PaymentsTable.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Title.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Title.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/explorer/Payments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explorer/Payments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/store/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="83" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
+              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="65" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
@@ -413,7 +409,7 @@
       <workItem from="1564517842452" duration="23865000" />
       <workItem from="1564546340773" duration="16210000" />
       <workItem from="1564596190420" duration="476000" />
-      <workItem from="1564596689609" duration="15516000" />
+      <workItem from="1564596689609" duration="15611000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1564221863125</created>
@@ -688,11 +684,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564621469349</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Added Payments Table">
+      <created>1564622087668</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1564622087668</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152761000" />
+    <option name="totallyTimeSpent" value="152856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1492" height="1407" extended-state="0" />
@@ -740,7 +743,8 @@
     <MESSAGE value="back to mainnet" />
     <MESSAGE value="Added loady boi" />
     <MESSAGE value="transaction delay" />
-    <option name="LAST_COMMIT_MESSAGE" value="transaction delay" />
+    <MESSAGE value="Added Payments Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Payments Table" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationTypes/PathPayment.js">
@@ -1158,7 +1162,7 @@
     <entry file="file://$PROJECT_DIR$/src/store/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="83" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="65" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
           </folding>
