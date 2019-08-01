@@ -10,7 +10,7 @@ const getRootPath = (location) => {
 const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 	const [navItems, setNavItems] = React.useState([]);
 	const [path, setPath] = React.useState(null);
-	const display = navOpen || !isMobile;
+	const display = navOpen && isMobile;
 
 
 	React.useEffect(() =>{
@@ -32,7 +32,7 @@ const Sidebar = ({ navOpen, isMobile, setNavOpen,  location }) => {
 	};
 
 	return (
-		<Menu style={{ transform: (display ? "translateX(0rem)" : "translateX(-9.6667rem)")}}>
+		<Menu style={display ? { transform:"translateX(0rem)" } : undefined}>
 			<MenuInner>
 				{navItems.map((value, index)=>(
 					<Section key={index}>

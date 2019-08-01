@@ -1,5 +1,5 @@
 import * as React from "react";
-import {NavLink, PanelTable} from "../Styled/Table";
+import {NavLink, PanelTable} from "../../../layout/Table";
 import TableHeader from "../TableData/TableHeader";
 import TableBody from "../TableData/TableBody";
 import TimeTd from "../TableData/TimeTd";

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {shortHash} from '../../utils/utils'
-import {NavLink} from "../explorer/Styled/Table";
+import {NavLink} from "../../layout/Table";
 
 const TransactionHash = ({hash, compact = true}) => {
   const hashLabel = compact ? shortHash(hash) : hash;

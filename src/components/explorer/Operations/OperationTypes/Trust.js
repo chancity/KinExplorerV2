@@ -1,5 +1,5 @@
 import React from 'react'
-import AccountLink from '../../../shared/AccountLink'
+import {AccountLink} from '../../../shared/AccountLink'
 import {FormattedMessage} from 'react-intl'
 
 const Trust = ({assetCode, children, trustee}) =>

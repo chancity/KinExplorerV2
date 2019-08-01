@@ -17,8 +17,8 @@ export const Search = ({searchOpen, isMobile, setSearchOpen}) =>{
 				<CloseSvg fill="white" style={svgStyle}/>
 			</button>
 		</Header>
-		<Overlay searchOpen={searchOpen || !isMobile}>
-			<Modal searchOpen={searchOpen || !isMobile}>
+		<Overlay searchOpen={searchOpen}>
+			<Modal searchOpen={searchOpen }>
 				<div>
 				<Wrapper>
 					<Label>

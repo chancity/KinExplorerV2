@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 
 import TransactionHash from '../../../shared/TransactionHash'
 import OperationType from '../../../shared/OperationType'
-import AccountLink from '../../../shared/AccountLink'
-import JSONButton from '../../../shared/JSONButton'
+import {AccountButtonLink} from '../../../shared/AccountLink'
 
 import AccountMerge from './AccountMerge'
 import AllowTrust from './AllowTrust'
@@ -47,7 +46,7 @@ const SubOperation = ({op}) => {
 const Operation = ({compact, op, parentRenderTimestamp, index}) => {
   const acc =
       op.type !== 'account_merge' ? (
-          <AccountLink key={index} account={op.sourceAccount} />
+          <AccountButtonLink key={index} account={op.sourceAccount} />
       ) : (
           <span key={index} title={op.sourceAccount}>{op.sourceAccount.substring(0, 4)}</span>
       );

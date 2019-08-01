@@ -6,13 +6,13 @@ import Sidebar from "../../store/UI/containers/Sidebar";
 
 
 
-export const NavMenu = ({isMobile}) => {
+export const NavMenu = () => {
 
 	return (
 		<header>
 			<Wrapper>
 				<Nav/>
-				<MobileNav style={{display: (isMobile ? "flex" : "none")}}/>
+				<MobileNav/>
 			</Wrapper>
 			<Sidebar/>
 		</header>

@@ -19,6 +19,7 @@ export const Menu = styled.nav`
     box-shadow: 1px 0 0 rgba(0,0,0,.2), 1.5px 0 0 rgba(0,0,0,.05), 2px 0 0 rgba(0,0,0,.05);
     @media (max-width: 62.5em) {
 	        display: block;
+            transform: translateX(-9.6667rem);
 	}
 `;
 export const MenuInner = styled.div`

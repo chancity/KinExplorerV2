@@ -2,7 +2,7 @@ import React from 'react'
 import {FormattedMessage} from 'react-intl'
 import PropTypes from 'prop-types'
 import Asset from '../../../shared/Asset'
-import AccountLink from '../../../shared/AccountLink'
+import {AccountLink} from '../../../shared/AccountLink'
 import FormattedAmount from '../../../shared/FormattedAmount'
 
 const Payment = ({amount, assetCode, assetIssuer, assetType, children, to}) => (

@@ -1,11 +1,9 @@
 import React from 'react';
-import {AppParent} from './Styled';
 import Routes from "./Routes";
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import AppStore from "../store";
 import {setIsMobile} from "../store/UI/actions";
-import NavMenu from "../store/UI/containers/NavMenu";
 import AppBody from "../store/UI/containers/AppBody";
 import {IntlProvider, addLocaleData} from 'react-intl'
 import en from 'react-intl/locale-data/en'
@@ -16,6 +14,8 @@ import enMessages from '../languages/en'
 import ruMessages from '../languages/ru'
 import viMessages from '../languages/vi'
 import zhMessages from '../languages/zh'
+import {NavMenu} from "../layout/Header/NavMenu";
+import AppParent from "../store/UI/containers/AppParent";
 
 addLocaleData([...en, ...ru, ...vi, ...zh]);
 
@@ -55,16 +55,18 @@ function App() {
 			locale={"en"}
 			messages={getMessages("en")}
 		>
-			<AppParent ref={parentRef}>
+
 				<Provider store={store}>
+					<AppParent ref={parentRef} isMobile={isMobile}>
 					<BrowserRouter>
 						<NavMenu/>
-						<AppBody>
+						<AppBody isMobile={isMobile}>
 							<Routes/>
 						</AppBody>
 					</BrowserRouter>
+					</AppParent>
 				</Provider>
-			</AppParent>
+
 		</IntlProvider>
 	);
 }

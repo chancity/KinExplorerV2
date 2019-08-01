@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {shortHash} from '../../utils/utils'
-import {NavLink} from "../explorer/Styled/Table";
+import {NavLink} from "../../layout/Table";
 
 const AppData = ({memo, compact = true}) => {
 
-  const [int, appid] = memo.split('-');
+  const [, appid] = memo.split('-');
   const appLabel = compact ? shortHash(appid) : appid;
   return (
     <span title={memo}>
-      	<NavLink to={`/apps/${appid}`} >{appLabel}</NavLink>
+      	<NavLink to={`/apps/${appid}`} color={"#149E83"} >{appLabel}</NavLink>
     </span>
   )
 };

@@ -2,7 +2,7 @@ import React from 'react'
 import {FormattedMessage} from 'react-intl'
 import PropTypes from 'prop-types'
 
-import AccountLink from '../../../shared/AccountLink'
+import {AccountLink} from '../../../shared/AccountLink'
 import Asset from '../../../shared/Asset'
 import FormattedAmount from '../../../shared/FormattedAmount'
 

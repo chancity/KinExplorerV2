@@ -19,12 +19,14 @@ export default (state = initialState, action)  => {
 				...state,
 				navOpen: !state.navOpen,
 				secondaryNavOpen: false,
+				searchOpen: false
 			};
 		case SET_SECONDARY_NAV_OPEN:
 			return {
 				...state,
 				secondaryNavOpen: !state.secondaryNavOpen,
-				navOpen: false
+				navOpen: false,
+				searchOpen: false
 			};
 		case SET_SEARCH_OPEN:
 			return {
@@ -36,6 +38,9 @@ export default (state = initialState, action)  => {
 		case SET_IS_MOBILE:
 			return {
 				...state,
+				searchOpen: false,
+				navOpen: false,
+				secondaryNavOpen: false,
 				isMobile: action.isMobile
 			};
 		default:

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {FormattedMessage} from 'react-intl'
-import AccountLink from '../../../shared/AccountLink'
+import {AccountLink} from '../../../shared/AccountLink'
 import FormattedAmount from '../../../shared/FormattedAmount'
 
 const CreateAccount = ({account, startingBalance}) => (

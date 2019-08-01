@@ -2,11 +2,9 @@ import styled from 'styled-components/macro'
 
 
 export const AppParent = styled.div`
-	padding-left: 9.6667rem;
+ 	padding-left: ${props => !props.isMobile || props.navOpen ? "9.6667rem" : "0rem" };
     overflow: hidden;
-	@media (max-width: 62.5em) {
-	    padding-left: 0;
-	}
+ 	 transition: padding-left 150ms ease-out 0s;
 `;
 
 
@@ -19,10 +17,6 @@ const AppBody = styled.div`
     overflow: auto;
     transition: transform 150ms ease-out 0s;
     
-    @media (max-width: 62.5em) {
-	    transform: translateX(${props => props.navOpen ? "9.6667rem" : "0rem" });
-	
-	}
 `;
 
 export {

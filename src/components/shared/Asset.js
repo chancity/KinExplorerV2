@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import AccountLink from './AccountLink'
+import {AccountLink} from './AccountLink'
 
 const Asset = ({code, issuer, type}) => {
   const isKin = type === 'native'

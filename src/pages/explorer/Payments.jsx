@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Title} from '../../layout/Title'
-import {Panel} from "../../components/explorer/Styled/Panel";
+import {Panel} from "../../layout/Panel";
 import PaymentsTable from "../../store/Blockchain/containers/PaymentsTable";
 
 export const Payments = () => (

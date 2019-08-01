@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const Wrapper = styled.div`
-    display: flex;
+    display: none;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;

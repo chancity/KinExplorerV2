@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Title} from '../../layout/Title'
 import OperationsTable from "../../store/Blockchain/containers/OperationsTable";
-import {Panel} from "../../components/explorer/Styled/Panel";
+import {Panel} from "../../layout/Panel";
 
 export const Operations = () => (
 	<>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { PanelTable} from "../Styled/Table";
+import { PanelTable} from "../../../layout/Table";
 import TableHeader from "../TableData/TableHeader";
 import TableBody from "../TableData/TableBody";
 import Operation from "./OperationTypes/Operation";

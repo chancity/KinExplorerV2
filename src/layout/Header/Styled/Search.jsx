@@ -2,6 +2,7 @@ import styled from 'styled-components/macro'
 
 export const Overlay = styled.div`
     margin-right: 0.555556rem;
+	display: block;
     @media (max-width: 62.5em) {
         position: fixed;
 	    top: 0;
@@ -9,31 +10,31 @@ export const Overlay = styled.div`
 	    right: 0;
 	    z-index: 1;
 	    left: 0;
-	 	display: ${props => props.searchOpen ? "block !important" : "none !important"};
 	    overflow-y: auto;
 	    background: #36393f;
+        display: ${props => props.searchOpen ? "block" : "none"};
 	    margin: 0;
     }
 `;
 
 export const Modal = styled.div`
-    display: ${props => props.searchOpen ? "block !important" : "none !important"};
+	display: block;
     @media (max-width: 62.5em) {
 	    position: absolute;
-	    top: 0px;
-	    left: 0px;
-	    right: 0px;
+	    top: 0;
+	    left: 0;
+	    right: 0;
 	    background: currentcolor;
 	    overflow: auto;
 	    box-shadow: 0 2px 0 rgba(0,0,0,.2), 0 3px 0 rgba(0,0,0,.05), 0 4px 0 rgba(0,0,0,.05);
+        display: ${props => props.searchOpen ? "block !important" : "none !important"};
     }
 `;
 
 export const Header = styled.div`
-    display: ${props => props.searchOpen ? "block !important" : "none !important"};
     color: currentcolor;
+    display: ${props => props.searchOpen ? "block" : "none"};
     @media (max-width: 62.5em){
-   
     	button {
     	    cursor: pointer;
 		    position: fixed;
@@ -41,12 +42,12 @@ export const Header = styled.div`
 		    top: 0.611111rem;
 		    z-index: 2;
 		    color: currentColor;
-		    padding: 0px;
+		    padding: 0;
 		    border-width: initial;
 		    border-style: none;
 		    border-color: initial;
 		    border-image: initial;
-		        background-color: transparent;
+	        background-color: transparent;
     	}
 	}
 `;

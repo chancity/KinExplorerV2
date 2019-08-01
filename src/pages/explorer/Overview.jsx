@@ -2,8 +2,8 @@ import * as React from "react";
 import {Title} from '../../layout/Title'
 import {BodyGrid, SideWrapper} from "./Styled/ExplorerBody";
 import OperationsTable from "../../store/Blockchain/containers/OperationsTable";
-import {Panel, PanelHeader} from "../../components/explorer/Styled/Panel";
-import {NavLink} from "../../components/explorer/Styled/Table";
+import {Panel, PanelHeader} from "../../layout/Panel";
+import {NavLink} from "../../layout/Table";
 import LedgersTable from "../../store/Blockchain/containers/LedgersTable";
 import TransactionsTable from "../../store/Blockchain/containers/TransactionsTable";
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import {FormattedMessage} from 'react-intl'
-import AccountLink from '../../../shared/AccountLink'
+import {AccountLink} from '../../../shared/AccountLink'
 import Trust from './Trust'
 
 const AllowTrust = props => (

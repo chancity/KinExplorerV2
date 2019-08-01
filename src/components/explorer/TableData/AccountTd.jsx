@@ -1,7 +1,7 @@
 import * as React from "react";
 import {FormattedRelative} from "react-intl";
-import {NavLink} from "../Styled/Table";
-import {PanelHeader} from "../Styled/Panel";
+import {NavLink} from "../../../layout/Table";
+import {PanelHeader} from "../../../layout/Panel";
 
 
 const AccountTd = ({account, index}) => (
