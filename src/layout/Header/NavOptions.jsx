@@ -49,10 +49,10 @@ const explorerNav = [
 		path:"transactions",
 		text: "Transactions",
 	},
-	{
-		path:"effects",
-		text: "Effects",
-	},
+//	{
+//		path:"effects",
+//		text: "Effects",
+//	},
 	{
 		path:"payments",
 		text: "Payments",
