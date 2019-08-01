@@ -27,18 +27,18 @@ const SpinnerBg = styled.div`
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
-    background-size: contain;
+    background-size: 50%;
     background-image: url(${KinLogoFull});
     background-position: center center;
-    height: 10vw;
-    width: 5vw;
-	animation:  2s ${spin}  infinite alternate;
+    height: 300px;
+    width: 300px;
+	animation:  1s ${spin}  infinite alternate;
 
 `;
 
 const Spinner = () => (
 	<SpinnerContainer>
-			<SpinnerBg/>
+		<SpinnerBg/>
 	</SpinnerContainer>
 );
 

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/NavOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/NavOptions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/WithSpinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/WithSpinner.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,15 +24,6 @@
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/shared/AppData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -113,11 +104,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/layout/Header/NavOptions.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="507">
               <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,7 +215,6 @@
         <option value="$PROJECT_DIR$/src/layout/Title.js" />
         <option value="$PROJECT_DIR$/src/components/shared/OperationType.js" />
         <option value="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx" />
-        <option value="$PROJECT_DIR$/src/components/shared/WithSpinner.js" />
         <option value="$PROJECT_DIR$/src/components/explorer/Operations/OperationTypes/Operation.js" />
         <option value="$PROJECT_DIR$/src/components/explorer/Operations/OperationTypes/AccountMerge.js" />
         <option value="$PROJECT_DIR$/src/components/explorer/Operations/OperationTypes/AllowTrust.js" />
@@ -234,6 +236,7 @@
         <option value="$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx" />
         <option value="$PROJECT_DIR$/src/layout/Table.js" />
         <option value="$PROJECT_DIR$/src/layout/Header/NavOptions.jsx" />
+        <option value="$PROJECT_DIR$/src/components/shared/WithSpinner.js" />
       </list>
     </option>
   </component>
@@ -271,14 +274,20 @@
               <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
               <item name="playing-around" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
+              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
               <item name="playing-around" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
@@ -290,29 +299,7 @@
               <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
               <item name="playing-around" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="explorer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="kin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -404,7 +391,7 @@
       <workItem from="1564517842452" duration="23865000" />
       <workItem from="1564546340773" duration="16210000" />
       <workItem from="1564596190420" duration="476000" />
-      <workItem from="1564596689609" duration="23938000" />
+      <workItem from="1564596689609" duration="24230000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1564221863125</created>
@@ -721,11 +708,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564631509062</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="removed effects">
+      <created>1564631709060</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1564631709060</updated>
+    </task>
+    <task id="LOCAL-00047" summary="decreased spinner size">
+      <created>1564631806901</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1564631806901</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161183000" />
+    <option name="totallyTimeSpent" value="161475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
@@ -775,7 +776,9 @@
     <MESSAGE value="transaction delay" />
     <MESSAGE value="Added Payments Table" />
     <MESSAGE value="Updated favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated favicon" />
+    <MESSAGE value="removed effects" />
+    <MESSAGE value="decreased spinner size" />
+    <option name="LAST_COMMIT_MESSAGE" value="decreased spinner size" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/static/images/kin/kin-icon.svg">
@@ -915,16 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1215,6 +1208,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
           <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
