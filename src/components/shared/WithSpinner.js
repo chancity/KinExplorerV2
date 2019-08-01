@@ -30,8 +30,8 @@ const SpinnerBg = styled.div`
     background-size: contain;
     background-image: url(${KinLogoFull});
     background-position: center center;
-    height: 15vw;
-    width: 10vw;
+    height: 10vw;
+    width: 5vw;
 	animation:  2s ${spin}  infinite alternate;
 
 `;
