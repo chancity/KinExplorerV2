@@ -4,10 +4,10 @@ import styled, { keyframes } from 'styled-components/macro'
 
 const spin = keyframes`
   0% {
-   	transform: scale(1);
+   	transform: rotate(0deg) scale(1);
   }
   100% {
-    transform:  scale(1.5);;
+    transform: rotate(360deg) scale(1.5);;
   }
 `;
 
