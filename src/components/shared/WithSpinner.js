@@ -4,10 +4,10 @@ import styled, { keyframes } from 'styled-components/macro'
 
 const spin = keyframes`
   0% {
-   	transform: rotate(0deg) scale(1);
+   	transform: scale(1);
   }
   100% {
-    transform: rotate(360deg)  scale(1.5);;
+    transform:  scale(1.5);;
   }
 `;
 
@@ -32,7 +32,7 @@ const SpinnerBg = styled.div`
     background-position: center center;
     height: 300px;
     width: 300px;
-	animation:  1s ${spin}  infinite alternate;
+	animation:  .5s ${spin}  infinite alternate;
 
 `;
 

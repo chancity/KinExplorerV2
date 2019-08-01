@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/static/images/gemkin2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/swoosh.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/NavLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/NavLinks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/WithSpinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/WithSpinner.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,8 +43,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="498">
-                  <caret line="86" column="18" lean-forward="true" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+                <state relative-caret-position="1190">
+                  <caret line="70" column="2" lean-forward="true" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -75,11 +71,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/App.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+                <state relative-caret-position="532">
+                  <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -90,8 +86,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+                <state relative-caret-position="442">
+                  <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -185,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/store/Blockchain/containers/OperationsTable.jsx" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/reducers.js" />
         <option value="$PROJECT_DIR$/src/layout/Logo.jsx" />
         <option value="$PROJECT_DIR$/src/static/images/kin/kin-logo.svg" />
@@ -224,7 +231,6 @@
         <option value="$PROJECT_DIR$/src/pages/explorer/Payments.jsx" />
         <option value="$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx" />
         <option value="$PROJECT_DIR$/src/layout/Table.js" />
-        <option value="$PROJECT_DIR$/src/components/shared/WithSpinner.js" />
         <option value="$PROJECT_DIR$/src/static/apps/ios.json" />
         <option value="$PROJECT_DIR$/src/static/apps/android.json" />
         <option value="$PROJECT_DIR$/src/app/Routes.jsx" />
@@ -234,8 +240,10 @@
         <option value="$PROJECT_DIR$/src/layout/Header/NavLinks.jsx" />
         <option value="$PROJECT_DIR$/src/static/images/asd.svg" />
         <option value="$PROJECT_DIR$/src/pages/apps/All.js" />
-        <option value="$PROJECT_DIR$/src/index.scss" />
+        <option value="$PROJECT_DIR$/src/static/images/swoosh.svg" />
         <option value="$PROJECT_DIR$/src/app/App.jsx" />
+        <option value="$PROJECT_DIR$/src/index.scss" />
+        <option value="$PROJECT_DIR$/src/components/shared/WithSpinner.js" />
       </list>
     </option>
   </component>
@@ -279,41 +287,14 @@
               <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
               <item name="playing-around" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
               <item name="playing-around" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="app_stores" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -406,21 +387,7 @@
       <workItem from="1564546340773" duration="16210000" />
       <workItem from="1564596190420" duration="476000" />
       <workItem from="1564596689609" duration="34158000" />
-      <workItem from="1564642653445" duration="3362000" />
-    </task>
-    <task id="LOCAL-00007" summary="close secondary on nav click">
-      <created>1564278341101</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1564278341101</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added Redux store to handle UI changes">
-      <created>1564292026353</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1564292026353</updated>
+      <workItem from="1564642653445" duration="4380000" />
     </task>
     <task id="LOCAL-00009" summary="refactoring">
       <created>1564292345869</created>
@@ -751,11 +718,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564643292813</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="send it">
+      <created>1564646045610</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1564646045610</updated>
+    </task>
+    <task id="LOCAL-00057" summary="send it">
+      <created>1564646854297</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1564646854297</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174765000" />
+    <option name="totallyTimeSpent" value="175783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1132" y="0" width="2313" height="1407" extended-state="0" />
@@ -810,7 +791,8 @@
     <MESSAGE value="Added apps page" />
     <MESSAGE value="Removed unfinished links" />
     <MESSAGE value="Rearranged navlinks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rearranged navlinks" />
+    <MESSAGE value="send it" />
+    <option name="LAST_COMMIT_MESSAGE" value="send it" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/layout/Title.js">
@@ -1053,16 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layout/Logo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1185,22 +1157,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="86" column="18" lean-forward="true" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/swoosh.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/apps/All.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="88" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/images/gemkin2.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="2" lean-forward="true" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/images/swoosh.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/colors.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -1209,22 +1184,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/gemkin2.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.scss">
+    <entry file="file://$PROJECT_DIR$/src/app/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="532">
+          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/App.jsx">
+    <entry file="file://$PROJECT_DIR$/src/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+        <state relative-caret-position="442">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
