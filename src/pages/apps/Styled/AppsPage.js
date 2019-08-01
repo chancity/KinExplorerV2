@@ -40,7 +40,7 @@ export const AppImageContainer = styled.div`
     border-radius: 36px;   
 `;
 
-export const AppImage = styled.div`
+export const AppImage = styled.img`
     transform: scale(1);
 	background-size: cover;
 	background-position: center center;

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/apps/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/apps/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/apps/All.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/apps/All.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,14 +16,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.38580078">
+    <splitter split-orientation="horizontal" split-proportion="0.32691008">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/static/apps/ios.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3995">
-                  <caret line="235" column="1" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
+                <state relative-caret-position="835">
+                  <caret line="214" column="38" lean-forward="true" selection-start-line="214" selection-start-column="38" selection-end-line="214" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -30,8 +31,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/static/apps/android.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+                <state relative-caret-position="393">
+                  <caret line="1079" column="40" lean-forward="true" selection-start-line="1079" selection-start-column="40" selection-end-line="1079" selection-end-column="40" />
                   <folding>
                     <element signature="e#12167#13738#0" />
                     <element signature="e#13741#22829#0" />
@@ -43,8 +44,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1190">
-                  <caret line="70" column="2" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
+                <state relative-caret-position="714">
+                  <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -62,11 +63,14 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/apps/All.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="88" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
+                <state relative-caret-position="510">
+                  <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#0#30#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -95,7 +99,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
+                <state relative-caret-position="238">
                   <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
@@ -104,7 +108,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/apps/constants.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
@@ -239,26 +243,26 @@
         <option value="$PROJECT_DIR$/src/pages/explorer/Payments.jsx" />
         <option value="$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx" />
         <option value="$PROJECT_DIR$/src/layout/Table.js" />
-        <option value="$PROJECT_DIR$/src/static/apps/ios.json" />
-        <option value="$PROJECT_DIR$/src/static/apps/android.json" />
         <option value="$PROJECT_DIR$/src/app/Routes.jsx" />
         <option value="$PROJECT_DIR$/src/pages/constants.js" />
         <option value="$PROJECT_DIR$/src/layout/Header/NavOptions.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js" />
         <option value="$PROJECT_DIR$/src/layout/Header/NavLinks.jsx" />
         <option value="$PROJECT_DIR$/src/static/images/asd.svg" />
-        <option value="$PROJECT_DIR$/src/pages/apps/All.js" />
         <option value="$PROJECT_DIR$/src/static/images/swoosh.svg" />
         <option value="$PROJECT_DIR$/src/app/App.jsx" />
         <option value="$PROJECT_DIR$/src/index.scss" />
         <option value="$PROJECT_DIR$/src/components/shared/WithSpinner.js" />
         <option value="$PROJECT_DIR$/src/pages/apps/constants.js" />
+        <option value="$PROJECT_DIR$/src/static/apps/android.json" />
+        <option value="$PROJECT_DIR$/src/static/apps/ios.json" />
+        <option value="$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/apps/All.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1548" />
-    <option name="width" value="1897" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="956" />
+    <option name="width" value="2489" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -317,6 +321,27 @@
               <item name="playing-around" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
+              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="Styled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
+              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
+              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -411,14 +436,8 @@
       <workItem from="1564596689609" duration="34158000" />
       <workItem from="1564642653445" duration="4443000" />
       <workItem from="1564647127810" duration="43000" />
-      <workItem from="1564647352922" duration="13000" />
-    </task>
-    <task id="LOCAL-00011" summary="robots">
-      <created>1564293152149</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1564293152149</updated>
+      <workItem from="1564647352922" duration="54000" />
+      <workItem from="1564678183761" duration="210000" />
     </task>
     <task id="LOCAL-00012" summary="meta data">
       <created>1564293380811</created>
@@ -756,17 +775,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564647159375</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="added spinning of kin logo">
+      <created>1564647372720</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1564647372721</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175902000" />
+    <option name="totallyTimeSpent" value="176153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1548" y="0" width="1897" height="1407" extended-state="0" />
+    <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24744487" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13458163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1142,42 +1168,10 @@
     <entry file="file://$PROJECT_DIR$/src/static/images/gemkin2.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/apps/ios.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3995">
-          <caret line="235" column="1" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/apps/android.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="e#12167#13738#0" />
-            <element signature="e#13741#22829#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layout/Panel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="10" selection-start-line="10" selection-end-line="10" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="2" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/apps/All.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="88" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -1195,6 +1189,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1218,20 +1222,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/apps/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/apps/android.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="1079" column="40" lean-forward="true" selection-start-line="1079" selection-start-column="40" selection-end-line="1079" selection-end-column="40" />
+          <folding>
+            <element signature="e#12167#13738#0" />
+            <element signature="e#13741#22829#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/apps/ios.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="835">
+          <caret line="214" column="38" lean-forward="true" selection-start-line="214" selection-start-column="38" selection-end-line="214" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/apps/All.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

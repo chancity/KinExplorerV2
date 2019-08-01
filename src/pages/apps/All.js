@@ -79,7 +79,7 @@ export const AppCategory = ({title, apps}) => (
 						<AppContainer>
 							<AppTitle>{value.name}</AppTitle>
 							<AppImageContainer>
-								<AppImage style={{backgroundImage: `url("${imageUrlBase}${value.logo}")`}}/>
+								<AppImage src={`${imageUrlBase}${value.logo}`}/>
 							</AppImageContainer>
 							<UrlContainer>
 								{value.isAndroid &&
