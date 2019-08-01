@@ -3,14 +3,14 @@ const kinApps = [
 		path:"",
 		text: "All",
 	},
-	{
-		path:"ios",
-		text: "iOS",
-	},
-	{
-		path:"android",
-		text: "Android",
-	}
+//	{
+//		path:"ios",
+//		text: "iOS",
+//	},
+//	{
+//		path:"android",
+//		text: "Android",
+//	}
 ];
 
 const stats = [

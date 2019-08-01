@@ -7,6 +7,7 @@ import {Operations} from "../pages/explorer/Operations";
 import {Ledgers} from "../pages/explorer/Ledgers";
 import {Effects} from "../pages/explorer/Effects";
 import {Overview} from "../pages/explorer/Overview";
+import {AppPageAll} from "../pages/apps/All";
 
 
 const Routes = () => (
@@ -21,6 +22,7 @@ const Routes = () => (
 			<Route exact path="/explorer/ledgers" component={ Ledgers }/>
 			<Route exact path="/explorer/effects" component={ Effects }/>
 			<Route exact path="/my-kin-wallet" component={ MyKinWallet }/>
+			<Route exact path="/apps" component={ AppPageAll} />
 		</Switch>
 );
 

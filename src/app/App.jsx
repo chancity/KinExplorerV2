@@ -35,7 +35,6 @@ const getMessages = locale => {
 }
 
 function App() {
-	const parentRef = React.useRef(null);
 	const [isMobile, setMobile] = React.useState(window.innerWidth <= 1000);
 
 	React.useEffect(() => {
@@ -57,7 +56,7 @@ function App() {
 		>
 
 				<Provider store={store}>
-					<AppParent ref={parentRef} isMobile={isMobile}>
+					<AppParent isMobile={isMobile}>
 					<BrowserRouter>
 						<NavMenu/>
 						<AppBody isMobile={isMobile}>
