@@ -33,7 +33,7 @@ const getMessages = locale => {
 		default:
 			return enMessages
 	}
-};
+}
 
 function App() {
 	const [isMobile, setMobile] = React.useState(window.innerWidth <= 1000);
@@ -56,9 +56,9 @@ function App() {
 		>
 
 				<Provider store={store}>
-					<Swoosh style={{position:"fixed", zIndex: "-1", fill:"#202225", top: 0} } />
-			
-					<Swoosh style={{position:"fixed", zIndex: "-1", fill:"#202225", transform: "rotate(180deg)", bottom: 0} } />
+					<div className={"swoosh-container swoosh-flipped"}>
+						<Swoosh className={"swoosh"} />
+					</div>
 					<AppParent isMobile={isMobile}>
 
 					<BrowserRouter>

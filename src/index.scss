@@ -23,7 +23,26 @@ body {
   width: 100%;
   z-index: -4;
 }
+.swoosh-container {
+  position: fixed;
+  z-index: -3;
+  width: 100%;
+  overflow: hidden;
+}
+.swoosh {
+  fill: $background-3;
+  min-width: 1000px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
 
+.swoosh-flipped {
+  transform: rotate(180deg);
+  bottom: 0;
+}
 
 @media (max-width: 62.5em) {
   html, body {
