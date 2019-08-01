@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/WithSpinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/WithSpinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/apps/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/apps/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,7 +92,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/shared/WithSpinner.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="272">
@@ -100,6 +100,15 @@
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/pages/apps/constants.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="29" selection-start-column="29" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -193,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/store/Blockchain/reducers.js" />
         <option value="$PROJECT_DIR$/src/layout/Logo.jsx" />
         <option value="$PROJECT_DIR$/src/static/images/kin/kin-logo.svg" />
         <option value="$PROJECT_DIR$/src/colors.scss" />
@@ -244,6 +252,7 @@
         <option value="$PROJECT_DIR$/src/app/App.jsx" />
         <option value="$PROJECT_DIR$/src/index.scss" />
         <option value="$PROJECT_DIR$/src/components/shared/WithSpinner.js" />
+        <option value="$PROJECT_DIR$/src/pages/apps/constants.js" />
       </list>
     </option>
   </component>
@@ -260,6 +269,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,11 +306,23 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
+              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
+              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,14 +410,8 @@
       <workItem from="1564596190420" duration="476000" />
       <workItem from="1564596689609" duration="34158000" />
       <workItem from="1564642653445" duration="4443000" />
-      <workItem from="1564647127810" duration="19000" />
-    </task>
-    <task id="LOCAL-00010" summary="refactoring">
-      <created>1564292812517</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1564292812517</updated>
+      <workItem from="1564647127810" duration="43000" />
+      <workItem from="1564647352922" duration="13000" />
     </task>
     <task id="LOCAL-00011" summary="robots">
       <created>1564293152149</created>
@@ -733,11 +749,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564647092935</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="added spinning of kin logo">
+      <created>1564647159374</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1564647159375</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175865000" />
+    <option name="totallyTimeSpent" value="175902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1548" y="0" width="1897" height="1407" extended-state="0" />
@@ -768,7 +791,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="close secondary on nav click" />
     <MESSAGE value="Added Redux store to handle UI changes" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="robots" />
@@ -793,7 +815,8 @@
     <MESSAGE value="Rearranged navlinks" />
     <MESSAGE value="send it" />
     <MESSAGE value="Removed spinner of kin logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed spinner of kin logo" />
+    <MESSAGE value="added spinning of kin logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added spinning of kin logo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/layout/Title.js">
@@ -1090,13 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/apps/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layout/Header/NavOptions.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1209,6 +1225,13 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/apps/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
