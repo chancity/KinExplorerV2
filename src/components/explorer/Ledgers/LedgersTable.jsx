@@ -3,13 +3,14 @@ import {NavLink, PanelTable} from "../Styled/Table";
 import TableHeader from "../TableData/TableHeader";
 import TableBody from "../TableData/TableBody";
 import TimeTd from "../TableData/TimeTd";
+import WithSpinner from '../../shared/WithSpinner'
 
 export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
 
 	React.useEffect(() => {
 		startStream("ledgers", limit, false);
 
-		return () =>{
+		return () => {
 			cancelStream("ledgers");
 		}
 	}, [cancelStream, startStream, limit]);
@@ -17,11 +18,9 @@ export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTime
 		console.log("LedgersTable Render")
 	}, []);
 	return (
-
+		<WithSpinner loaded={loaded}>
 		<PanelTable>
 			<TableHeader data={["#", "Transactions", "Time"]}/>
-			{loaded
-			?
 				<TableBody>
 					{records.map((op) => (
 						<tr key={op.id}>
@@ -35,9 +34,7 @@ export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTime
 						</tr>
 					))}
 				</TableBody>
-			:
-				null
-			}
-		</PanelTable>
+			</PanelTable>
+		</WithSpinner>
 	);
 };

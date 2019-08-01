@@ -36,18 +36,18 @@ const getMessages = locale => {
 
 function App() {
 	const parentRef = React.useRef(null);
+	const [isMobile, setMobile] = React.useState(window.innerWidth <= 1000);
 
+	React.useEffect(() => {
+		store.dispatch(setIsMobile(isMobile));
+		console.log(isMobile);
+	}, [isMobile]);
 
-	React.useEffect(()=> {
-		let clearTimer = null;
-		window.addEventListener("resize", ()=> {
-			if(clearTimer)
-				clearTimeout(clearTimer);
-
-			clearTimer = setTimeout(store.dispatch(setIsMobile(window.innerWidth <= 1000)), 100)
+	React.useEffect(() => {
+		window.addEventListener("resize", () => {
+			setMobile(window.innerWidth <= 1000);
 		});
-	}, []);
-
+	}, [setMobile]);
 
 	return (
 		<IntlProvider
@@ -55,22 +55,21 @@ function App() {
 			locale={"en"}
 			messages={getMessages("en")}
 		>
-		<AppParent ref={parentRef}>
-			<Provider store={store}>
-				<BrowserRouter>
-					<NavMenu/>
-					<AppBody>
-						<Routes/>
-					</AppBody>
-				</BrowserRouter>
-			</Provider>
-		</AppParent>
+			<AppParent ref={parentRef}>
+				<Provider store={store}>
+					<BrowserRouter>
+						<NavMenu/>
+						<AppBody>
+							<Routes/>
+						</AppBody>
+					</BrowserRouter>
+				</Provider>
+			</AppParent>
 		</IntlProvider>
 	);
 }
 
 export default App;
-
 
 
 //import {Footer} from "../layout/Footer/Styled";

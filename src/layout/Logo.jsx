@@ -2,7 +2,7 @@ import styled from 'styled-components/macro'
 import React from "react";
 import {Link} from "react-router-dom";
 //import KinIcon from '../static/images/kin/kin-icon.svg';
-import KinLogoFull from '../static/images/kin/kin-logo.svg';
+import KinLogoFull from '../static/images/kin/kin-logo-purple.svg';
 
 const LogoLink = styled(Link)`
     display: inline-block;
@@ -19,6 +19,7 @@ const LogoBg = styled.div`
     box-sizing: border-box;
     background-size: contain;
     background-image: url(${KinLogoFull});
+    
     width: 1.75rem;
     height: 1.75rem;
     background-position: center center;

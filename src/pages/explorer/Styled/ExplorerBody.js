@@ -8,14 +8,17 @@ export const BodyGrid = styled.div`
 	@media (max-width: 72.5em) {
  		display: flex;
  		flex-direction: column;
+	    .child {
+	    	margin-top: 10px;
+	    }
 	}
 	
 	.main {
   		grid-column: auto / span 2;
 	}
 	
-	.child {
-  		grid-column: auto / span 1;
+	.main {
+  		grid-column: auto / span 2;
 	}
 `;
 

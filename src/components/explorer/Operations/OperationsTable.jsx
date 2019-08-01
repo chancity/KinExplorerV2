@@ -3,6 +3,7 @@ import { PanelTable} from "../Styled/Table";
 import TableHeader from "../TableData/TableHeader";
 import TableBody from "../TableData/TableBody";
 import Operation from "./OperationTypes/Operation";
+import WithSpinner from '../../shared/WithSpinner'
 
 
 
@@ -22,19 +23,16 @@ export const OperationsTable = ({doStream, limit, loaded, records, parentRenderT
 		console.log("OperationsTable Render")
 	}, []);
 	return (
-		<PanelTable>
-			<TableHeader data={isMobile ? mobile : desktop}/>
-			{loaded
-				?
-				<TableBody>
-					{records.map((record, index) => (
-						<Operation key={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={isMobile}/>
-					))}
-				</TableBody>
-				:
-				null
-			}
-		</PanelTable>
+		<WithSpinner loaded={loaded}>
+			<PanelTable>
+				<TableHeader data={isMobile ? mobile : desktop}/>
+					<TableBody>
+						{records.map((record, index) => (
+							<Operation key={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={isMobile}/>
+						))}
+					</TableBody>
+			</PanelTable>
+		</WithSpinner>
 	);
 };
 

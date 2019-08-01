@@ -69,7 +69,7 @@ function onMessage(record, dispatch, caller, splice, limit) {
 };
 
 const onStreamError = (error)  => {
-	console.error(error)
+	//console.error(error)
 };
 
 export const cancelStream = (caller) => async (dispatch, getState) => {

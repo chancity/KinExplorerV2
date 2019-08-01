@@ -44,7 +44,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 svg{
-  fill:currentColor;
+  fill: currentColor;
 }
 ::after, ::before {
   text-decoration: inherit;
@@ -80,3 +80,4 @@ article, aside, footer, header, nav, section {
 [tabindex], a, area, button, input, label, select, summary, textarea {
   touch-action: manipulation;
 }
+
