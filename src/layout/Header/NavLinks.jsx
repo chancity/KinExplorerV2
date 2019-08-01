@@ -9,13 +9,15 @@ export const NavLinks = ({onClick}) => {
 			{/*<NavLink to={"/my-kin-wallet"} onClick={onClick} activeClassName={"navActive"}>
 				My Kin Wallet
 			</NavLink>*/}
-			<NavLink to={"/apps"} onClick={onClick} activeClassName={"navActive"}>
-				Apps
-			</NavLink>
-			<Seperator/>
 			<NavLink to={"/explorer"} onClick={onClick} activeClassName={"navActive"}>
 				Blockchain
 			</NavLink>
+			<Seperator/>
+			<NavLink to={"/apps"} onClick={onClick} activeClassName={"navActive"}>
+				Apps
+			</NavLink>
+		
+
 			{/*<NavLink to={"/stats"} onClick={onClick} activeClassName={"navActive"}>
 				Stats
 			</NavLink>*/}
