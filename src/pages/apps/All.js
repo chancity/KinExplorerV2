@@ -71,30 +71,25 @@ const AppPanel =  React.memo(props => {
 	const {value} = props;
 	return(
 		<>
-		{toggler.isToggled ?
-				<AppModal value={value} toggler={toggler}/>
-				:
-				<Panel style={{padding:0, minWidth:"235px"}} title={value.title}>
-					<StyledExpand title={"expand"} onClick={toggler.toggle}/>
-					<AppTitle>{value.name}</AppTitle>
-
-						<AppImage src={`${imageUrlBase}${value.logo}`}/>
-
-					<AppDescription description={value.description} onClick={toggler.toggle}/>
-					<UrlContainer>
-						{value.isAndroid &&
-						<Url href={value.googleUrl}>
-							<Google/>
-							Google Play
-						</Url>}
-						{value.isIos &&
-						<Url href={value.iosUrl}>
-							<Apple/>
-							App Store
-						</Url>}
-					</UrlContainer>
-				</Panel>
-		}
+			<AppModal value={value} toggler={toggler}/>
+			<Panel style={{padding:0, minWidth:"235px"}} title={value.title}>
+				<StyledExpand title={"expand"} onClick={toggler.toggle}/>
+				<AppTitle>{value.name}</AppTitle>
+				<AppImage src={`${imageUrlBase}${value.logo}`}/>
+				<AppDescription description={value.description} onClick={toggler.toggle}/>
+				<UrlContainer>
+					{value.isAndroid &&
+					<Url href={value.googleUrl}>
+						<Google/>
+						Google Play
+					</Url>}
+					{value.isIos &&
+					<Url href={value.iosUrl}>
+						<Apple/>
+						App Store
+					</Url>}
+				</UrlContainer>
+			</Panel>
 		</>
 	)
 });

@@ -79,14 +79,13 @@ const InternalModal = styled.div`
     }
 `;
 
-export default ({children, useToggle}) => {
-	const bodyRef = React.useRef(null);
-
+export default React.memo(props => {
+	const {children, useToggle} = props;
 	return (useToggle.isToggled ?
 		createPortal(
 			<>
 				<InternalModalOverlay onClick={useToggle.toggle}/>
-				<InternalModalWrapper ref={bodyRef}>
+				<InternalModalWrapper>
 					<InternalModal>
 						<StyledExpand onClick={useToggle.toggle}/>
 						{children}
@@ -94,4 +93,4 @@ export default ({children, useToggle}) => {
 				</InternalModalWrapper>
 
 				</>, document.body) : null);
-};
+});
