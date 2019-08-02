@@ -27,7 +27,7 @@ const AppDescription = React.memo(props => {
 	const [isExpandable] = React.useState(description.length > MAX_DESCRIPTION_LENGTH);
 
 	return(
-		<div onClick={onClick}>
+		<div onClick={onClick} style={{marginTop:"1em"}}>
 			<Description>
 				{shortDescription}
 				{isExpandable &&
@@ -72,10 +72,12 @@ const AppPanel =  React.memo(props => {
 	return(
 		<>
 			<AppModal value={value} toggler={toggler}/>
-			<Panel style={{padding:0, minWidth:"235px"}} title={value.title}>
+			<Panel style={{padding:0, width:"235px"}} title={value.title}>
 				<StyledExpand title={"expand"} onClick={toggler.toggle}/>
 				<AppTitle>{value.name}</AppTitle>
-				<AppImage src={`${imageUrlBase}${value.logo}`}/>
+				<AppImageContainer>
+					<AppImage src={`${imageUrlBase}${value.logo}`}/>
+				</AppImageContainer>
 				<AppDescription description={value.description} onClick={toggler.toggle}/>
 				<UrlContainer>
 					{value.isAndroid &&

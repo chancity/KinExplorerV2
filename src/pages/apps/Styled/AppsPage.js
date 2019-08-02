@@ -34,9 +34,9 @@ export const AppsContainer = styled.div`
 	grid-gap: 15px;
 `;
 
-export const AppImageContainer = styled.span`
-    width: 158px;
-    height: 158px;
+export const AppImageContainer = styled.div`
+    width: 125px;
+    height: 125px;
     overflow: hidden;
     border-radius: 36px;
     align-self: center;
@@ -44,9 +44,9 @@ export const AppImageContainer = styled.span`
 
 export const AppImage = styled(LazyLoadImage)`
     transition: transform 0.25s ease-in 0s;
-    width: 7rem;
-    height: 7rem;
- 	transform: scale(1);
+    width: 125px;
+    height: 125px;
+ 	transform: scale(1.02);
     vertical-align: middle;
     border: none;
     background-color: transparent;
@@ -104,7 +104,7 @@ export const UrlContainer = styled.div`
 	width: 100%;
 	height: 100%;
     justify-content: center;
-    margin-bottom: 1em;
+    margin: 1em 0;
 	
 	svg{
 		width: 50px;

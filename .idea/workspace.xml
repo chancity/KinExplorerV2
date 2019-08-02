@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTableRows.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTableRows.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/apps/All.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/apps/All.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/apps/All.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationsTableBody.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="204">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -33,12 +42,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/explorer/Ledgers/LedgersTable.jsx">
+        <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="729">
+              <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/Blockchain/thunk.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+            <state relative-caret-position="66">
+              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding>
                 <element signature="e#0#143#0" expanded="true" />
               </folding>
@@ -92,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTableRows.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="527">
+              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -111,18 +120,6 @@
               <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,7 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rgba(0, 0, 0, 0.07)</find>
       <find>26, 26</find>
       <find>init</find>
       <find>&gt;tbody &gt; tr &gt; td</find>
@@ -181,6 +177,7 @@
       <find>keyframe</find>
       <find>200</find>
       <find>TableBody</find>
+      <find>setTimeout</find>
     </findStrings>
     <replaceStrings>
       <replace>@media (max-width: 55.5em)</replace>
@@ -222,10 +219,8 @@
         <option value="$PROJECT_DIR$/src/components/modal/useToggle.tsx" />
         <option value="$PROJECT_DIR$/src/components/modal/useToggle.js" />
         <option value="$PROJECT_DIR$/src/components/modal/StyledComponents.js" />
-        <option value="$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/containers/OperationsTable.jsx" />
         <option value="$PROJECT_DIR$/src/components/modal/Modal.js" />
-        <option value="$PROJECT_DIR$/src/pages/apps/All.js" />
         <option value="$PROJECT_DIR$/src/components/explorer/Operations/fade.css" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/containers/PaymentsTable.jsx" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/containers/OperationsTableBody.jsx" />
@@ -244,14 +239,16 @@
         <option value="$PROJECT_DIR$/src/components/explorer/TableData/AccountTd.jsx" />
         <option value="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx" />
         <option value="$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx" />
-        <option value="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTableBody.js" />
         <option value="$PROJECT_DIR$/src/components/explorer/Ledgers/LedgersTable.jsx" />
-        <option value="$PROJECT_DIR$/src/store/Blockchain/thunk.js" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTableRows.jsx" />
         <option value="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/reducers.js" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx" />
+        <option value="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTableBody.js" />
+        <option value="$PROJECT_DIR$/src/store/Blockchain/thunk.js" />
         <option value="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTableRows.jsx" />
+        <option value="$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/apps/All.js" />
       </list>
     </option>
   </component>
@@ -405,6 +402,13 @@
               <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
               <item name="playing-around" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playing-around" type="b2602c69:ProjectViewProjectNode" />
+              <item name="playing-around" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -531,21 +535,7 @@
       <workItem from="1564647127810" duration="43000" />
       <workItem from="1564647352922" duration="54000" />
       <workItem from="1564678183761" duration="355000" />
-      <workItem from="1564690039033" duration="46792000" />
-    </task>
-    <task id="LOCAL-00021" summary="idk">
-      <created>1564476823430</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1564476823430</updated>
-    </task>
-    <task id="LOCAL-00022" summary="idk">
-      <created>1564476967804</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1564476967804</updated>
+      <workItem from="1564690039033" duration="48579000" />
     </task>
     <task id="LOCAL-00023" summary="Cleanup cleanup everywhere">
       <created>1564518596146</created>
@@ -876,11 +866,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564743083453</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="added spinning of kin logo">
+      <created>1564744177372</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1564744177372</updated>
+    </task>
+    <task id="LOCAL-00071" summary="GC detached nodes plz">
+      <created>1564744996836</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1564744996836</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223090000" />
+    <option name="totallyTimeSpent" value="224877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
@@ -912,7 +916,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Redux store to handle UI changes" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="robots" />
     <MESSAGE value="meta data" />
@@ -937,7 +940,8 @@
     <MESSAGE value="send it" />
     <MESSAGE value="Removed spinner of kin logo" />
     <MESSAGE value="added spinning of kin logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="added spinning of kin logo" />
+    <MESSAGE value="GC detached nodes plz" />
+    <option name="LAST_COMMIT_MESSAGE" value="GC detached nodes plz" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/shared/FormattedAmount.js">
@@ -966,16 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/apps/All.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/modal/Modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -990,16 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="115" column="43" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,16 +1152,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layout/Table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="e#1#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationTypes/Inflation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1274,29 +1248,12 @@
     <entry file="file://$PROJECT_DIR$/src/components/explorer/TableData/TableHeader.jsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/explorer/TableData/TimeTd.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationsTableBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1311,32 +1268,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/Blockchain/thunk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/Blockchain/reducers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="712">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="e#0#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1371,12 +1308,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/explorer/TableData/TimeTd.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layout/Table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding>
+            <element signature="e#1#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/explorer/Operations/OperationsTableBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTableRows.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="527">
+          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/Blockchain/thunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/apps/Styled/AppsPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/apps/All.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
