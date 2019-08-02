@@ -7,8 +7,8 @@ import TransactionHash from "../../shared/TransactionHash";
 import AppData from "../../shared/AppData";
 import WithSpinner from '../../shared/WithSpinner'
 
-export const TransactionsTable =  React.memo(props => {
-	const {doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream} = props;
+export const TransactionsTable =  ({doStream, limit, loaded, records, startStream, cancelStream}) => {
+
 	React.useEffect(() => {
 		startStream("transactions", limit, true);
 
@@ -16,6 +16,8 @@ export const TransactionsTable =  React.memo(props => {
 			cancelStream("transactions");
 		}
 	}, [cancelStream, startStream, limit]);
+
+
 	React.useEffect(() => {
 		console.log("TransactionsTable Render")
 	}, []);
@@ -26,28 +28,25 @@ export const TransactionsTable =  React.memo(props => {
 			<PanelTable>
 				<TableHeader data={["#", "AppId", "Ledger", "Ops", "Time"]}/>
 				<TableBody>
-					{records.map((op, index) => (
-						<tr key={`${index}-tx-tr`}>
-							<td key={`${index}-tx-hash`}>
+					{records.map((op) => (
+						<tr key={op.hash}>
+							<td>
 								<TransactionHash hash={op.hash} compact={true}/>
 							</td>
-							<td key={`${index}-tx-memo`}>
+							<td>
 								<AppData memo={op.memo} compact={false}/>
 							</td>
-							<td key={`${index}-tx-navlink-td-ledger`}>
-								<NavLink key={`${index}-tx-navlink-ledger`}
-								         to={`/explorer/ledgers/${op.ledgerAttr}`}>{op.ledgerAttr}</NavLink>
+							<td>
+								<NavLink to={`/explorer/ledgers/${op.ledgerAttr}`}>{op.ledgerAttr}</NavLink>
 							</td>
-							<td key={`${index}-tx-navlink-td-ledger-tx`}>
-								<NavLink key={`${index}-tx-navlink-td-ledger-tx1`}
-								         to={`/explorer/transactions/${op.id}`}>{op.operationCount}</NavLink>
+							<td>
+								<NavLink to={`/explorer/transactions/${op.id}`}>{op.operationCount}</NavLink>
 							</td>
-							<TimeTd key={`${index}-tx-navlink-time`} render_time={parentRenderTimestamp}
-							        record_time={op.time}/>
+							<TimeTd render_time={op.parentRenderTimestamp} record_time={op.time}/>
 						</tr>
 					))}
 				</TableBody>
 			</PanelTable>
 		</WithSpinner>
 	);
-});
+};

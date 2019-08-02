@@ -7,7 +7,6 @@ import OperationsTableBody from "../../../store/Blockchain/containers/Operations
 import TableBody from "../TableData/TableBody";
 
 
-
 const desktop = ["Account", "Operation","Transaction","Type", "Time"];
 const mobile = ["Account", "Operation", "Time"];
 
@@ -16,6 +15,9 @@ const mobile = ["Account", "Operation", "Time"];
 
 export const OperationsTable = React.memo(props => {
 	const {doStream, limit, loaded, startStream, cancelStream, isMobile} = props;
+
+
+
 	React.useEffect(() => {
 		startStream("operations", limit);
 
@@ -27,11 +29,15 @@ export const OperationsTable = React.memo(props => {
 	React.useEffect(() => {
 		console.log("OperationsTable Render")
 	}, []);
+
+
+
 	return (
 		<WithSpinner loaded={loaded}>
 			<PanelTable>
 				<TableHeader data={isMobile ? mobile : desktop}/>
 				<TableBody>
+
 					<OperationsTableBody/>
 				</TableBody>
 			</PanelTable>

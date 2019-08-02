@@ -2,13 +2,18 @@ import Operation from "./OperationTypes/Operation";
 import * as React from "react";
 
 
-export const OperationsTableBody = React.memo(props => {
-	const {records, parentRenderTimestamp,isMobile} = props;
+const OperationWrapper = ({record, isMobile}) => {
 	return (
-		<>
-			{records.map((record, index) => (
-				<Operation key={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={isMobile}/>
-			))}
-		</>
+			<Operation op={record} parentRenderTimestamp={record.parentRenderTimestamp} compact={isMobile}/>
 	)
-});
+};
+export const OperationsTableBody = ({records,isMobile}) => {
+
+	return (
+			<>
+			{records.map((record) => (
+					<OperationWrapper key={record.id} record={record}  isMobile={isMobile}/>
+			))}
+			</>
+	)
+};

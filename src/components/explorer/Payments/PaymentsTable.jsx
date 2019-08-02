@@ -10,7 +10,7 @@ import WithSpinner from '../../shared/WithSpinner'
 const desktop = ["Account", "Payment","Transaction", "Type", "Time"];
 const mobile = ["Account", "Payment", "Time"];
 
-export const PaymentsTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream, isMobile}) => {
+export const PaymentsTable = ({doStream, limit, loaded, records, startStream, cancelStream, isMobile}) => {
 	React.useEffect(() => {
 		startStream("payments", limit);
 
@@ -29,8 +29,8 @@ export const PaymentsTable = ({doStream, limit, loaded, records, parentRenderTim
 			<PanelTable>
 				<TableHeader data={isMobile ? mobile : desktop}/>
 				<TableBody>
-					{records.map((record, index) => (
-						<Operation key={index} op={record} parentRenderTimestamp={parentRenderTimestamp} compact={isMobile}/>
+					{records.map((record) => (
+						<Operation key={record.id} op={record} parentRenderTimestamp={record.parentRenderTimestamp} compact={isMobile}/>
 					))}
 				</TableBody>
 			</PanelTable>

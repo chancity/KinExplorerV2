@@ -34,12 +34,12 @@ const cancelStreamErrorAction = (name, error) => ({
 	payload:{name: name, error}
 });
 
-const addRecordAction = (name, record, splice) => ({
+const addRecordAction = (name, record, limit) => ({
 	type: ADD_RECORD,
 	payload:{
 		record: record,
 		name: name,
-		splice: splice
+		limit: limit
 	}
 });
 

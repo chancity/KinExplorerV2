@@ -16,7 +16,6 @@ export default (state = initialState, action)  => {
 			stateCopy[action.payload.name] = {
 				records:[],
 				closeStream: undefined,
-				parentRenderTimestamp: undefined,
 				error: undefined,
 				loaded: false
 			};
@@ -45,22 +44,27 @@ export default (state = initialState, action)  => {
 				...stateCopy
 			};
 		case ADD_RECORD:
-
-			const newRecords = action.payload.record;
 			const recordsCopy = [...stateCopy[action.payload.name].records];
+			const record = action.payload.record;
 
-			newRecords.forEach(record => {
-				const insertIdx = recordsCopy.findIndex(rec => rec.pagingToken < record.pagingToken);
-				recordsCopy.splice(insertIdx, 0, record);
 
-				if(action.payload.splice) {
+			if(Array.isArray(record)) {
+				record.forEach((rec) => {
+					recordsCopy.splice(0, 0, rec);
+					if(recordsCopy.length >= action.payload.limit ) {
+						recordsCopy.splice(-1, 1);
+					}
+				});
+
+			} else {
+				recordsCopy.splice(0, 0, record);
+				if(recordsCopy.length >= action.payload.limit ) {
 					recordsCopy.splice(-1, 1);
 				}
-			});
+			}
 
 			stateCopy[action.payload.name].loaded =  true;
 			stateCopy[action.payload.name].records =  recordsCopy;
-			stateCopy[action.payload.name].parentRenderTimestamp = Date.now();
 
 			return {
 				...state,

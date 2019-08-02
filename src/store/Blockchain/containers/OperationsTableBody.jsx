@@ -4,7 +4,6 @@ import {OperationsTableBody as OperationsTableBodyC} from "../../../components/e
 const mapStateToProps = (state)=> {
 	return {
 		records: state.BC.hasOwnProperty('operations') ? state.BC['operations'].records || []  : [],
-		parentRenderTimestamp: state.BC.hasOwnProperty('operations') ? state.BC['operations'].parentRenderTimestamp || new Date()  : new Date(),
 		isMobile: state.UI.isMobile
 	}
 };

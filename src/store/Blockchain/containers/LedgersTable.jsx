@@ -6,7 +6,6 @@ const mapStateToProps = (state)=> {
 	return {
 		records: state.BC.hasOwnProperty('ledgers') ? state.BC['ledgers'].records || []  : [],
 		loaded: state.BC.hasOwnProperty('ledgers') ? state.BC['ledgers'].loaded || false  : false,
-		parentRenderTimestamp: state.BC.hasOwnProperty('ledgers') ? state.BC['ledgers'].parentRenderTimestamp || new Date()  : new Date(),
 	}
 };
 

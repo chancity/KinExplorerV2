@@ -5,7 +5,7 @@ import TableBody from "../TableData/TableBody";
 import TimeTd from "../TableData/TimeTd";
 import WithSpinner from '../../shared/WithSpinner'
 
-export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
+export const LedgersTable = ({doStream, limit, loaded, records, startStream, cancelStream}) => {
 
 	React.useEffect(() => {
 		startStream("ledgers", limit, false);
@@ -30,7 +30,7 @@ export const LedgersTable = ({doStream, limit, loaded, records, parentRenderTime
 							<td>
 								{op.transactionCount}
 							</td>
-							<TimeTd render_time={parentRenderTimestamp} record_time={op.time}/>
+							<TimeTd render_time={op.parentRenderTimestamp} record_time={op.time}/>
 						</tr>
 					))}
 				</TableBody>

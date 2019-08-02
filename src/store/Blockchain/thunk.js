@@ -5,10 +5,11 @@ import omit from 'lodash/omit'
 
 const formatRecord  = (record) => {
 	record.time = record.created_at || record.closed_at;
+	record.parentRenderTimestamp = Date.now();
 	const camelCasedRecord = mapKeys(record, (v, k) => camelCase(k));
 	return omit(camelCasedRecord, ['links']);
 }
-export const startStream = (caller, limit, delay=true) => async (dispatch, getState, {api}) => {
+export const startStream = (caller, limit) => async (dispatch, getState, {api}) => {
 	const {BC} = getState();
 	if(BC.hasOwnProperty(caller)){
 		dispatch(startStreamErrorAction(caller,"only one stream at a time is allowed"));
@@ -21,23 +22,21 @@ export const startStream = (caller, limit, delay=true) => async (dispatch, getSt
 		.call();
 
 	const data = await okay.prev();
-
+	const formatedRecords = [];
 	data.records.forEach(record =>{
-		dispatch(addRecordAction(caller,[formatRecord(record)] , false));
+		formatedRecords.push(formatRecord(record));
 	});
+
+	dispatch(addRecordAction(caller, formatedRecords , limit));
 
 	const pagingToken = data.records[0].paging_token;
 	const es = await api[caller]()
 			.cursor(pagingToken)
-			.limit(limit)
+			.limit(Math.round(limit))
 			.order('asc')
 			.stream({
 				onmessage: (record => {
-					if(delay) {
-						onMessage.call(null, formatRecord(record), dispatch, caller, true, limit)
-					} else {
-						dispatch(addRecordAction(caller,[formatRecord(record)] , true));
-					}
+						dispatch(addRecordAction(caller, formatRecord(record) , limit));
 
 				}),
 				onerror: onStreamError
@@ -46,27 +45,6 @@ export const startStream = (caller, limit, delay=true) => async (dispatch, getSt
 	dispatch(startStreamSuccessAction(caller, es));
 };
 
-const records = {};
-function onMessage(record, dispatch, caller, splice, limit) {
-	const what = records[caller] ||  ( records[caller] = {});
-	const _records = what.records || (what.records = []);
-
-	_records.push(record);
-
-	clearTimeout(what.clear);
-
-	what.clear = setTimeout(function(){
-			dispatch(addRecordAction(caller, what.records , splice));
-			what.records.length = 0;
-		},
-		500);
-
-	if(what.length >= limit) {
-		dispatch(addRecordAction(caller, what, splice));
-		what.length = 0;
-	}
-
-};
 
 const onStreamError = (error)  => {
 	//console.error(error)
@@ -74,8 +52,9 @@ const onStreamError = (error)  => {
 
 export const cancelStream = (caller) => async (dispatch, getState) => {
 	const {BC} = getState();
-	if(BC.hasOwnProperty(caller)){
-	//	BC[caller].closeStream();
+	if(BC.hasOwnProperty(caller) &&	BC[caller].closeStream){
+
+		BC[caller].closeStream();
 	}
 	dispatch(cancelStreamSuccessAction(caller));
 };

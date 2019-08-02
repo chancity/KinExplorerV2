@@ -1,6 +1,15 @@
-import styled from 'styled-components/macro'
-import {Link} from "react-router-dom";
 
+import {Link} from "react-router-dom";
+import styled, { keyframes } from 'styled-components/macro'
+
+const fadeIn = keyframes`
+  0% {
+   	background-color: rgba(0,0,0,.1);
+  }
+  100% {
+    background-color: inherit;
+  }
+`;
 
 export const PanelTable = styled.table`
     table-layout: fixed;
@@ -37,9 +46,12 @@ export const PanelTable = styled.table`
 	>tbody>tr:first-of-type>td {
 	    border-top: unset;
     }
+    > tbody > tr {
+       animation:  1s ${fadeIn}  ease-in-out;   
+    }
     tr{
         margin: 0!important;
-    	min-height: 60px;   
+    	min-height: 60px;
     }
     >tbody>tr{  
     	:hover {
