@@ -13,7 +13,6 @@ const getId = (caller) => {
 		newId = 0;
 
 	bettaId[caller] = newId;
-	console.log(`${caller} id is ${newId}`);
 	return newId;
 };
 const formatRecord  = (caller,record) => {
