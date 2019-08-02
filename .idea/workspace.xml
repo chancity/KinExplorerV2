@@ -3,23 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6272040-e0a2-465c-8c99-d4cc811c33b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/explorer/Ledgers/LedgersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explorer/Ledgers/LedgersTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTableBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explorer/Operations/OperationsTableBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/explorer/TableData/TimeTd.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explorer/TableData/TimeTd.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/containers/LedgersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/containers/LedgersTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/containers/OperationsTableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/containers/OperationsTableBody.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/containers/PaymentsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/containers/PaymentsTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Blockchain/thunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Blockchain/thunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/Blockchain/thunk.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="714">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#143#0" expanded="true" />
               </folding>
@@ -58,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="68">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
@@ -68,45 +52,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/Blockchain/types.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/Blockchain/reducers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
+            <state relative-caret-position="776">
               <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
               <folding>
                 <element signature="e#0#182#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/Blockchain/actions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#0#182#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/explorer/Overview.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,6 +76,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -133,11 +98,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="442">
+              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/explorer/Ledgers/LedgersTable.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -243,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/store/Blockchain/containers/LedgersTable.jsx" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx" />
         <option value="$PROJECT_DIR$/src/components/explorer/Ledgers/LedgersTable.jsx" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/explorer/TableData/TimeTd.jsx" />
         <option value="$PROJECT_DIR$/src/components/explorer/Payments/PaymentsTable.jsx" />
         <option value="$PROJECT_DIR$/src/layout/Table.js" />
@@ -254,9 +230,10 @@
         <option value="$PROJECT_DIR$/src/pages/explorer/Transactions.jsx" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/actions.js" />
         <option value="$PROJECT_DIR$/src/store/Blockchain/reducers.js" />
-        <option value="$PROJECT_DIR$/src/store/Blockchain/thunk.js" />
-        <option value="$PROJECT_DIR$/src/store/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx" />
+        <option value="$PROJECT_DIR$/src/store/index.jsx" />
+        <option value="$PROJECT_DIR$/src/store/Blockchain/thunk.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -534,21 +511,7 @@
       <workItem from="1564647127810" duration="43000" />
       <workItem from="1564647352922" duration="54000" />
       <workItem from="1564678183761" duration="355000" />
-      <workItem from="1564690039033" duration="40423000" />
-    </task>
-    <task id="LOCAL-00017" summary="unused import">
-      <created>1564431579612</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1564431579612</updated>
-    </task>
-    <task id="LOCAL-00018" summary="unused import">
-      <created>1564433035675</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1564433035675</updated>
+      <workItem from="1564690039033" duration="42297000" />
     </task>
     <task id="LOCAL-00019" summary="unused import">
       <created>1564433119497</created>
@@ -879,11 +842,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564727952458</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added spinning of kin logo">
+      <created>1564737913579</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1564737913580</updated>
+    </task>
+    <task id="LOCAL-00067" summary="added spinning of kin logo">
+      <created>1564739334010</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1564739334010</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216721000" />
+    <option name="totallyTimeSpent" value="218595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
@@ -893,6 +870,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32969603" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33047545" />
@@ -904,7 +882,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32969603" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.16913484" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.16913484" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -942,9 +920,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="added spinning of kin logo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/static/images/gemkin2.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/apps/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1002,16 +977,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/static/images/kin/kin-logo-purple.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/TransactionHash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/apps/util.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1195,13 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/explorer/TableData/TimeTd.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1215,16 +1173,6 @@
           <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding>
             <element signature="e#1#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/explorer/Ledgers/LedgersTable.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1315,22 +1263,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/Blockchain/reducers.js">
+    <entry file="file://$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/TransactionHash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding>
-            <element signature="e#0#182#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/explorer/Ledgers/LedgersTable.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/Blockchain/thunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/Blockchain/reducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1345,30 +1340,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/Blockchain/containers/TransactionsTable.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/Blockchain/thunk.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/explorer/Transactions/TransactionsTable.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
         </state>
       </provider>
     </entry>
