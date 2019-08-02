@@ -57,6 +57,7 @@ export default (state = initialState, action)  => {
 				});
 
 			} else {
+
 				recordsCopy.splice(0, 0, record);
 				if(recordsCopy.length >= action.payload.limit ) {
 					recordsCopy.splice(-1, 1);

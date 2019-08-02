@@ -23,7 +23,7 @@ export const LedgersTable = ({doStream, limit, loaded, records, startStream, can
 			<TableHeader data={["#", "Transactions", "Time"]}/>
 				<TableBody>
 					{records.map((op) => (
-						<tr key={op.id}>
+						<tr key={op.bettaId.toString()}>
 							<td>
 								<NavLink to={`/explorer/ledgers/${op.sequence}`}>{op.sequence}</NavLink>
 							</td>

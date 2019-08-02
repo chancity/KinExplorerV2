@@ -13,10 +13,7 @@ const mobile = ["Account", "Operation", "Time"];
 
 
 
-export const OperationsTable = React.memo(props => {
-	const {doStream, limit, loaded, startStream, cancelStream, isMobile} = props;
-
-
+export const OperationsTable = ({doStream, limit, loaded, startStream, cancelStream, isMobile}) => {
 
 	React.useEffect(() => {
 		startStream("operations", limit);
@@ -37,11 +34,10 @@ export const OperationsTable = React.memo(props => {
 			<PanelTable>
 				<TableHeader data={isMobile ? mobile : desktop}/>
 				<TableBody>
-
 					<OperationsTableBody/>
 				</TableBody>
 			</PanelTable>
 		</WithSpinner>
 	);
-});
+};
 

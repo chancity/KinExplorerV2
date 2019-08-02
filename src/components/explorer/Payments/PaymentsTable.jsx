@@ -30,7 +30,7 @@ export const PaymentsTable = ({doStream, limit, loaded, records, startStream, ca
 				<TableHeader data={isMobile ? mobile : desktop}/>
 				<TableBody>
 					{records.map((record) => (
-						<Operation key={record.id} op={record} parentRenderTimestamp={record.parentRenderTimestamp} compact={isMobile}/>
+						<Operation key={record.bettaId.toString()} op={record} parentRenderTimestamp={record.parentRenderTimestamp} compact={isMobile}/>
 					))}
 				</TableBody>
 			</PanelTable>

@@ -3,12 +3,30 @@ import camelCase from 'lodash/camelCase'
 import mapKeys from 'lodash/mapKeys'
 import omit from 'lodash/omit'
 
-const formatRecord  = (record) => {
+
+const bettaId = {};
+const getId = (caller) => {
+	const currentId = bettaId[caller] || 0;
+	let newId = currentId + 1;
+
+	if(newId > 50)
+		newId = 0;
+
+	bettaId[caller] = newId;
+	console.log(`${caller} id is ${newId}`);
+	return newId;
+};
+const formatRecord  = (caller,record) => {
+
+
 	record.time = record.created_at || record.closed_at;
+	record.bettaId = getId(caller);
 	record.parentRenderTimestamp = Date.now();
+
+
 	const camelCasedRecord = mapKeys(record, (v, k) => camelCase(k));
 	return omit(camelCasedRecord, ['links']);
-}
+};
 export const startStream = (caller, limit) => async (dispatch, getState, {api}) => {
 	const {BC} = getState();
 	if(BC.hasOwnProperty(caller)){
@@ -24,7 +42,7 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 	const data = await okay.prev();
 	const formatedRecords = [];
 	data.records.forEach(record =>{
-		formatedRecords.push(formatRecord(record));
+		formatedRecords.push(formatRecord(caller,record));
 	});
 
 	dispatch(addRecordAction(caller, formatedRecords , limit));
@@ -36,7 +54,7 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 			.order('asc')
 			.stream({
 				onmessage: (record => {
-					dispatch(addRecordAction(caller, formatRecord(record) , limit));
+					dispatch(addRecordAction(caller, formatRecord(caller,record) , limit));
 				}),
 				onerror: onStreamError
 			});
