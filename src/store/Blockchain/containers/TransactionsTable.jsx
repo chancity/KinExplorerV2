@@ -4,7 +4,6 @@ import {cancelStream, startStream} from "../thunk";
 
 const mapStateToProps = (state)=> {
 	return {
-		records: state.BC.hasOwnProperty('transactions') ? state.BC['transactions'].records || []  : [],
 		loaded: state.BC.hasOwnProperty('transactions') ? state.BC['transactions'].loaded || false  : false,
 	}
 };

@@ -64,7 +64,8 @@ export default (state = initialState, action)  => {
 				}
 			}
 
-			stateCopy[action.payload.name].loaded =  true;
+			if(!stateCopy[action.payload.name].loaded)
+				stateCopy[action.payload.name].loaded =  true;
 			stateCopy[action.payload.name].records =  recordsCopy;
 
 			return {
