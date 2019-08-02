@@ -67,7 +67,10 @@ a {
 audio, canvas, iframe, img, svg, video {
   vertical-align: middle;
 }
-
+img {
+  vertical-align: middle;
+  border-style: none;
+}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -80,7 +83,7 @@ svg{
 }
 *, ::after, ::before {
   background-repeat: no-repeat;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 button, input, select {

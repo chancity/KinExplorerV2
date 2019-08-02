@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { ReactComponent as Expand } from '../../../static/images/layout/expand.svg';
 
 export const AppCategoryContainer = styled.div`
 	overflow: auto;
@@ -9,14 +10,18 @@ export const AppCategoryContainer = styled.div`
 export const AppCategorySliderContainer = styled.div`
 	display: grid;
 	overflow: auto;
-	grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+	grid-template-columns: repeat(auto-fit, 235px);
 	grid-gap: 15px;
-	justify-content: left;
+
 	padding: 0 20px  20px 0;
 	margin: 0;
+	justify-content: left;
+    justify-items: left;
 	@media (max-width: 62.5em) {
 		overflow: hidden;
-		grid-template-columns: unset;
+		overflow-y: scroll;
+		height: 100%;
+  		-webkit-overflow-scrolling: touch;
 		grid-auto-flow: column dense;
 		width: max-content;
 
@@ -29,45 +34,54 @@ export const AppsContainer = styled.div`
 	grid-gap: 15px;
 `;
 
-export const AppImageContainer = styled.div`
-    position: relative;
-    width: 180px;
-    height: 180px;
-    z-index: 0;
+export const AppImageContainer = styled.span`
+    width: 158px;
+    height: 158px;
     overflow: hidden;
-    margin: 18px;
-    border-image: initial;
-    border-radius: 36px;   
-`;
-
-export const AppImage = styled.img`
-    transform: scale(1);
-	background-size: cover;
-	background-position: center center;
-    transition: transform 0.25s ease-in 0s;
-    width: 100%;
-    height: 100%;
- 
-`;
-
-export const AppContainer = styled.div`
-	display: grid;
-	grid-auto-flow: row dense;
-    border-color: rgba(151, 151, 151, 0.4);
-    border-image: initial;
     border-radius: 36px;
-    justify-content: center;
-    text-align: center;
-    height: min-content;
-    ${AppImage}:hover {
-        display: block;
-	    z-index: 100;
+    align-self: center;
+`;
+
+export const AppImage = styled(LazyLoadImage)`
+    transition: transform 0.25s ease-in 0s;
+    width: 7rem;
+    height: 7rem;
+ 	transform: scale(1);
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+        border-radius: 36px;
+        align-self: center;
+    :hover {
+    	display: block;
 	    transform: scale(1.1);
+        z-index: 100;
     }
 `;
+
 export const AppTitle = styled.h3`
 	color: #b9bbbe;
+	align-self: center;
+	margin-top: 0;
 
+`;
+
+export const Description = styled.p`
+	text-align: center;
+	height: 90px;
+	padding: 0 5px;
+`;
+
+export const Readmore = styled.a`
+	color: #936BFB;
+	text-align: center;
+	:hover{
+		color: rgb(91,60,171) !important;
+		cursor: pointer;
+		text-decoration: underline;
+	}
 `;
 
 export const Url = styled.a`
@@ -79,20 +93,34 @@ export const Url = styled.a`
 	grid-gap: 5px;
    transition: transform 0.25s ease-in 0s;
 	:hover{
-		transform: scale(1.1);
+	
 		color: #79848a;
 	}	
 `;
 export const UrlContainer = styled.div`
 	display: grid;
 	grid-auto-flow: column;
-	grid-gap: 10px;
+	grid-gap: 45px;
 	width: 100%;
-	height: 100px;
+	height: 100%;
+    justify-content: center;
+    margin-bottom: 1em;
 	
 	svg{
 		width: 50px;
-    	height: 50px;
+    	height: auto;
     	justify-self: center;
+	}
+`;
+
+export const StyledExpand = styled(Expand)`
+	height: 16px;
+	width: 16px;
+    margin: 5px;
+	transition: all .5s;
+	cursor:pointer;
+	align-self: flex-end;
+	:hover{
+		fill: #4f545c;
 	}
 `;

@@ -1,0 +1,487 @@
+[
+	{
+		"title": "Communication & Social",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.aipcsoft.gochallengeme",
+				"logo": "ki7kNnam0yUBmduRCzli2T-wJVI3F1Gv1tDM3wJo5KwDjTze4tgt57BDDKaycA2jnw=s360-rw.webp",
+				"description": "GoChallenge.me is a social platform that is incentivizing people to achieve their goals through competition and accountability. ",
+				"title": "Social platform that is incentivizing people to achieve their goals",
+				"name": "GoChallenge.me"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=spaced.kindred.app",
+				"logo": "wmA2pUHmbT2li-O37rnfInHolcF2nDIvsbUe6mhV2JCA--4Sqm7Mo44i8uq7t98-lUuQ=h180.png",
+				"description": "Kindred is a social driven app where interaction between users is rewarded with Kin. It’s core mechanic is enabling you to find and meet other people in real life in your local area.",
+				"title": "Social driven app where interaction between users is rewarded with Kin",
+				"name": "Kindred"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=kinnyco.kinnyapp",
+				"logo": "kinny_icon-1.png",
+				"description": "Send and receive Kin on social media and earn Kin in the Kinny app.",
+				"title": "Kinny",
+				"name": "Kinny",
+				"isIos": true,
+				"iosUrl": "https://apps.apple.com/us/app/kinny/id1426150699"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.thematchmakerapp",
+				"logo": "cMQ8CSTm7Bnwqf8Mo7QXjjeq-7c5oS5eonvLLsr8Q1UhBfOvlyeSOT7_4rhwo6kmRK8=s360-rw.webp",
+				"description": "Test your matchmaking skills by deciding whether two people will be a good couple or not. If you're right, you win. If you're wrong, you lose.",
+				"title": "Test your matchmaking skills",
+				"name": "Matchmaker"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.synergetechsolutions.nearbylive",
+				"logo": "vYPm7KNs4e-pqUd446K5ndNdSPkvXfj3SzK3fyF2U97JI8OJv1XncnuL__16X58HrOKd=s360-rw.webp",
+				"description": "Nearby is a social network that helps you meet new people near you.",
+				"title": "Meet new people nearby",
+				"name": "Nearby"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=app.reveald.reveald",
+				"logo": "sYqjFw1yTpZ4H1KvOvzoeQaGcEOSKv4I2ctVXzYfD-4XdPcLLg79W_dzPfS6pKP0EQ=s360-rw.webp",
+				"description": "Reveald is a new free dating app where you have to flip through local singles before their pictures are fully revealed! ",
+				"title": "Meet someone new",
+				"name": "Reveald"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.wemesh.android",
+				"logo": "K4CualWGL9b7zaqbT3cQsdORlJx_XR-O9W-qQnvhQhRCnqnXtnmKQ1xDkh5yKJqxpdSP=s360-rw.webp",
+				"description": "Everything is more fun with friends. Whether it's the latest Netflix show, or the hottest music video on YouTube, sync up with Rave and never watch alone again.",
+				"title": "Netflix & YouTube with friends",
+				"name": "Rave"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.vent&hl=en",
+				"logo": "irCKdYt7yTkBngsXhwuXuVaYRX8-v1JL6WEDBaHCj-cA_BsaBVfuarMwGvsjeXevclo=s360-rw.webp",
+				"description": "Vent is like a social diary, a place for you to express how you REALLY feel. \n\n        Vent helps you connect to a fun, uplifting, positive, and understanding community, making it easy to share your feelings with people around the world and lift your mood! ",
+				"title": "Express yourself freely",
+				"name": "Vent"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.troutloud.dvel&hl=en_US",
+				"logo": "cGFGq7wRU81rtzJ9SNZAZVIM4W2FZDYBXcIpwknl8phOOimvXW213DAS26u39Pi7=s180-rw-1.webp",
+				"description": "Swelly keeps their survey/feedback exchange as simple as possible with a standardized image based ‘this or that’ format, which is called a ‘Swell’. Both brands and users can create Swells and post them publicly, or to specific targets, in order to crowdsource opinions. With Kin, users can crowdsource quicker by featuring their Swells with a Kin reward that's given to users who engage with the Swell. User can also gift others for high quality swells and can use their Kin to purchase a 5 euro coupon for a leading retail brand. ",
+				"title": "Swelly provides a platform for Gen Z and millennials to crowdsource opinions for their daily decision making.",
+				"name": "Swelly",
+				"isIos": true,
+				"iosUrl": "https://itunes.apple.com/us/app/swelly-whats-your-opinion/id1082808642?mt=8"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.quoord.tapatalkpro.activity&hl=en_US",
+				"logo": "Rj-xXVWUsnq3TPxIxiUnsQ9SPW2REg2VI60bopvTPGzc67nQiVkvT5lpdfi_lkWNCw=s180-rw-1.webp",
+				"description": "Taptalk allows forum owners and members across the world to engage with multiple forums simultaneously through one dedicated platform. Tapatalk empower their onboarding process by using Kin as a reward for users first steps within the app - essentially guiding them towards forums and communities that they'd love.",
+				"title": "Tapatalk is the \"mobile home\" to over 200,000 online forums worldwide.",
+				"name": "Tapatalk",
+				"isIos": true,
+				"iosUrl": "https://itunes.apple.com/us/app/tapatalk-200-000-forums/id307880732?mt=8"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=kik.android&hl=en",
+				"logo": "eM5gWdpF7jihE9GmI5xeexqQzCJJg9X91ctpm4yw7XkXKapJgS4ERyV4X_g5tW4fjVYo=s180-rw.webp",
+				"description": "Kik is the best way to connect with friends. It's a chat platform built especially for teens and as a clear leader in chatbots, Kik is a central hub for everyday life for teens across the world.",
+				"title": "Kik is an industry leading chat platform built especially for teens and a clear leader in chatbot experiences.",
+				"name": "Kik"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=il.co.moveo.find.people",
+				"logo": "find-icon.png",
+				"description": "Find is a diverse community of open-minded people looking to discover new friends. ",
+				"title": "Find",
+				"name": "Find"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.imgvue.android",
+				"logo": "imgvue_icon.png",
+				"description": "imgvue is a content-sharing service that rewards creators for their creativity and passion.",
+				"title": "imgvue",
+				"name": "imgvue"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.uds.jokeapp",
+				"logo": "justjoking_icon.png",
+				"description": "Joke sharing app",
+				"title": "Just Joking",
+				"name": "Just Joking"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.trymoi",
+				"logo": "trymoi_icon.png",
+				"description": "Dare social media app for daring friends.",
+				"title": "Trymoi",
+				"name": "Trymoi"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.ibrahim.kin.kard",
+				"logo": "kard_icon.png",
+				"description": "Send virtual cards and Kin to friends and family.",
+				"title": "Kard",
+				"name": "Kard"
+			},
+			{
+				"isIos": true,
+				"iosUrl": "https://itunes.apple.com/gb/app/thisthat/id1439596187?mt=8",
+				"logo": "246x0w-1.jpeg",
+				"description": "Share opinions and make instant decisions. Take a picture, add a question, send it to your friends and/or the public, let them vote, and see what popular opinion is.",
+				"title": "Share opinions and make instant decisions",
+				"name": "ThisThat"
+			}
+		]
+	},
+	{
+		"title": "Education",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.kinguist",
+				"logo": "jFTl-oaiha6U91Qni9___9e2_Ci6NMsY_qkGUnR-BLTZTNyzI-5L-T22b-eqT_SGnA=s360-rw.webp",
+				"description": "Kinguist is a community-driven ecosystem of learning packs and challenges - teach yourself a new language while helping others learn your native tongue.",
+				"title": "Community-driven ecosystem of learning",
+				"name": "Kinguist"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.syngli.androidapp",
+				"logo": "YAZc1ePjc4i5EjAwCJd1VLN9_2zuk10ug53IKvkNzIIci_4LASg0OomJrpmZ2e0G3yM=s360-rw.webp",
+				"description": "Syngli is an educational tool that harnesses both findings about human learning from cognitive neuroscience, and the power of the web to enable collaborative knowledge generation.",
+				"title": "AI-based education platform that empowers teachers and learning alike",
+				"name": "Syngli"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=kin.sdk.sample",
+				"logo": "sxlve_icon.png",
+				"description": "Incentivized homework solution app where KIN facilitates the exchange of homework solutions between askers and experts with KIN.",
+				"title": "Sxlve",
+				"name": "Sxlve"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=ltd.vblago.subti&hl=en",
+				"logo": "subti-logo.png",
+				"description": "A new and easy way to learn a language using film. Earn KIN by learning a certain amount of new words per day, using the app daily, watching ads and inviting new users. Use KIN to buy subtitles for new films/series.",
+				"title": "Subti",
+				"name": "Subti"
+			}
+		]
+	},
+	{
+		"title": "Gaming",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.darkVoodoo.castleRushAR",
+				"logo": "fIIPyBPglfrwmc3yvBaIJ0Y1gvvmoxUCZsfQRxrZYZQcdcxX6i5lI0OV1fvLNlsD2fuC=s180-rw.webp",
+				"description": "Castle Rush AR is an augmented reality collectible card game. How to earn Kin: Destroy your opponent's castle to win the game and get rewarded in cards and Kin. How to spend Kin: Purchase additional cards to play with.",
+				"title": "Castle Rush AR is an augmented reality collectible card game.",
+				"name": "Castle Rush AR"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=cz.ackee.rps",
+				"logo": "_YhWj27k8uQ3vZSk_feoMGXDV6-j5Bjn43kGCVXAJ_wcwPUKxtN3tJnnhGEsOWl5lg=s360-rw.webp",
+				"description": "Play Rock Paper Scissors with your friends over the Facebook Messenger!",
+				"title": "Rock Paper Scissors with your friends",
+				"name": "RPS for Messenger"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.kinapp.kinapp&hl=en",
+				"logo": "78ibkdP0ooP3eSGh_z6bGMsLSs9FjClctenmWLJKhGENGHFTsEprzQ-GRkQvtIoe1A=s360-rw.webp",
+				"description": "Trivia Clan is a daily single-elimination trivia competition where users compete for a grand prize of Kin.",
+				"title": "Daily single-elimination trivia competition",
+				"name": "Trivia Clan"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.smiletime.android",
+				"logo": "ppV99ahYzck97DSZ2uUnjjQQi-1GLStSooArt7cT_1cgnQoX6tDBKN5ar6fGLIbz5vY=s360-rw.webp",
+				"description": "During Game Night, contestants compete in skill-based games for cash prizes. ",
+				"title": "Video app that lets users compete with others on live video",
+				"name": "Pop.in",
+				"isIos": true,
+				"iosUrl": "https://play.google.com/store/apps/details?id=com.smiletime.android"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=nu.planets.android",
+				"logo": "planetnu_icon.png",
+				"description": "A space strategy game where KIN incentivizes players to keep playing.\n",
+				"title": "Planets Nu",
+				"name": "Planets Nu"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.speedgenius",
+				"logo": "speedgenius_icon-1.png",
+				"description": "Speed Trivia game where KIN incentivizes being correct quickly.",
+				"title": "Speed Genius: Speed Trivia",
+				"name": "Speed Genius",
+				"isIos": true,
+				"iosUrl": "https://apps.apple.com/us/app/speed-genius-speed-trivia/id1472190345"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=io.peerbet.peerbet",
+				"logo": "peerbet_icon-1.png",
+				"description": "Free social betting app that lets you place bets in KIN against your friends and other players.",
+				"title": "PeerBet",
+				"name": "PeerBet",
+				"isIos": true,
+				"iosUrl": "https://apps.apple.com/gb/app/peerbet/id1441354291"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.kieriantechnologies.bettapoint",
+				"logo": "bettapoint_icon.png",
+				"description": "Bettapoint is a community-based sports prediction and gaming platform where players compete and earn money based on their playing and prediction skills. KIN will be Bettapoint’s crypto alternative prediction & reward currency.",
+				"title": "Bettapoint",
+				"name": "Bettapoint"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.kinlabs.tinyted2",
+				"logo": "tinyted_icon.png",
+				"description": "In Tiny Ted the player controls a jetpack character and tries to fly between orange pipes without hitting them. Earn KIN by eating Kin coins during flight and then spend your KIN on consumables, power-ups and different characters.",
+				"title": "Tiny Ted",
+				"name": "Tiny Ted"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.vbgames.SubwayMotoSurfers",
+				"logo": "subwayscooter-icon-1.png",
+				"description": "Carlyle the Cat is back for the holidays and this time he is more crazy than ever! He has stolen the candy to take back to his horde. Your mission is to dodge the subway obstacles and jump, roll, duck, dive, shoot and fly your way to a new all-time high score! Earn Kin by finding Gold Keys and spend Kin to extend your game.",
+				"title": "Subway Scooter Surf",
+				"name": "Subway Scooter Surf"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.oneminja.catpurse",
+				"logo": "Catpurse-icon.png",
+				"description": "It’s the 60s, a time of art, love, and sneaks.\n\nThe Man With No Color enlists Catpurse, the world’s greatest cat burglar, to steal the most valuable pop art in the country.\n\nThey work their way up to the creme de la creme of art: a one of a kind art piece by none other than Andy Walrus, the pope of pop art himself. No one knows what it is yet.\n\nCatpurse must steal it at its unveiling, right under everyone’s noses. The press will be electric. The security stifling.\n\nCan Catpurse get to it? Can he avoid capture and take home the prize piece, whatever it is? Most of all, can he trust this mysterious Man With No Color?",
+				"title": "Catpurse in: \"Pop Art Peril!\"",
+				"name": "Catpurse in: \"Pop Art Peril!\""
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=biz.ideus.rentomania",
+				"logo": "rentomania-icon.png",
+				"description": "Welcome to the modern multiplayer online game Rentomania, where you have to build your businesses monopoly and make strategic decisions in order to win! Available in single and multiplayer modes! Earn KIN by winning and use KIN to get new dice and player tokens.",
+				"title": "Rentomania - 3d online board game",
+				"name": "Rentomania"
+			}
+		]
+	},
+	{
+		"title": "Health & Fitness",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=app.kinetik",
+				"logo": "1dPnLPUkjWpFuuCY3LAlR71ByNLnJ8aQ1DikEU0vRrRkhUCgP3eYly5YSO38_snSne3P=h180.png",
+				"description": "- Meet challenges and earn KIN cryptocurrency.\n        - Connect with like-minded friends.\n        - Encourage & challenge each other.",
+				"title": "Motivate yourself and others to live a healthier lifestyle with challenges",
+				"name": "Kinetik"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.kinfit",
+				"logo": "kinfit_icon.png",
+				"description": "Pedometer based app that rewards users with KIN for walking, and becoming and staying active.",
+				"title": "KinFit",
+				"name": "KinFit"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.kinpossible.stepandspend",
+				"logo": "stepspend_icon.png",
+				"description": "Improve your health and earn KIN every step of the way. KIN will help incentivize walking, health and fitness. End users will earn KIN primarily through walking and be tipped with KIN by other users for achieving walking goals.",
+				"title": "Step And Spend",
+				"name": "Step And Spend"
+			},
+			{
+				"isIos": true,
+				"iosUrl": "https://itunes.apple.com/us/app/pause-for/id1293407815?mt=8",
+				"logo": "246x0w.jpeg",
+				"description": "Pause For is a productivity app, built to help users focus on their tasks while earning digital currency for their chosen charities. Choose your own cause and turn time spent on-task and off your phone into hot meals, planted trees, or animal vaccinations! ",
+				"title": "Give to your favorite charities by taking a break from your phone",
+				"name": "Pause For"
+			}
+		]
+	},
+	{
+		"title": "News & Entertainment",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=madlipz.eigenuity.com&hl=en",
+				"logo": "nc_FiMDi9laTBy_O5xHdRm4OCy3iKqYEePNngPcIggVR_AA6Md79_Q-8yMr3Mh7ayGg=s180-rw-1.webp",
+				"description": "MadLipz is a social platform that allows users to create humorous sub and dub videos based on pop culture videos. MadLipz uses Kin to empower their onboarding process by rewarding their users for their first actions within the app. Users could also gift users for creating high quality content, and earn Kin through the Kin marketplace.",
+				"title": "MadLipz is a social platform that allows users to create humorous sub and dub videos based on pop culture videos",
+				"name": "MadLipz",
+				"isIos": true,
+				"iosUrl": "https://itunes.apple.com/us/app/madlipz-instant-dub-and-sub/id1056224570?mt=8"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=org.kinecosystem.kinit",
+				"logo": "EieddA3w7WZSo6WF__wIqf684rS1Vepj0Zp16yvwNUohi4Q6Q7dQHalBI5UxKbsy37_Z=s180-rw.webp",
+				"description": "Kinit is a fun, easy way to earn Kin, a new cryptocurency made for your digital life. Earning Kin is just like playing a game, only better, because you get rewarded for completing fun daily activities like surveys, quizzes and more.",
+				"title": "Fun way to earn Kin.",
+				"name": "Kinit",
+				"isIos": true,
+				"iosUrl": "https://itunes.apple.com/us/app/kinit/id1401266070?mt=8"
+			}
+		]
+	},
+	{
+		"title": "Tools",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.appwise.kingvpn",
+				"logo": "P5nGBqxYjezHRN6dNuyirhn994UW9Raa31qS-WpElJpr6f42RCu91iNXtrP5TPgGfPE6=s360-rw.webp",
+				"description": "King VPN is the most secure and fastest way to connect the world from wherever you are. It is the best proxy VPN client for WiFI security, anonymity, privacy protection and to access sites. The app offers free VPN and you can earn more bandwidth as you complete in app promotions.",
+				"title": "Secure and fast way to connect the world from wherever you are",
+				"name": "King VPN"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.meamobile.photomailjoy",
+				"logo": "MKMlhhw8BUNqi77NjO4DqjjJbLbJvPBrO6PwS-hZiN0Mw4Mld2FYlStCsfmi4-bnWjs=s360-rw.webp",
+				"description": "Print Pictures from Google, Facebook, Instagram, Dropbox, Picasa & More. Your Photos - Delivered to Your Home - Direct from your Phone. Now with Kin Blockchain Token Support!",
+				"title": "Order photo prints from your phone",
+				"name": "Photo Mail Joy"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.wicrypt.app",
+				"logo": "O9xAD3G19vpLEdgechFjap0hgPFanmUQrbIxug3EC8STc7md5D0-KyITjvFcF74Ol5M=s360-rw.webp",
+				"description": "Wicrypt is a peer-to-peer Wi-Fi sharing app that enables users to get rewarded for sharing their mobile data.",
+				"title": "Wi-Fi sharing mobile application",
+				"name": "Wicrypt"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.kiddobank.kin",
+				"logo": "kiddobank_icon.png",
+				"description": "Cryptocurrency-enabled piggy bank",
+				"title": "Kiddobank",
+				"name": "Kiddobank"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.rentmole.app",
+				"logo": "rentmole_icon.png",
+				"description": "Rentmole is a review app for rental experiences. Users are incentivized with KIN to create and review rental experiences and can then spend KIN to access other rental property report details.",
+				"title": "RentMole",
+				"name": "RentMole"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.FistBump.io",
+				"logo": "fistbump_icon.png",
+				"description": "Your Reputation Based Sharing Economy",
+				"title": "FistBump.io",
+				"name": "FistBump.io"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.agentscove.agentscove",
+				"logo": "agentscove_icon.png",
+				"description": "Network for property agents and consumers.",
+				"title": "AgentsCove",
+				"name": "AgentsCove"
+			}
+		]
+	},
+	{
+		"title": "Travel & Local",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=il.co.moveo.find",
+				"logo": "bIA08cvd50McM8wa6bY61Nezh7Qcr9sPF39F_-vNJTA6mihDcRmRcD5DxU2cliinIh0B=s360-rw.webp",
+				"description": "Find is a diverse community of open-minded travelers looking to discover new friends. Find allows you to search for travelers with similar interests passing through your hometown, or in your destination city. With Find, you can make friends in your next stop before you even get there!",
+				"title": "Social network and messaging platform for travelers.",
+				"name": "Find - Find travelers"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.cityroutes",
+				"logo": "cityroutes_icon.png",
+				"description": "An application for sharing tours of cities with other people.",
+				"title": "City Routes",
+				"name": "City Routes"
+			}
+		]
+	},
+	{
+		"title": "Video Players & Editors",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.kimeoapp.kimeo.android",
+				"logo": "lxY2BcFPSA6LAZ3nP7Dl5EB38XrPt3hHUBWcf1R2yOrpni4E85lFbHsBmYomqsjB6_k=h180.png",
+				"description": "We are creating a video app using blockchain, Cloud and cryptocurrencies where people get rewarded for adding content, consuming content and advertisers reward people to watch their content. Everyone is a stakeholder and everyone gets rewarded unlike current platforms where the platform makes major chunk of the revenue.",
+				"title": "Video App where everyone gets rewarded",
+				"name": "Kimeo"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=org.kinecosystem.tippic&hl=en",
+				"logo": "epAvpiNqlKmtQFm7eseTkpCC7fSFM854shY3ENj8saWoMZteK0-UZ9XYQYZtKNTDwqs=s180-rw.webp",
+				"description": "Tippic is a new way to discover amazing photos and reward the people who create them!\n\n        With Tippic, you get to enjoy carefully curated beautiful photos from amateur photographers around the world. But, that’s not all. Instead of just giving them another heart or thumbs up, you get the chance to actually reward them for their work, using Kin, a new digital currency created to give everyone the chance to get rewarded for the value they create online.",
+				"title": "Discover a new photo every day.",
+				"name": "Tippic"
+			}
+		]
+	},
+	{
+		"title": "Lifestyle & Finance",
+		"apps": [
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.arcsoft.perfect365&hl=en",
+				"logo": "MGaA9kbURHbjDu1TYsNmFzU7FRM2AEsXlyq0yAt8TIdwXuUiMOkEYrhkEp5XmMjaVC4=s180-rw-1.webp",
+				"description": "Perfect365 allows users to try on different looks that are created by makeup artists and brands using special AR filters. When users find something they like they could explore the different makeup products that make up that look, be directed to the different shops etc. Users could gift makeup artists for beauitfully created looks, and download these looks in low and high resolution with Kin.",
+				"title": "Try before you buy AR app for makeup",
+				"name": "Perfect365"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.uwe",
+				"logo": "uwe_icon.png",
+				"description": "Uwe is a clothing builder app for bespoke fashion. KIN will incentivize designing new clothes every day. The current version is just the beginning and will soon be an entire marketplace.",
+				"title": "Uwe",
+				"name": "Uwe"
+			},
+			{
+				"isAndroid": true,
+				"googleUrl": "https://play.google.com/store/apps/details?id=com.simpletransfer.simpletransfer",
+				"logo": "simpletransfer_icon.png",
+				"description": "SimpleTransfer is a payment app that allows users to send and request Kin from friends and family.",
+				"title": "Simple Transfer",
+				"name": "Simple Transfer"
+			}
+		]
+	}
+]

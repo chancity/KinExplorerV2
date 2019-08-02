@@ -9,7 +9,7 @@ export const AppParent = styled.div`
 
 
 const AppBody = styled.div`
-    width: 76.8889rem;
+    width: 100rem;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
