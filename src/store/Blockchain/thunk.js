@@ -32,12 +32,11 @@ export const startStream = (caller, limit) => async (dispatch, getState, {api}) 
 	const pagingToken = data.records[0].paging_token;
 	const es = await api[caller]()
 			.cursor(pagingToken)
-			.limit(Math.round(limit))
+			.limit(Math.round(limit/3))
 			.order('asc')
 			.stream({
 				onmessage: (record => {
-						dispatch(addRecordAction(caller, formatRecord(record) , limit));
-
+					dispatch(addRecordAction(caller, formatRecord(record) , limit));
 				}),
 				onerror: onStreamError
 			});

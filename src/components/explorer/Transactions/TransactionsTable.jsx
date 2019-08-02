@@ -29,7 +29,7 @@ export const TransactionsTable =  ({doStream, limit, loaded, records, startStrea
 				<TableHeader data={["#", "AppId", "Ledger", "Ops", "Time"]}/>
 				<TableBody>
 					{records.map((op) => (
-						<tr key={op.hash}>
+						<tr key={op.pagingToken}>
 							<td>
 								<TransactionHash hash={op.hash} compact={true}/>
 							</td>
