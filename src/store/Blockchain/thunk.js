@@ -75,7 +75,7 @@ const onStreamError = (error)  => {
 export const cancelStream = (caller) => async (dispatch, getState) => {
 	const {BC} = getState();
 	if(BC.hasOwnProperty(caller)){
-		BC[caller].closeStream();
+	//	BC[caller].closeStream();
 	}
 	dispatch(cancelStreamSuccessAction(caller));
 };
