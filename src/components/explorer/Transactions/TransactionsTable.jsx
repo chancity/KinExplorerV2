@@ -7,8 +7,8 @@ import TransactionHash from "../../shared/TransactionHash";
 import AppData from "../../shared/AppData";
 import WithSpinner from '../../shared/WithSpinner'
 
-export const TransactionsTable = ({doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream}) => {
-
+export const TransactionsTable =  React.memo(props => {
+	const {doStream, limit, loaded, records, parentRenderTimestamp, startStream, cancelStream} = props;
 	React.useEffect(() => {
 		startStream("transactions", limit, true);
 
@@ -19,6 +19,8 @@ export const TransactionsTable = ({doStream, limit, loaded, records, parentRende
 	React.useEffect(() => {
 		console.log("TransactionsTable Render")
 	}, []);
+
+
 	return (
 		<WithSpinner loaded={loaded}>
 			<PanelTable>
@@ -48,4 +50,4 @@ export const TransactionsTable = ({doStream, limit, loaded, records, parentRende
 			</PanelTable>
 		</WithSpinner>
 	);
-};
+});

@@ -20,7 +20,8 @@ import Modal from "../../components/modal/Modal";
 
 const MAX_DESCRIPTION_LENGTH = 90;
 
-const AppDescription = ({description, onClick}) => {
+const AppDescription = React.memo(props => {
+	const {description, onClick} = props;
 	const [shortDescription] = React.useState(shortenDescription(description, MAX_DESCRIPTION_LENGTH));
 	const [expanded] = React.useState(false);
 	const [isExpandable] = React.useState(description.length > MAX_DESCRIPTION_LENGTH);
@@ -35,39 +36,39 @@ const AppDescription = ({description, onClick}) => {
 			</Description>
 		</div>
 	)
-};
+});
 
-const AppModal = ({value, toggler}) => (
-	<Modal useToggle={toggler}>
+const AppModal = React.memo(props => (
+	<Modal useToggle={props.toggler}>
 		<ModalHeader>
-			{value.name}
+			{props.value.name}
 		</ModalHeader>
 		<ModalBody>
 		<AppImageContainer>
-			<AppImage src={`${imageUrlBase}${value.logo}`}/>
+			<AppImage src={`${imageUrlBase}${props.value.logo}`}/>
 		</AppImageContainer>
-		<p>{value.description}</p>
+		<p>{props.value.description}</p>
 		<UrlContainer>
-			{value.isAndroid &&
-			<Url href={value.googleUrl}>
+			{props.value.isAndroid &&
+			<Url href={props.value.googleUrl}>
 				<Google/>
 				Google Play
 			</Url>}
-			{value.isIos &&
-			<Url href={value.iosUrl}>
+			{props.value.isIos &&
+			<Url href={props.value.iosUrl}>
 				<Apple/>
 				App Store
 			</Url>}
 		</UrlContainer>
 		</ModalBody>
 	</Modal>
-);
+));
 
 
 
-const AppPanel = ({value}) => {
+const AppPanel =  React.memo(props => {
 	const toggler = useToggle(false);
-
+	const {value} = props;
 	return(
 		<>
 		{toggler.isToggled ?
@@ -96,12 +97,14 @@ const AppPanel = ({value}) => {
 		}
 		</>
 	)
-};
+});
 
 
-const AppCategory = ({title, apps}) => (
-	<Panel style={{overflow: "hidden", backgroundColor: "transparent", boxShadow: "unset", padding:"0", width: "100%"}}>
-		<PanelHeader style={{alignSelf: "left", paddingLeft:0}}>
+const AppCategory = React.memo(props => {
+	const {apps, title} = props;
+	return (<Panel
+		style={{overflow: "hidden", backgroundColor: "transparent", boxShadow: "unset", padding: "0", width: "100%"}}>
+		<PanelHeader style={{alignSelf: "left", paddingLeft: 0}}>
 			{title}
 		</PanelHeader>
 		<AppCategoryContainer title={title}>
@@ -111,8 +114,8 @@ const AppCategory = ({title, apps}) => (
 				))}
 			</AppCategorySliderContainer>
 		</AppCategoryContainer>
-	</Panel>
-);
+	</Panel>)
+});
 
 export const AppPageAll = () => {
 	const [apps, setApps] = React.useState([]);
