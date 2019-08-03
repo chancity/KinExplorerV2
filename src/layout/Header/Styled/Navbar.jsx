@@ -1,5 +1,24 @@
 import styled from 'styled-components/macro'
 
+export const NavHeader = styled.header`
+    background: #2f3136;
+    color: #b9bbbe;
+    position: fixed;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 3;
+    width: 100%;
+    height: 2.77778rem;
+    svg {
+		height: 18px;
+		width: 18px;
+		fill: currentColor;	
+		
+	}
+	button {
+		color: currentColor;
+	}
+`;
 export const Wrapper = styled.nav`
     position: fixed;
     left: 0;
@@ -9,17 +28,13 @@ export const Wrapper = styled.nav`
     height: 2.77778rem;
     font-family: "Avenir Next",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-weight: 500;
-    background: #2f3136;
+
     -webkit-transition: background 300ms ease-out 0s;
     transition: background 300ms ease-out 0s;
     padding: 0;
     font-size: 16px;
     box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 1.5px 0 rgba(0,0,0,.05), 0 2px 0 rgba(0,0,0,.05);
-    color: #b9bbbe;
     
-    svg{
-        fill: currentColor;
-    }
     @media (max-width: 62.5em) {
     	font-size: 16px;
 	}
@@ -62,7 +77,7 @@ export const Seperator = styled.span`
     flex: 0 0 auto;
     margin: 0 0.833333rem;
     border-radius: 50%;
-    background: #292b2f;
+    background: currentColor;
 `;
 
 export const SocialWrapper = styled.nav`
@@ -71,11 +86,6 @@ export const SocialWrapper = styled.nav`
     flex: 1 1 auto;
     @media (max-width: 62.5em) {
     	display: none;
-	}
-	svg{
-		height: 18px;
-		width: 18px;
-		fill: currentColor;	
 	}
 `;
 

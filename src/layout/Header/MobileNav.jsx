@@ -11,9 +11,9 @@ import {SocialLinks} from "./SocialLinks";
 
 const OpenButtonStyle = {background: "#2f3136"};
 const arrowWrapperStyle = {transformOrigin: "center center",transform: "rotate(180deg)",transition: "transform 0.2s ease 0s"};
-const arrowSvgStyle = {fill:"white", width: "2rem", height: "2rem"};
+const arrowSvgStyle = {width: "2rem", height: "2rem"};
 const searchWrapperStyle = { display: "inline-block",	justifyContent: "flex-end",	float: "right", backGroundColor:"transparent"};
-const searchSvgStyle = {fill:"white", width: "1.55556rem", height: "1.55556rem"};
+const searchSvgStyle = {width: "1.55556rem", height: "1.55556rem"};
 
 export const ButtonWrapper = ({children, onClick, open}) => {
 	return(

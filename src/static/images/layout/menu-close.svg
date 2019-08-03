@@ -2,7 +2,7 @@
 	<title>
 		close
 	</title>
-	<use fill="#FFF" xlink:href="#close" transform="translate(1 1)">
+	<use xlink:href="#close" transform="translate(1 1)">
 	</use>
 	<defs>
 		<path id="close" d="M-.7.7l13 13 1.4-1.4-13-13L-.7.7zm13-1.4l-13 13 1.4 1.4 13-13-1.4-1.4z">

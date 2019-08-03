@@ -70,6 +70,7 @@ export const Wrapper = styled.form`
 
 export const Label = styled.label`
     margin-right: 0.222222rem;
+    margin-left: 0.222222rem;
     cursor: pointer;
     display: flex;
     background: none;

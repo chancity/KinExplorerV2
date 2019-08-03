@@ -1,6 +1,5 @@
 import styled from 'styled-components/macro'
-import {ReactComponent as Expand} from "../../static/images/layout/expand.svg";
-
+import {ReactComponent as Close} from "../../static/images/layout/menu-close.svg";
 
 export const ModalHeader = styled.h4`
 	font-size: 1.5625em;
@@ -25,9 +24,10 @@ export const ModalBody = styled.div`
 `;
 
 
-export const StyledExpand = styled(Expand)`
+export const StyledExpand = styled(Close)`
 	height: 16px;
 	width: 16px;
+
 	right:0;
 	top:0;
 	position: absolute;

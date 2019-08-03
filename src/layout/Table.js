@@ -12,7 +12,7 @@ const fadeIn = keyframes`
 `;
 
 export const PanelTable = styled.table`
-    table-layout: fixed;
+	width: 100%;
 	text-align: left;
 	border-spacing: 0;
 	box-sizing: border-box;
@@ -51,8 +51,8 @@ export const PanelTable = styled.table`
     }
     tr{
         margin: 0!important;
-    	min-height: 60px;
     }
+
     >tbody>tr{  
     	:hover {
     		background-color: rgba(20,20,20,0.1);

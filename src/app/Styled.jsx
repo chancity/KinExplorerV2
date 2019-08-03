@@ -16,7 +16,9 @@ const AppBody = styled.div`
     padding: 3rem 1.11111rem 1.66667rem;
     overflow: auto;
     transition: transform 150ms ease-out 0s;
-    
+    @media (max-width: 62.5em){
+    	  padding: 3rem 0.555555rem  1.66667rem;
+    }
 `;
 
 export {

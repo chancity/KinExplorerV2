@@ -16,14 +16,15 @@ export const NavLink = styled(Link)`
     letter-spacing: 0.0222222rem;
     color: currentcolor;
     flex: 0 0 auto;
-    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;    
+    transition: .2s;  
     :active{
-	    transform: scale(0.95);
-	    opacity: 0.6;
+	    transform: scale(1.1);
+	    opacity: 0.5;
 	}
 	
 	:focus, :hover  {
-    	opacity: 0.8;
+    	
+        transform: scale(.95);
 	}
 `;
 

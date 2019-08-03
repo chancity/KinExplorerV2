@@ -14,7 +14,7 @@ export const Menu = styled.nav`
     box-sizing: border-box;
     color: inherit;
     overflow-y: auto;
-    background: #2f3136;
+    background: #202225;
     transition: transform 150ms ease-out 0s;
     box-shadow: 1px 0 0 rgba(0,0,0,.2), 1.5px 0 0 rgba(0,0,0,.05), 2px 0 0 rgba(0,0,0,.05);
     @media (max-width: 62.5em) {
@@ -49,8 +49,9 @@ export const StyledLink = styled(NavLink)`
     cursor: pointer;
     padding: 0.111111rem 0.444444rem;
     margin: -0.111111rem -0.444444rem;
+    
     :hover {
-    	background: rgba(20, 20, 20, 0.1);
+    	background: rgba(185, 187, 190, 0.1);
 	}
     @media (min-width: 62.5em)	{
     	border-radius: 0.166667rem;

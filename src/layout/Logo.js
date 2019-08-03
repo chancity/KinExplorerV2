@@ -1,14 +1,27 @@
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 import React from "react";
 import {Link} from "react-router-dom";
 //import KinIcon from '../static/images/kin/kin-icon.svg';
 import KinLogoFull from '../static/images/kin/kin-logo-purple.svg';
+
+
+const spin = keyframes`
+  0% {
+   	transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);;
+  }
+`;
 
 const LogoLink = styled(Link)`
     display: inline-block;
     margin-right: 1.94444rem;
     @media (max-width: 55.5rem) {
     	    margin-right: 0;
+    }
+        :hover{
+    	animation:  .5s ${spin}  infinite alternate;
     }
 `;
 

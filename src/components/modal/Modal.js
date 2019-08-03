@@ -76,6 +76,7 @@ const InternalModal = styled.div`
     z-index: 2147483647;
     @media (max-width: 440px){
     	width: 100%;
+       	top: 0;
     }
 `;
 

@@ -33,20 +33,14 @@ export const SecondaryMenu = styled.div`
     user-select: none;
     overflow-x: scroll;
     overflow-y: hidden;
-    color: rgb(134, 134, 134);
     padding: 0 1.11111rem;
-    background-color: #292b2f;
+    background-color: #202225;
     transition: height 0.1s ease 0s;
 `;
 
 export const SecondaryMenuItem = styled.div`
     padding-right: 1.11111rem;
     display: flex;
-    svg {
-		height: 16px;
-		width: 16px;
-		fill: currentColor;	
-	}
 `;
 
 
@@ -63,10 +57,7 @@ export const Button = styled.button`
     background: none;
     flex: 0 0 auto;
     padding: 0 0.555556rem;
-    svg{
-    	width:15px;
-     	height:15px;
-    }
+
 `;
 
 export const ArrowWrapper = styled.div`

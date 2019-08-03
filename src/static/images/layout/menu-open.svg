@@ -2,7 +2,7 @@
 	<title>
 		fold
 	</title>
-	<use fill="#FFF" xlink:href="#fold" transform="translate(0 1)">
+	<use xlink:href="#fold" transform="translate(0 1)">
 
 	</use>
 	<defs>
