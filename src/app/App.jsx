@@ -56,9 +56,9 @@ function App() {
 		>
 
 				<Provider store={store}>
-					<div className={"swoosh-container swoosh-flipped"}>
+					{/*<div className={"swoosh-container swoosh-flipped"}>
 						<Swoosh className={"swoosh"} />
-					</div>
+					</div>*/}
 					<AppParent isMobile={isMobile}>
 
 					<BrowserRouter>
