@@ -112,6 +112,7 @@ export const Description = styled.p`
 	height: 90px;
 	width: 296.89px;
 	padding: 0 5px;
+    margin: auto;
 `;
 
 export const Readmore = styled.a`
