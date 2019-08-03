@@ -4,11 +4,11 @@ import {
 	AppCategorySliderContainer,
 	AppImage,
 	AppImageContainer,
-	AppsContainer, AppTitle, Description, Readmore, Scrollable, StyledExpand, StyledPanel, Url, UrlContainer
+	AppsContainer, AppTitle, Description, Readmore, Scrollable, StyledPanel, Url, UrlContainer
 } from "./Styled/AppsPage";
 import allApps from '../../static/apps/all';
 import {Title} from "../../layout/Title";
-import {imageUrlBase} from "./constants";
+import {googleUrl, s3Url} from "./constants";
 import {Panel, PanelHeader} from "../../layout/Panel";
 import {ReactComponent as Google} from '../../static/images/app_stores/google-play.svg';
 import {ReactComponent as Apple} from '../../static/images/app_stores/apple-logo.svg';
@@ -38,6 +38,16 @@ const AppDescription = React.memo(props => {
 	)
 });
 
+const getImageUrl = (res)=> {
+	if(res.includes(".webp")){
+		const replaceWith = "s180";
+		res = res.replace("s360-rw.webp", replaceWith).replace("s180-rw.webp", replaceWith).replace("s180-rw-1.webp", replaceWith);
+
+		return `${googleUrl}${res}`
+	}
+	return `${s3Url}${res}`
+};
+
 const AppModal = React.memo(props => (
 	<Modal useToggle={props.toggler}>
 		<ModalHeader>
@@ -45,7 +55,7 @@ const AppModal = React.memo(props => (
 		</ModalHeader>
 		<ModalBody>
 			<AppImageContainer>
-				<AppImage src={`${imageUrlBase}${props.value.logo}`}/>
+				<AppImage src={getImageUrl(props.value.logo)}/>
 			</AppImageContainer>
 			<p>{props.value.description}</p>
 			<UrlContainer>
@@ -74,7 +84,7 @@ const AppPanel = React.memo(props => {
 			<Panel style={{padding: 0, paddingTop:1+"em", minWidth: "296.89px", width:"100%"}} title={value.title}>
 				<AppTitle>{value.name}</AppTitle>
 				<AppImageContainer>
-					<AppImage src={`${imageUrlBase}${value.logo}`}/>
+					<AppImage src={getImageUrl(value.logo)}/>
 				</AppImageContainer>
 				<AppDescription description={value.description} onClick={toggler.toggle}/>
 				<UrlContainer>

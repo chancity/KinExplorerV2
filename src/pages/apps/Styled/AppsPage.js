@@ -58,7 +58,7 @@ export const AppCategorySliderContainer = styled.div`
 		grid-template-columns: unset;
 		grid-auto-flow: column dense;	
 		overflow: hidden;
-	   width: fit-content;
+	   	width: fit-content;
 	}
 `;
 
@@ -72,15 +72,19 @@ export const AppsContainer = styled.div`
 export const AppImageContainer = styled.div`
     min-width: 158px;
     min-height: 158px;
+    width: 158px;
+    height: 158px;
     overflow: hidden;
     border-radius: 36px;
     align-self: center;
 `;
 
-export const AppImage = styled.img`
+export const AppImage = styled(LazyLoadImage)`
     transition: transform 0.25s ease-in 0s;
     width: 158px;
     height: 158px;
+    min-width: 158px;
+    min-height: 158px;
  	transform: scale(1.02);
     vertical-align: middle;
     border: none;
