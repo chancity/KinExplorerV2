@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const NavHeader = styled.header`
-    background: #2f3136;
+    background: #36393F;
     color: #b9bbbe;
     position: fixed;
     left: 0;

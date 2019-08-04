@@ -14,7 +14,7 @@ export const Menu = styled.nav`
     box-sizing: border-box;
     color: inherit;
     overflow-y: auto;
-    background: #202225;
+    background: #2F3136;
     transition: transform 150ms ease-out 0s;
     box-shadow: 1px 0 0 rgba(0,0,0,.2), 1.5px 0 0 rgba(0,0,0,.05), 2px 0 0 rgba(0,0,0,.05);
     @media (max-width: 62.5em) {

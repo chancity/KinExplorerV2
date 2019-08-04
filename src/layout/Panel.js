@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 export const Panel = styled.div`
 	display: flex;
 	flex-direction: column;
-	background-color: #2f3136;
+	background-color: #202225;
 	font-size: 14px;
 	padding: 5px 10px;
 	border-radius: .5em;

@@ -58,6 +58,7 @@ export const Wrapper = styled.form`
     align-items: center;
     justify-content: flex-start;
     flex: 0 0 auto;
+    color: #72767d;
     background-color: #202225;
     border-radius: .5em;
     @media (max-width: 62.5em){

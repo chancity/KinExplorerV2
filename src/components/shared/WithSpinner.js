@@ -33,7 +33,6 @@ const SpinnerBg = styled.div`
     height: 300px;
     width: 300px;
 	animation:  .5s ${spin}  infinite alternate;
-
 `;
 
 const Spinner = () => (
