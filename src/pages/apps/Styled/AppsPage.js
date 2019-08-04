@@ -76,7 +76,8 @@ export const AppImageContainer = styled.div`
     height: 158px;
     overflow: hidden;
     border-radius: 36px;
-    align-self: center;
+    align-self: center;   
+
 `;
 
 export const AppImage = styled(LazyLoadImage)`
@@ -85,7 +86,7 @@ export const AppImage = styled(LazyLoadImage)`
     height: 158px;
     min-width: 158px;
     min-height: 158px;
- 	transform: scale(1.02);
+ 	transform: scale(1.01);
     vertical-align: middle;
     border: none;
     background-color: transparent;
@@ -93,6 +94,10 @@ export const AppImage = styled(LazyLoadImage)`
     outline: none;
     border-radius: 36px;
     align-self: center;
+    background-image: url("${props => props.url}");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     :hover {
     	display: block;
 	    transform: scale(1.1);

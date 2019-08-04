@@ -16,6 +16,8 @@ const Routes = () => (
 				<Redirect to="/explorer"/>
 			)}/>
 			<Route exact path="/explorer" component={ Overview }/>
+			<Route exact path="/explorer/account/:publicAddress" component={ Overview }/>
+			<Route exact path="/explorer/tx/:txHash" component={ Overview }/>
 			<Route exact path="/explorer/operations" component={ Operations }/>
 			<Route exact path="/explorer/payments" component={ Payments }/>
 			<Route exact path="/explorer/transactions" component={ Transactions }/>

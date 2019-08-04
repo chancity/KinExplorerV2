@@ -55,7 +55,7 @@ const AppModal = React.memo(props => (
 		</ModalHeader>
 		<ModalBody>
 			<AppImageContainer>
-				<AppImage src={getImageUrl(props.value.logo)}/>
+				<AppImage url={getImageUrl(props.value.logo)}/>
 			</AppImageContainer>
 			<p>{props.value.description}</p>
 			<UrlContainer>
