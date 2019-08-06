@@ -86,7 +86,7 @@ export const AppImage = styled(LazyLoadImage)`
     height: 158px;
     min-width: 158px;
     min-height: 158px;
- 	transform: scale(1.01);
+ 	transform: scale(1.02);
     vertical-align: middle;
     border: none;
     background-color: transparent;
