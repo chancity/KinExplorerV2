@@ -77,7 +77,6 @@ export const AppImageContainer = styled.div`
     overflow: hidden;
     border-radius: 36px;
     align-self: center;   
-
 `;
 
 export const AppImage = styled(LazyLoadImage)`
